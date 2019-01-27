@@ -3,6 +3,11 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import { RoutingContext, gridColors } from "../context/routing";
 import { COLORS, BREAKPOINTS } from "../theme";
+import { List, Item } from "../components/list";
+
+import { ReactComponent as TwitterIcon } from "../images/icons/twitter.svg";
+import { ReactComponent as GithubIcon } from "../images/icons/github.svg";
+import { ReactComponent as MediumIcon } from "../images/icons/medium.svg";
 
 const Menu = styled.menu`
   margin: 0;
@@ -35,18 +40,6 @@ const Menu = styled.menu`
       pointer-events: all;
       transform: scale(1);
     }
-  }
-
-  & ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
-
-  & li {
-    width: 100%;
   }
 
   & a {
@@ -181,6 +174,47 @@ const MobileMenuButton = styled.button`
   }
 `;
 
+const SocialList = styled.ul`
+  margin: 5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & li a {
+    padding: 0.5rem;
+    margin: 0 0.4rem 0 0;
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+
+    &:hover {
+      color: var(--hover-color);
+      transform: translateY(-0.3rem);
+    }
+
+    &:focus {
+      outline: 0 none;
+      transform: scale(1.2);
+    }
+
+    & svg {
+      height: 2rem;
+      width: auto;
+    }
+  }
+
+  ${BREAKPOINTS.MOBILE} {
+    width: 100%;
+    justify-content: center;
+    margin-top: 4rem;
+
+    & li a svg {
+      height: 3rem;
+    }
+  }
+`;
+
 function Navigation({ location }) {
   const context = useContext(RoutingContext);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -203,38 +237,71 @@ function Navigation({ location }) {
         <span />
       </MobileMenuButton>
       <Menu className={mobileMenuOpen ? "active" : undefined}>
-        <ul>
-          <li>
+        <List>
+          <Item>
             <Link to="/" onClick={handleLinkClick}>
               Hi.
             </Link>
-          </li>
-          <li>
+          </Item>
+          <Item>
             <Link to="/curriculum-vitae" onClick={handleLinkClick}>
               Curriculum vitae
             </Link>
-          </li>
-          <li>
+          </Item>
+          <Item>
             <Link to="/skills" onClick={handleLinkClick}>
               Skills
             </Link>
-          </li>
-          <li>
+          </Item>
+          <Item>
             <Link to="/my-work" onClick={handleLinkClick}>
               My Work
             </Link>
-          </li>
-          <li>
+          </Item>
+          <Item>
             <Link to="/til" onClick={handleLinkClick}>
               TIL
             </Link>
-          </li>
-          <li>
+          </Item>
+          <Item>
             <Link to="/get-in-touch" onClick={handleLinkClick}>
               Get in touch
             </Link>
+          </Item>
+        </List>
+
+        <SocialList>
+          <li>
+            <a
+              href="https://mobile.twitter.com/jburr90"
+              title="@jburr90 on twitter"
+              target="_blank"
+              style={{ "--hover-color": COLORS.TWITTER_BLUE }}
+            >
+              <TwitterIcon />
+            </a>
           </li>
-        </ul>
+          <li>
+            <a
+              href="https://github.com/julianburr"
+              title="@julianburr on github"
+              target="_blank"
+              style={{ "--hover-color": COLORS.GITHUB_GREY }}
+            >
+              <GithubIcon />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://medium.com/@julianburr"
+              title="@julianburr on Medium"
+              target="_blank"
+              style={{ "--hover-color": COLORS.MEDIUM_GREEN }}
+            >
+              <MediumIcon />
+            </a>
+          </li>
+        </SocialList>
       </Menu>
 
       <MenuGrid>

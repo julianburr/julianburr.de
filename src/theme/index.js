@@ -17,7 +17,11 @@ export const COLORS = {
   YELLOW: "#F7AD08",
   PURPLE: "#CA85D8",
   BLUE: "#599AE5",
-  RED: "#DA7A70"
+  RED: "#DA7A70",
+
+  TWITTER_BLUE: "#1EA1F2",
+  MEDIUM_GREEN: "#029E74",
+  GITHUB_GREY: "#55554C"
 };
 
 export const BREAKPOINTS = {
