@@ -1,4 +1,5 @@
 const path = require("path");
+const fs = require("fs");
 const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`);
 
 exports.createPages = ({ actions, graphql }) => {
@@ -10,10 +11,7 @@ exports.createPages = ({ actions, graphql }) => {
     resolve(
       graphql(`
         {
-          allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-            limit: 1000
-          ) {
+          allMarkdownRemark(limit: 1000) {
             edges {
               node {
                 fields {
@@ -22,22 +20,34 @@ exports.createPages = ({ actions, graphql }) => {
                 frontmatter {
                   title
                 }
+                fileAbsolutePath
               }
             }
           }
         }
       `).then(result => {
         if (result.errors) {
+          // eslint-disable-next-line
           console.log(result.errors);
           return reject(result.errors);
         }
 
-        const blogTemplate = path.resolve("./src/templates/blog-post.js");
+        const defaultTemplate = path.resolve("./src/templates/page-default.js");
+        const pagesPath = path.resolve("./src/pages/");
 
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+          const type = node.fileAbsolutePath
+            .substring(pagesPath.length)
+            .split("/")[1];
+
+          const typeTemplate = path.resolve(`./src/templates/page-${type}.js`);
+          const template = fs.existsSync(typeTemplate)
+            ? typeTemplate
+            : defaultTemplate;
+
           createPage({
             path: node.fields.slug,
-            component: blogTemplate,
+            component: template,
             context: {
               slug: node.fields.slug
             } // additional data can be passed via context

@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { graphql } from "gatsby";
 import SEO from "../components/seo";
 
-export default function BlogPostTemplate({ data }) {
+export default function PageDefaultTemplate({ data }) {
   const post = data.markdownRemark;
   return (
     <Fragment>
