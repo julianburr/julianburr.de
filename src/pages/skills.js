@@ -33,6 +33,11 @@ export default function SkillsPage({ data }) {
     <Fragment>
       <SEO title="Skills" />
       <h1>Skills</h1>
+      <p>
+        These are some of of the fields I currently work in and the tech I use.
+        Click on any of them to find out how I use them and what similar tools I
+        might have been working with in the past.
+      </p>
       <Grid>
         <Column width={6}>
           <h2>Programming Languages</h2>
@@ -63,6 +68,9 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           html
           frontmatter {
             title

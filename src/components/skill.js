@@ -1,15 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 import { COLORS, BREAKPOINTS } from "../theme";
 
 import { ReactComponent as Happy } from "../images/icons/smiley-happy.svg";
 import { ReactComponent as Neutral } from "../images/icons/smiley-neutral.svg";
 
-const Container = styled.div`
+const Container = styled(Link)`
   display: flex;
   flex-direction: row;
   alignitems: center;
   padding: 0.2rem 0;
+  font-weight: inherit;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
 `;
 
 const Rating = styled.div`
@@ -39,7 +46,7 @@ const Title = styled.div`
 
 export default function Skill({ data }) {
   return (
-    <Container>
+    <Container to={data.fields.slug}>
       <Rating>
         {Array.from(Array(5)).map((_, i) => {
           const active = i + 1 <= parseInt(data.frontmatter.rating);
