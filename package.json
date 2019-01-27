@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^4.1.0",
+    "babel-plugin-styled-components": "^1.10.0",
     "dayjs": "^1.8.0",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.20",
@@ -21,6 +22,7 @@
     "gatsby-plugin-offline": "^2.0.16",
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-plugin-svgr": "^2.0.1",
     "gatsby-source-filesystem": "^2.0.17",
     "gatsby-transformer-remark": "^2.2.0",
@@ -40,7 +42,8 @@
     "start": "npm run develop",
     "format": "prettier --write '**/*.{js,jsx,json,css,md}'",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "lint:staged": "lint-staged"
+    "lint:staged": "lint-staged",
+    "deploy": "yarn clean && yarn build && cp now.json ./public/now.json && cd ./public && now --public && now alias && cd -"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.3.2",
