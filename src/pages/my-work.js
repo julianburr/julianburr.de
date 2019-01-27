@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import styled from "styled-components";
 import SEO from "../components/seo";
 import { Grid, Column } from "../components/grid";

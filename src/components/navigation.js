@@ -198,6 +198,7 @@ function Navigation({ location }) {
       <MobileMenuButton
         onClick={toggleMenu}
         className={mobileMenuOpen ? "active" : undefined}
+        aria-label="Toggle Menu"
       >
         <span />
       </MobileMenuButton>

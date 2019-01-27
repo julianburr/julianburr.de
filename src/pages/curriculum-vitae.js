@@ -29,7 +29,6 @@ const RoleDate = styled.span`
 
 export default function CurriculumVitaePage({ data }) {
   const roles = data.allMarkdownRemark.edges;
-  console.log({ roles });
   return (
     <Container>
       <SEO title="Curriculum Vitae" />
@@ -41,28 +40,25 @@ export default function CurriculumVitaePage({ data }) {
         them. Every single role made me grow professionally and personally.
       </p>
       <List mt="3rem">
-        {roles.map(
-          role =>
-            console.log({ role }) || (
-              <Item key={role.node.fields.slug} pb=".8rem">
-                <Card linkTo={role.node.fields.slug}>
-                  <WrapHeading>
-                    <RoleDate>
-                      {role.node.frontmatter.from} to{" "}
-                      {role.node.frontmatter.to > dayjs().format("YYYY")
-                        ? "now"
-                        : role.node.frontmatter.to}{" "}
-                      —
-                    </RoleDate>
-                    <span role="heading" aria-level="2">
-                      {role.node.frontmatter.title}
-                    </span>
-                  </WrapHeading>
-                  <p>{role.node.frontmatter.role}</p>
-                </Card>
-              </Item>
-            )
-        )}
+        {roles.map(role => (
+          <Item key={role.node.fields.slug} pb=".8rem">
+            <Card linkTo={role.node.fields.slug}>
+              <WrapHeading>
+                <RoleDate>
+                  {role.node.frontmatter.from} to{" "}
+                  {role.node.frontmatter.to > dayjs().format("YYYY")
+                    ? "now"
+                    : role.node.frontmatter.to}{" "}
+                  —
+                </RoleDate>
+                <span role="heading" aria-level="2">
+                  {role.node.frontmatter.title}
+                </span>
+              </WrapHeading>
+              <p>{role.node.frontmatter.role}</p>
+            </Card>
+          </Item>
+        ))}
       </List>
     </Container>
   );
