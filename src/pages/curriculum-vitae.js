@@ -1,0 +1,93 @@
+import React, { Fragment } from "react";
+import styled from "styled-components";
+import { graphql } from "gatsby";
+import dayjs from "dayjs";
+import SEO from "../components/seo";
+import Card from "../components/card";
+import { List, Item } from "../components/list";
+
+const Container = styled.div`
+  width: 100%;
+  max-width: 50rem;
+`;
+
+const WrapHeading = styled.div`
+  display: inline-block;
+  word-wrap: break-word;
+  padding: 0.4rem 0;
+  font-size: 2.2rem;
+  font-family: Staatliches;
+  line-height: 1.2;
+`;
+
+const RoleDate = styled.span`
+  color: var(--main-bg-color);
+  display: inline-block;
+  padding: 0 0.8rem 0 0;
+  font-size: 75%;
+`;
+
+export default function CurriculumVitaePage({ data }) {
+  const roles = data.allMarkdownRemark.edges;
+  console.log({ roles });
+  return (
+    <Container>
+      <SEO title="Curriculum Vitae" />
+      <h1>Curriculum Vitae</h1>
+      <p>
+        Below is a history of emplyers I worked for. Click through to see more
+        details about what my roles were and what responsibilities were
+        involved, as well as most importantly what I think I learned at each of
+        them. Every single role made me grow professionally and personally.
+      </p>
+      <List mt="3rem">
+        {roles.map(
+          role =>
+            console.log({ role }) || (
+              <Item key={role.node.fields.slug} pb=".8rem">
+                <Card linkTo={role.node.fields.slug}>
+                  <WrapHeading>
+                    <RoleDate>
+                      {role.node.frontmatter.from} to{" "}
+                      {role.node.frontmatter.to > dayjs().format("YYYY")
+                        ? "now"
+                        : role.node.frontmatter.to}{" "}
+                      —
+                    </RoleDate>
+                    <span role="heading" aria-level="2">
+                      {role.node.frontmatter.title}
+                    </span>
+                  </WrapHeading>
+                  <p>{role.node.frontmatter.role}</p>
+                </Card>
+              </Item>
+            )
+        )}
+      </List>
+    </Container>
+  );
+}
+
+export const pageQuery = graphql`
+  {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___to] }
+      filter: { fileAbsolutePath: { regex: "/pages/curriculum-vitae/.*$/" } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          html
+          frontmatter {
+            title
+            role
+            from(formatString: "YYYY")
+            to(formatString: "YYYY")
+          }
+        }
+      }
+    }
+  }
+`;
