@@ -41,7 +41,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write '**/*.{js,jsx,json,css,md}'",
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "lint": "eslint '**/*.{js,jsx}'",
     "lint:staged": "lint-staged",
     "deploy": "yarn clean && yarn build && cp now.json ./public/now.json && cd ./public && now --public && now alias && cd -"
   },
