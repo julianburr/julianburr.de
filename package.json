@@ -47,6 +47,7 @@
     "format": "prettier --write '**/*.{js,jsx,json,css,md}'",
     "lint": "eslint '**/*.{js,jsx}'",
     "lint:staged": "lint-staged",
+    "lighthouse": "gatsby-lighthouse --performance=100 --accessibility=100 --best-practices=100 --seo=100",
     "deploy": "yarn clean && yarn build && cp now.json ./public/now.json && cd ./public && now --public && now alias && cd -"
   },
   "devDependencies": {
@@ -54,6 +55,7 @@
     "@commitlint/config-conventional": "^7.3.1",
     "eslint": "^5.12.1",
     "eslint-plugin-react": "^7.12.4",
+    "gatsby-lighthouse-cli": "^0.0.1",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.2",
