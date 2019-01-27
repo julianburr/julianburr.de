@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 import "../fonts/montserrat.css";
 import "../fonts/staatliches.css";
+import "./prismjs-theme.css";
 
 export const COLORS = {
   WHITE: "#FAF9F6",
@@ -89,6 +90,14 @@ export const GlobalStyles = createGlobalStyle`
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    min-width: 100%;
+    margin: 3rem 0;
+    box-shadow: 0 .4rem 4rem -.4rem rgba(0, 0, 0, .1);
+    border-radius: 0;
   }
 
   ${BREAKPOINTS.MOBILE} {
