@@ -1,7 +1,7 @@
 ---
 title: Sketch Plugin Boilerplate
 type: Open Source
-medium: meetup
+externalUrl: https://github.com/julianburr/sketch-plugin-boilerplate
 ---
 
-Some description about the project...
+TODO

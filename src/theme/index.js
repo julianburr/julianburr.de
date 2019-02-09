@@ -33,7 +33,7 @@ export const BREAKPOINTS = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800|Staatliches');
+  @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Staatliches');
  
   :root {
     --main-bg-color: ${COLORS.BLACK};
@@ -47,10 +47,11 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-size: 1.4rem;
-    line-height: 1.5;
-    font-family: Montserrat, 'Open Sans', sans-serif;
-    font-weight: 500;
+    line-height: 1.6;
+    font-family: Lato, 'Open Sans', sans-serif;
+    font-weight: 400;
     color: ${COLORS.BLACK};
+    word-break: break-word;
   }
 
   *, *:before, *:after {
@@ -77,13 +78,27 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 1.2;
   }
 
+  h3 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0 1rem;
+    font-weight: 700;
+  }
+
   p {
     margin: 0;
-    padding: .4rem 0;
+    padding: 1rem 0;
+  }
+
+  hr {
+    margin: 2.5rem 0;
+    border: 0 none;
+    border-top: .3rem solid ${COLORS.BLACK};
+    width: 100%;
+    max-width: 4rem;
   }
 
   a {
-    font-weight: 800;
+    font-weight: 900;
     color: var(--main-bg-color);
     text-decoration: none;
 
@@ -92,17 +107,65 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+  b, strong {
+    font-weight: 900;
+  }
+
+  ul, ol {
+    margin: 0;
+    padding: 1rem 1rem 1rem 3rem;
+  }
+
+  ul li,
+  ol li {
+    padding: .5rem 0;
+  }
+
   code[class*="language-"],
   pre[class*="language-"] {
-    min-width: 100%;
     margin: 3rem 0;
-    box-shadow: 0 .4rem 4rem -.4rem rgba(0, 0, 0, .1);
     border-radius: 0;
+  }
+
+  p code.language-text,
+  li code.language-text {
+    color: ${COLORS.BLACK};
+    background: ${COLORS.GREY.MEDIUM};
+    display: inline-block;
+    padding: .1rem .4rem;
+    margin: 0;
+    border-radius: 0;
+    font-size: 1.2rem;
+  }
+
+  pre[class*="language-"] {
+    margin: 3rem 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 .4rem 5rem -.4rem rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    min-width: calc(100% - 3rem);
+  }
+
+  pre[class*="language-"] code {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .twitter-tweet {
+    width: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 3rem 0 !important;
   }
 
   ${BREAKPOINTS.MOBILE} {
     body {
       font-size: 1.3rem;
+    }
+
+    pre[class*="language-"] {
+      margin: 3rem 0;
     }
   }
 `;

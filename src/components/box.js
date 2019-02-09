@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 function hasFlexProps(props) {
@@ -6,13 +7,13 @@ function hasFlexProps(props) {
     "flexDirection",
     "flexWrap",
     "justifyContent",
-    "alignItems",
-    "alignContent"
+    "alignItems"
   ].some(flexProp => Object.keys(props).includes(flexProp));
 }
 
-const Box = styled(p => p.as || "div")`
-  display: ${p => (hasFlexProps(p) ? "flex" : undefined)};
+const Div = props => <div {...props} />;
+
+const Box = styled(p => p.as || <Div {...p} />)`
   margin: ${p =>
     p.mt || p.mb || p.ml || p.mr
       ? `${p.mt || p.margin || "0"} ` +
@@ -29,6 +30,12 @@ const Box = styled(p => p.as || "div")`
       : p.padding};
   width: ${p => p.width};
   height: ${p => p.height};
+  display: ${p => (hasFlexProps(p) ? "flex" : undefined)};
+  flex-direction: ${p => p.flexDirection};
+  align-items: ${p => p.alignItems};
+  justify-content: ${p => p.justifyContent};
+  flex-wrap: ${p => p.flexWrap};
+  flex: ${p => p.flex};
 `;
 
 export default Box;

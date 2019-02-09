@@ -3,7 +3,9 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import { COLORS } from "../theme";
 
-const Container = styled(p => <Link {...p} />)`
+const Container = styled(p =>
+  p.href ? <a target="_blank" {...p} /> : <Link {...p} />
+)`
   width: 100%;
   padding: 2.5rem;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
@@ -22,6 +24,10 @@ const Container = styled(p => <Link {...p} />)`
   }
 `;
 
-export default function Card({ children, linkTo }) {
-  return <Container to={linkTo}>{children}</Container>;
+export default function Card({ children, linkTo, href }) {
+  return (
+    <Container to={linkTo} href={href}>
+      {children}
+    </Container>
+  );
 }

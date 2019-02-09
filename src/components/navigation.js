@@ -276,6 +276,7 @@ function Navigation({ location }) {
               href="https://mobile.twitter.com/jburr90"
               title="@jburr90 on twitter"
               target="_blank"
+              rel="noreferrer"
               style={{ "--hover-color": COLORS.TWITTER_BLUE }}
             >
               <TwitterIcon />
@@ -286,6 +287,7 @@ function Navigation({ location }) {
               href="https://github.com/julianburr"
               title="@julianburr on github"
               target="_blank"
+              rel="noreferrer"
               style={{ "--hover-color": COLORS.GITHUB_GREY }}
             >
               <GithubIcon />
@@ -296,6 +298,7 @@ function Navigation({ location }) {
               href="https://medium.com/@julianburr"
               title="@julianburr on Medium"
               target="_blank"
+              rel="noreferrer"
               style={{ "--hover-color": COLORS.MEDIUM_GREEN }}
             >
               <MediumIcon />

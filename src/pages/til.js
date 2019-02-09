@@ -28,9 +28,11 @@ export default function TILPage({ data }) {
       <SEO title="Today I Learned" />
       <h1>Today I Learned</h1>
       <p>
-        This is just a collection of small bits and pieces of knowledge I picked
-        up on my way. We learn something new every day, so I wanted to keep that
-        gained knowledge accessible for later. It also makes sharing easier.
+        This is not a blog, just a collection of small bits and pieces of
+        knowledge I picked up on my way. We learn something new every day, so I
+        wanted to keep that gained knowledge accessible for later. It also makes
+        sharing easier. Most of it is just random thoughts and code snippets,
+        with links to further resources.
       </p>
       {posts.length ? (
         <List mt="3rem">
@@ -43,7 +45,7 @@ export default function TILPage({ data }) {
                     {p.node.frontmatter.title}
                   </span>
                 </WrapHeading>
-                <p>{p.node.frontmatter.summary}</p>
+                <p>{p.node.frontmatter.description}</p>
               </Card>
             </Item>
           ))}
@@ -58,7 +60,7 @@ export default function TILPage({ data }) {
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date, frontmatter___prio] }
+      sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "/pages/til/.*$/" } }
     ) {
       edges {
@@ -67,9 +69,9 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD/MM/YY")
+            date(formatString: "DD/MM/YYYY")
             title
-            summary
+            description
           }
         }
       }

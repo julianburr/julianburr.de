@@ -55,9 +55,12 @@ export default function MyWorkPage({ data }) {
       <Group>
         {projects.map((project, i) => (
           <GroupItem width={4}>
-            <Card linkTo={project.node.fields.slug}>
+            <Card
+              linkTo={project.node.fields.slug}
+              href={project.node.frontmatter.externalUrl}
+            >
               <WrapHeading>
-                <WorkYear>{project.node.frontmatter.year} —</WorkYear>
+                <WorkYear>{project.node.frontmatter.date} —</WorkYear>
                 <span role="heading" aria-level="3">
                   {project.node.frontmatter.title}
                 </span>
@@ -78,9 +81,12 @@ export default function MyWorkPage({ data }) {
       <Group>
         {talks.map((talk, i) => (
           <GroupItem width={4}>
-            <Card linkTo={talk.node.fields.slug}>
+            <Card
+              linkTo={talk.node.fields.slug}
+              href={talk.node.frontmatter.externalUrl}
+            >
               <WrapHeading>
-                <WorkYear>{talk.node.frontmatter.year} —</WorkYear>
+                <WorkYear>{talk.node.frontmatter.date} —</WorkYear>
                 <span role="heading" aria-level="3">
                   {talk.node.frontmatter.title}
                 </span>
@@ -98,7 +104,10 @@ export default function MyWorkPage({ data }) {
       <Group>
         {oss.map((project, i) => (
           <GroupItem width={4}>
-            <Card linkTo={project.node.fields.slug}>
+            <Card
+              linkTo={project.node.fields.slug}
+              href={project.node.frontmatter.externalUrl}
+            >
               <WrapHeading>
                 <span role="heading" aria-level="3">
                   {project.node.frontmatter.title}
@@ -115,7 +124,7 @@ export default function MyWorkPage({ data }) {
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___year] }
+      sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "/pages/my-work/.*$/" } }
     ) {
       edges {
@@ -127,8 +136,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
-            year
+            date(formatString: "YYYY")
             type
+            externalUrl
           }
         }
       }

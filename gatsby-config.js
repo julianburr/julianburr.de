@@ -28,6 +28,8 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
+    "gatsby-plugin-twitter",
+    "gatsby-plugin-catch-links",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -42,6 +44,13 @@ module.exports = {
             resolve: "gatsby-remark-prismjs",
             options: {
               inlineCodeMarker: "÷"
+            }
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "noreferrer"
             }
           },
           "gatsby-remark-copy-linked-files"

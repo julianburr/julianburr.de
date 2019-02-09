@@ -34,7 +34,7 @@ const Stage = styled.div`
 
 const Content = styled.main`
   width: 100%;
-  max-width: 80rem;
+  max-width: 70rem;
 `;
 
 function Layout({ children }) {
@@ -42,7 +42,7 @@ function Layout({ children }) {
   return (
     <Container background={context.currentGridColor}>
       <GlobalStyles />
-      <Stage>
+      <Stage id="stage">
         <Navigation />
         <Content>{children}</Content>
       </Stage>

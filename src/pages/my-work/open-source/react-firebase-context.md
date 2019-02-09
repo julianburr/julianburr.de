@@ -1,7 +1,7 @@
 ---
 title: React Firebase Context
 type: Open Source
-medium: meetup
+externalUrl: https://github.com/julianburr/react-firebase-context
 ---
 
-Some description about the project...
+TODO
