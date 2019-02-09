@@ -1,9 +1,13 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
+import dayjs from "dayjs";
+import customParseFormat from "dayjs/plugin/customParseFormat";
 import { graphql } from "gatsby";
 import SEO from "../components/seo";
 import Card from "../components/card";
 import { List, Item } from "../components/list";
+
+dayjs.extend(customParseFormat);
 
 const WrapHeading = styled.div`
   display: inline-block;
@@ -22,7 +26,9 @@ const PostDate = styled.span`
 `;
 
 export default function TILPage({ data }) {
-  const posts = data.allMarkdownRemark.edges;
+  const posts = data.allMarkdownRemark.edges.filter(e =>
+    dayjs(e.node.frontmatter.date, "DD/MM/YYYY").isBefore(dayjs())
+  );
   return (
     <Fragment>
       <SEO title="Today I Learned" />
