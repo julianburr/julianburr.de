@@ -248,11 +248,11 @@ function Navigation({ location }) {
               Curriculum vitae
             </Link>
           </Item>
-          <Item>
+          {/*<Item>
             <Link to="/skills" onClick={handleLinkClick}>
               Skills
             </Link>
-          </Item>
+          </Item>*/}
           <Item>
             <Link to="/my-work" onClick={handleLinkClick}>
               My Work

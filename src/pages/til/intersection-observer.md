@@ -9,10 +9,10 @@ Do you remember the good old days, when we measured the position of elements on 
 
 ## How it used to be
 
-It also came with a lot of overhead. Taken an example from the jQuery days, it could look like this.
+It also came with a lot of overhead. Taken an example from the jQuery days, it could have looked something like this.
 
 ```js
-const $element = $('.fadeIn');
+const $element = $(".fadeIn");
 
 let position = $element.position();
 let height = $element.height();
@@ -20,18 +20,18 @@ $(window).resize(() => {
   // When the window resizes, the position and dimensions might change
   position = $element.position();
   height = $element.height();
-})l
+});
 
 $(window).scroll(() => {
   const scrollTop = window.scrollTop;
   const positionTop = position.top;
 
   if (scrollTop >= positionTop && scrollTop <= positionTop + height) {
-    $element.addClass('visible');
+    $element.addClass("visible");
   } else {
-    $element.removeClass('visible');
+    $element.removeClass("visible");
   }
-})
+});
 ```
 
 These event listeners to scroll and resize are not really cheap. For one element this might be fine, but at scale if you have to do a lot of calculation for a lot of elements this can quickly make your website or application very laggy.

@@ -7,7 +7,7 @@ tags: CSS, JS
 
 ## What they are
 
-By now most people have heard of them, but in case you haven't: [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) are a CSS core feature in answer to all these pre-processors that took over in the last couple of years 😉 They allow you to define variables within your CSS and use them in your style rules. E.g.
+By now most people have heard of them, but in case you haven't: [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) are a CSS core feature in answer to all these pre-processors that took over in the last couple of years 😉 They allow you to define variables within your CSS and to use them in your style rules.
 
 ```css
 :root {
@@ -19,7 +19,7 @@ a {
 }
 ```
 
-Now if this is on a library level, you could use the file in your project as is and change the base color of the theme by simply overwriting the variable...
+Now, if this is on a library level, you could pull in the above definitions into your project (e.g. via a `styles.min.css`) and change the base color of the theme by simply overwriting the variable on your style sheets:
 
 ```css
 :root {
@@ -31,9 +31,9 @@ Neat, isn't it. But as nice as this is, there are even more powerful use cases f
 
 ## Dynamic styles
 
-One of the major arguments against CSS-in-JS (besides all the misconceptions people have when it comes to this) is the concern around dynamic styles, where the libraries often still have to fall back to inline styles. More specifically, say you have a React component that takes a `backgroundColor` prop. In order to apply the color, you'd have to apply it inline.
+One of the major arguments against CSS-in-JS (besides all the misconceptions people have when it comes to this) is the concern around dynamic styles, where the libraries often still have to fall back to inline styles. More specifically, say you have a React component that takes a `color` prop that defines the text color for the component instance. In order to apply the color, you'd have to apply it inline.
 
-CSS variables doesn't remove the need for that, but it makes it a lot nicer to do, since you can still define the background color in your CSS file, that you obviously pull out into a static file at build time, and all you apply via inline styles is the override of the css variable.
+CSS variables don't remove the need for that, but it makes it a lot nicer to do, since you can still define the color in your CSS file, that you obviously pull out into a static file at build time, and all you apply via inline styles is the override of the css variable.
 
 Popoular libraries like [Linaria](https://linaria.now.sh/) do exactly this for you, you don't even have to think about it.
 
@@ -100,7 +100,7 @@ See this [pen](https://codepen.io/anon/pen/exVPaB) for an example, for a much be
 
 ## Inline hover and media queries
 
-Inline styles are bad, because you can't use things like `:hover` and other pseudo selectors, right? Well, yeah, but CSS variables help you get around that. Again, this ties in with the way CSS-in-JS libraries allow dynamic styles from props.
+Inline styles are bad, because you can't use things like `:hover` and other pseudo selectors, right? Well, yeah, but CSS variables help you get around that. Again, this ties into the way CSS-in-JS libraries allow dynamic styles from props.
 
 ```css
 button {
@@ -122,8 +122,8 @@ In the same way you can apply values for media query rules etc, all inline.
 
 ## Shadow DOM
 
-The [Shadow DOM](https://developers.google.com/web/fundamentals/web-components/shadowdom) deserves its own little write up, but it's worth a mention in this context as well. One benefit of the Shadow DOM is that you can isolate styling to specific elements of the DOM tree. This is great, but what if you want or need to have control over it from outside of the shadow node?
+The [Shadow DOM](https://developers.google.com/web/fundamentals/web-components/shadowdom) deserves its own little write up, but it's worth a mention in this context as well. One benefit of the Shadow DOM is that you can isolate styling to specific elements of the DOM tree. This is great, but what if you want or need to have control over it from outside of the shadow root?
 
-Well, you guessed it. CSS variables are the answer. Defined on the element containing the Shadow DOM, you can override the variable values and thereby change the rule values to your needs. This obviously requires library authors to expose the values in question through variables, but this is actually good in my opinion, since it gives theses libraries very granular control over what they want people to be able to change and what they don't.
+Well, you guessed it. CSS variables are the answer. Defined on the element containing the Shadow DOM, you can override the variable values and thereby change the rule values to your needs. This obviously requires library authors to expose the values in question through variables, but this is actually good in my opinion, since it gives these libraries very granular control over what they want people to be able to change and what they don't.
 
 Ionic wrote up a very good article about this and how they use CSS variables for their web components: https://www.joshmorony.com/shadow-dom-usage-in-ionic-web-components/

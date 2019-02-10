@@ -53,7 +53,8 @@ module.exports = {
               rel: "noreferrer"
             }
           },
-          "gatsby-remark-copy-linked-files"
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants"
         ]
       }
     },

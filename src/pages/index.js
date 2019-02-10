@@ -29,7 +29,7 @@ const Graphic = styled(MovingIn)`
   width: auto;
 
   ${BREAKPOINTS.MOBILE} {
-    left: -20%;
+    left: -20rem;
   }
 `;
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { lighten, darken } from "polished";
+import { BREAKPOINTS } from "../../theme";
 
 import { ReactComponent as PlantSvg } from "../../images/pictures/plant.svg";
 import { ReactComponent as LampSvg } from "../../images/pictures/lamp.svg";
@@ -104,7 +105,7 @@ const Plant = styled(PlantSvg)`
 
 const Lamp = styled(LampSvg)`
   height: 18rem;
-  top: 20rem;
+  top: 20.2rem;
   width: auto;
   position: absolute;
   left: 65rem;

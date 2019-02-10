@@ -5,7 +5,7 @@ date: 2018-11-01
 tags: JS, CSS, HTML
 ---
 
-`AST` stands for [abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree), and describes a universal data format to represent any kind of tree structure. In frontend development it is commonly used to describe e.g. Javascript code. Parsers like `babel` uses AST trees to traverse the code, meaning to read and explore (and potentially modify) it in a very declaritive way, before parsing it back into JS code.
+`AST` stands for [abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree), and describes a universal data format to represent any kind of tree structure. In frontend development it is commonly used to describe e.g. Javascript code. Parsers like `babel` uses AST trees to traverse the code, in order to read and potentially modify it in a very declaritive way, before parsing it back into JS code.
 
 - https://github.com/babel/babylon
 - https://www.npmjs.com/package/babel-traverse

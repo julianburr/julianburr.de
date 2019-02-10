@@ -18,7 +18,7 @@ The components needed to be white branded, so that individual apps could apply t
 
 ### Architechture
 
-For developing and publishing the packages we went for a mono repo architechture using Lerna and yarn workspaces. It allows for a good developer experience while managing a large number of individual packages.
+For developing and publishing the packages we went for a monorepo architechture using Lerna and yarn workspaces. It allows for a good developer experience while managing a large number of individual packages.
 
 We ensured to have proper setup in place for easy bootstrapping of new packages, as well as testing components and packages with Jest. We also built an set of utilities around Cypress for end-to-end testing of our products.
 
