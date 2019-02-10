@@ -79,8 +79,8 @@ export const pageQuery = graphql`
           frontmatter {
             title
             role
-            from(formatString: "YYYY")
-            to(formatString: "YYYY")
+            from(formatString: "MM/YYYY")
+            to(formatString: "MM/YYYY")
           }
         }
       }
