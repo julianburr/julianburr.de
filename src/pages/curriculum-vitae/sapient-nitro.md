@@ -9,9 +9,9 @@ SapientNitro, now [SapientRazorfish](https://www.sapientrazorfish.com/), is a aw
 
 ## My Responsibilities
 
-In both roles, Brisbane and Sydney, I was the lead Frontend developer on the respective project. In Brisbane, working on the re-design and re-branding of the [Sunsuper](../../my-work/sunsuper/) website, I was the only FE developer, being in charge of planning and implementing designs into prototypes and finally templates to be used by the BE team for the final CMS integration. I was also heavily involved in the concept and design process as part of the core team.
+In both roles, Brisbane and Sydney, I was the lead Frontend developer on the respective project. In Brisbane, working on the re-design and re-branding of the [Sunsuper](../../my-work/projects/sunsuper/) website, I was the only FE developer, being in charge of planning and implementing designs into prototypes and finally templates to be used by the BE team for the final CMS integration. I was also heavily involved in the concept and design process as part of the core team.
 
-In Sydney I was part of the development [re-designing the website of the Sydney Opera House](../../my-work/sydney-opera-house/), including a re-factor of their online ticket purchase flow. I was in charge of the FE, leading a team of 5 offshore developers in India. My role included translating the designs into working prototypes, again building templates for the BE team to integrate into the existing CMS. I was also responsible for delegating and reviewing work to the other members of the team, reporting to the project manager keeping deadlines and customer feedback in mind.
+In Sydney I was part of the development [re-designing the website of the Sydney Opera House](../../my-work/projects/sydney-opera-house/), including a re-factor of their online ticket purchase flow. I was in charge of the FE, leading a team of 5 offshore developers in India. My role included translating the designs into working prototypes, again building templates for the BE team to integrate into the existing CMS. I was also responsible for delegating and reviewing work to the other members of the team, reporting to the project manager keeping deadlines and customer feedback in mind.
 
 ## Technology
 

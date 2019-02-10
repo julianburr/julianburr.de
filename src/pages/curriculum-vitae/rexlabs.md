@@ -11,7 +11,7 @@ to: 2020-01-01
 
 I started as part of the Frontend team, but quickly transitioned into more of a lead role, eventually becoming the technical lead of the FE development team.
 
-Responsibilities include planning and development of new products, as well as features for existing ones. As team lead I am also handling common project management tasks, planning and executing sprints, delegating work across the team and ensuring output quality through regular code reviews and QA. For more specific details on some of the recent projects check out my [work examples section](../../my-work/projects/).
+Responsibilities include planning and development of new products, as well as features for existing ones. As team lead I am also handling common project management tasks, planning and executing sprints, delegating work across the team and ensuring output quality through regular code reviews and QA. For more specific details on some of the recent projects check out my [work examples section](../../my-work/).
 
 Beyond the product work I was also part of the core team building our current Frontend stack, including the [generic design system and component library](../../my-work/projects/vivid/). A big part of my role is to constantly think about how to improve the product quality and developer experience at rexlabs.
 

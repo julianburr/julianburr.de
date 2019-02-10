@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import "../fonts/montserrat.css";
+import "../fonts/lato.css";
 import "../fonts/staatliches.css";
 import "./prismjs-theme.css";
 
@@ -33,8 +33,6 @@ export const BREAKPOINTS = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Staatliches');
- 
   :root {
     --main-bg-color: ${COLORS.BLACK};
   }
