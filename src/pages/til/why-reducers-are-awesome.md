@@ -9,7 +9,7 @@ tags: JS
 
 I got introduces to the term "reducer", like most other developers I know, through Redux. Not that the pattern was new, not even to me, I've used it before. But I wasn't really aware of it or gave it a name.
 
-Reducers are functions that take an action and an initial value and return a new value based on the action. Reducers should also be pure, meaning there should be no side effects. If the action and the same value are passed in, the same result should always be returned.
+Reducers are functions that take an initial value and an action, and return a new value based on the action. Reducers should also be pure, meaning there should be no side effects. If the action and the same value are passed in, the same result should always be returned.
 
 Actions are simple objects, usually with an identifier and an optional payload describing the properties of the action.
 
@@ -17,7 +17,7 @@ Actions are simple objects, usually with an identifier and an optional payload d
 // Example for a reducer function
 const counter = 0;
 
-function counterReducer(action, value) {
+function counterReducer(value, action) {
   switch (action.name) {
     case "add":
       return value + action.payload;
@@ -28,10 +28,10 @@ function counterReducer(action, value) {
   }
 }
 
-counterReducer({ name: "add", payload: 2 }, counter); // = 2
+counterReducer(counter, { name: "add", payload: 2 }); // = 2
 
-const newCounter = counterReducer({ name: "add", payload: 2 }, counter);
-counterReducer({ name: "reduce", payload: 1 }, newCounter); // = 1
+const newCounter = counterReducer(counter, { name: "add", payload: 2 });
+counterReducer(newCounter, { name: "reduce", payload: 1 }); // = 1
 ```
 
 ## What is so great about that

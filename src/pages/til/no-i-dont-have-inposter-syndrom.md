@@ -1,7 +1,7 @@
 ---
 title: No, I Don't Have Imposter Syndrom
 description: Personal Note
-date: 2019-02-20
+date: 3000-01-01
 tags: Personal
 ---
 
