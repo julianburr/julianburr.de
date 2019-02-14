@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
+import { RoutingContext } from "../context/routing";
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, image }) {
+  const { currentGridColor } = useContext(RoutingContext);
   return (
     <StaticQuery
       query={detailsQuery}
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description;
+
         return (
           <Helmet
             htmlAttributes={{
@@ -37,6 +40,14 @@ function SEO({ description, lang, meta, keywords, title }) {
               {
                 property: `og:type`,
                 content: `website`
+              },
+              {
+                property: `og:image`,
+                content: `https://julianburr.de/${image}`
+              },
+              {
+                property: `twitter:image`,
+                content: `https://julianburr.de/${image}`
               },
               {
                 name: `twitter:card`,
@@ -74,7 +85,8 @@ function SEO({ description, lang, meta, keywords, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  keywords: []
+  keywords: [],
+  image: "preview.png"
 };
 
 SEO.propTypes = {
@@ -82,7 +94,8 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string
 };
 
 export default SEO;

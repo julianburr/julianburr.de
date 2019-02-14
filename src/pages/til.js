@@ -31,7 +31,7 @@ export default function TILPage({ data }) {
   );
   return (
     <Fragment>
-      <SEO title="Today I Learned" />
+      <SEO title="Today I Learned" image="preview-til.png" />
       <h1>Today I Learned</h1>
       <p>
         This is not a blog, just a collection of small bits and pieces of

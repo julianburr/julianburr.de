@@ -25,6 +25,7 @@ export default function PageDefaultTemplate({ data }) {
       <SEO
         title={`Today I Learned: ${post.frontmatter.title}`}
         slug={post.fields.slug}
+        image="preview-til.png"
       />
       <Box flexDirection="row" alignItems="center" mt="1rem">
         <WrapDate>{post.frontmatter.date} — </WrapDate>
