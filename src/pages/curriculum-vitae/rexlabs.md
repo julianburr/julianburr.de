@@ -9,7 +9,7 @@ to: 2020-01-01
 
 ## My Responsibilities
 
-I started as part of the Frontend team, but quickly transitioned into more of a lead role, eventually becoming the technical lead of the FE development team.
+As part of the Frontend team I learned a lot about product development, React and React Native, eventually transitioning into the role of the technical lead of the team.
 
 Responsibilities include planning and development of new products, as well as features for existing ones. As team lead I am also handling common project management tasks, planning and executing sprints, delegating work across the team and ensuring output quality through regular code reviews and QA. For more specific details on some of the recent projects check out my [work examples section](../../my-work/).
 
