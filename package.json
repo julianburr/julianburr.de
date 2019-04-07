@@ -39,6 +39,7 @@
     "polished": "^2.3.3",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.2",
+    "query-string": "^6.4.2",
     "react": "^16.8.0-alpha.1",
     "react-dom": "^16.8.0-alpha.1",
     "react-helmet": "^5.2.0",

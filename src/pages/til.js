@@ -2,10 +2,12 @@ import React, { Fragment } from "react";
 import styled from "styled-components";
 import dayjs from "dayjs";
 import customParseFormat from "dayjs/plugin/customParseFormat";
+import qs from "query-string";
 import { graphql } from "gatsby";
 import SEO from "../components/seo";
 import Card from "../components/card";
 import { List, Item } from "../components/list";
+import Pagination from "../components/pagination";
 
 dayjs.extend(customParseFormat);
 
@@ -26,9 +28,17 @@ const PostDate = styled.span`
 `;
 
 export default function TILPage({ data }) {
+  const limit = 9;
+  const page = qs.parse(window.location.search).page || 1;
   const posts = data.allMarkdownRemark.edges.filter(e =>
     dayjs(e.node.frontmatter.date, "DD/MM/YYYY").isBefore(dayjs())
   );
+
+  const pages = Math.ceil(posts.length / limit);
+
+  const skip = (page - 1) * limit;
+  const pagePosts = posts.slice(skip, skip + limit);
+
   return (
     <Fragment>
       <SEO title="Today I Learned" image="preview-til.png" />
@@ -40,22 +50,32 @@ export default function TILPage({ data }) {
         sharing easier. Most of it is just random thoughts and code snippets,
         with links to further resources.
       </p>
-      {posts.length ? (
-        <List mt="3rem">
-          {posts.map(p => (
-            <Item key={p.node.fields.slug} pb=".8rem">
-              <Card linkTo={p.node.fields.slug}>
-                <WrapHeading>
-                  <PostDate>{p.node.frontmatter.date} —</PostDate>
-                  <span role="heading" aria-level="2">
-                    {p.node.frontmatter.title}
-                  </span>
-                </WrapHeading>
-                <p>{p.node.frontmatter.description}</p>
-              </Card>
-            </Item>
-          ))}
-        </List>
+
+      {pagePosts.length ? (
+        <Fragment>
+          <Pagination
+            currentPage={page}
+            totalPages={pages}
+            url="/til/"
+            id="top"
+          />
+          <List mt="3rem">
+            {pagePosts.map(p => (
+              <Item key={p.node.fields.slug} pb=".8rem">
+                <Card linkTo={p.node.fields.slug}>
+                  <WrapHeading>
+                    <PostDate>{p.node.frontmatter.date} —</PostDate>
+                    <span role="heading" aria-level="2">
+                      {p.node.frontmatter.title}
+                    </span>
+                  </WrapHeading>
+                  <p>{p.node.frontmatter.description}</p>
+                </Card>
+              </Item>
+            ))}
+          </List>
+          <Pagination currentPage={page} totalPages={pages} url="/til/" />
+        </Fragment>
       ) : (
         <p>No posts found.</p>
       )}
