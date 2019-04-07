@@ -29,7 +29,10 @@ const PostDate = styled.span`
 
 export default function TILPage({ data }) {
   const limit = 9;
-  const page = qs.parse(window.location.search).page || 1;
+  const page =
+    typeof window !== "undefined"
+      ? qs.parse(window.location.search).page || 1
+      : 1;
   const posts = data.allMarkdownRemark.edges.filter(e =>
     dayjs(e.node.frontmatter.date, "DD/MM/YYYY").isBefore(dayjs())
   );
