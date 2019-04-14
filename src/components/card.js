@@ -16,6 +16,7 @@ const Container = styled(p =>
   text-decoration: inherit;
   transition: box-shadow 0.3s;
   background: ${COLORS.GREY.LIGHT};
+  position: relative;
 
   &:hover {
     color: inherit;

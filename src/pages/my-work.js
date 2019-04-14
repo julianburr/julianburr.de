@@ -5,6 +5,14 @@ import SEO from "../components/seo";
 import { Grid, Column } from "../components/grid";
 import Card from "../components/card";
 
+import { ReactComponent as TalkSvg } from "../images/icons/talk.svg";
+import { ReactComponent as BlogSvg } from "../images/icons/blog.svg";
+
+const Icons = {
+  Talk: TalkSvg,
+  Blog: BlogSvg
+};
+
 const Group = styled(Grid)`
   margin-top: 1.6rem;
   margin-bottom: 2.4rem;
@@ -40,6 +48,19 @@ const Desc = styled.p`
   line-height: 1.2;
 `;
 
+const WrapIcon = styled.div`
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+
+  & svg {
+    color: #000;
+    opacity: 0.05;
+    height: 3.4rem;
+    width: auto;
+  }
+`;
+
 export default function MyWorkPage({ data }) {
   const work = data.allMarkdownRemark.edges;
 
@@ -65,21 +86,29 @@ export default function MyWorkPage({ data }) {
         meetups and published some other blog posts on the internet.
       </p>
       <Group>
-        {talks.map((talk, i) => (
-          <GroupItem width={4}>
-            <Card
-              linkTo={talk.node.fields.slug}
-              href={talk.node.frontmatter.externalUrl}
-            >
-              <WrapHeading>
-                <WorkYear>{talk.node.frontmatter.date} —</WorkYear>
-                <span role="heading" aria-level="3">
-                  {talk.node.frontmatter.title}
-                </span>
-              </WrapHeading>
-            </Card>
-          </GroupItem>
-        ))}
+        {talks.map((talk, i) => {
+          const Icon = Icons[talk.node.frontmatter.medium];
+          return (
+            <GroupItem width={4}>
+              <Card
+                linkTo={talk.node.fields.slug}
+                href={talk.node.frontmatter.externalUrl}
+              >
+                {!!Icon && (
+                  <WrapIcon>
+                    <Icon />
+                  </WrapIcon>
+                )}
+                <WrapHeading>
+                  <WorkYear>{talk.node.frontmatter.date} —</WorkYear>
+                  <span role="heading" aria-level="3">
+                    {talk.node.frontmatter.title}
+                  </span>
+                </WrapHeading>
+              </Card>
+            </GroupItem>
+          );
+        })}
       </Group>
 
       <h2>Open Source</h2>
@@ -148,6 +177,7 @@ export const pageQuery = graphql`
             description
             date(formatString: "YYYY")
             type
+            medium
             externalUrl
           }
         }

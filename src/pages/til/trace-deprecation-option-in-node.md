@@ -1,5 +1,5 @@
 ---
-title: --trace-deprecation option in node
+title: trace deprecation option in node
 description: How to easily find who's causing it
 date: 2019-04-09
 tags: terminal

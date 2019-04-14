@@ -2,7 +2,7 @@
 title: HOCs vs Render Props
 type: Talk
 date: 2018-01-21
-medium: meetup
+medium: Talk
 ---
 
 ## Sharing code
