@@ -45,10 +45,11 @@ export default function CurriculumVitaePage({ data }) {
             <Card linkTo={role.node.fields.slug}>
               <WrapHeading>
                 <RoleDate>
-                  {role.node.frontmatter.from} to{" "}
-                  {role.node.frontmatter.to > dayjs().format("YYYY")
-                    ? "now"
-                    : role.node.frontmatter.to}{" "}
+                  {role.node.frontmatter.from}
+                  {!role.node.frontmatter.to ||
+                  dayjs(role.node.frontmatter.toFmt).isAfter(dayjs())
+                    ? " till now"
+                    : ` to ${role.node.frontmatter.to}`}{" "}
                   —
                 </RoleDate>
                 <span role="heading" aria-level="2">
@@ -67,7 +68,7 @@ export default function CurriculumVitaePage({ data }) {
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___to] }
+      sort: { order: DESC, fields: [frontmatter___from] }
       filter: { fileAbsolutePath: { regex: "/pages/curriculum-vitae/.*$/" } }
     ) {
       edges {
@@ -81,6 +82,7 @@ export const pageQuery = graphql`
             role
             from(formatString: "MM/YYYY")
             to(formatString: "MM/YYYY")
+            toFmt: to(formatString: "YYYY-MM-DD")
           }
         }
       }

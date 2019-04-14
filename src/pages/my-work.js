@@ -35,6 +35,11 @@ const WorkYear = styled.span`
   font-size: 75%;
 `;
 
+const Desc = styled.p`
+  font-size: 1.2rem;
+  line-height: 1.2;
+`;
+
 export default function MyWorkPage({ data }) {
   const work = data.allMarkdownRemark.edges;
 
@@ -49,27 +54,8 @@ export default function MyWorkPage({ data }) {
   return (
     <Fragment>
       <SEO title="My Work" />
+
       <h1>My Work</h1>
-      <h2>Projects</h2>
-      <p>Some examples of the projects I did and am currently working on.</p>
-      <Group>
-        {projects.map((project, i) => (
-          <GroupItem width={4}>
-            <Card
-              linkTo={project.node.fields.slug}
-              href={project.node.frontmatter.externalUrl}
-            >
-              <WrapHeading>
-                <WorkYear>{project.node.frontmatter.date} —</WorkYear>
-                <span role="heading" aria-level="3">
-                  {project.node.frontmatter.title}
-                </span>
-              </WrapHeading>
-              {i < 3 && <p>{project.node.frontmatter.description}</p>}
-            </Card>
-          </GroupItem>
-        ))}
-      </Group>
 
       <h2>Talks & Blog Posts</h2>
       <p>
@@ -113,6 +99,30 @@ export default function MyWorkPage({ data }) {
                   {project.node.frontmatter.title}
                 </span>
               </WrapHeading>
+            </Card>
+          </GroupItem>
+        ))}
+      </Group>
+
+      <h2>Intesting Projects</h2>
+      <p>
+        A selection of interesting projects I worked on during my employments or
+        as private side projects.
+      </p>
+      <Group>
+        {projects.map((project, i) => (
+          <GroupItem width={4}>
+            <Card
+              linkTo={project.node.fields.slug}
+              href={project.node.frontmatter.externalUrl}
+            >
+              <WrapHeading>
+                <WorkYear>{project.node.frontmatter.date} —</WorkYear>
+                <span role="heading" aria-level="3">
+                  {project.node.frontmatter.title}
+                </span>
+              </WrapHeading>
+              <Desc>{project.node.frontmatter.description}</Desc>
             </Card>
           </GroupItem>
         ))}

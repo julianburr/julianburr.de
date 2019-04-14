@@ -1,8 +1,8 @@
 ---
 title: rexlabs
-role: Frontend Lead
+role: Senior Frontend Developer
 from: 2016-09-01
-to: 2020-01-01
+to: 2030-01-01
 ---
 
 [Rexlabs](https://rexlabs.io) is a product company based in Brisbane, Queensland. While the main product is still [Rex](https://www.rexsoftware.com), a CRM for real estate agencies, the company has transitioned more into a product house, launching other products like [Hitch](../../my-work/projects/hitch/) and [Spoke](../../my-work/projects/spoke/).
