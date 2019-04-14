@@ -166,4 +166,12 @@ export const GlobalStyles = createGlobalStyle`
       margin: 3rem 0;
     }
   }
+
+  img.emoji {
+    height: 1.8rem;
+    width: auto;
+    display: inline;
+    vertical-align: middle;
+    transform: translateY(-.2rem)
+  }
 `;

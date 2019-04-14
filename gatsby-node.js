@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`);
+const twemoji = require("twemoji");
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -58,7 +59,7 @@ exports.createPages = ({ actions, graphql }) => {
   });
 };
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
+exports.onCreateNode = ({ node, getNode, actions, loadNodeContent }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` });
@@ -66,6 +67,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       name: `slug`,
       value: slug
+    });
+
+    const content = node.internal.content;
+    node.internal.content = twemoji.parse(content, {
+      ext: ".svg",
+      size: "svg"
     });
   }
 };
