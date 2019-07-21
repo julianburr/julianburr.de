@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import styled from "styled-components";
 import SEO from "../components/seo";
 import Box from "../components/box";
+import BookPreview from "../components/book-preview";
 import { COLORS } from "../theme";
 
 const WrapDate = styled.span`
@@ -20,6 +21,11 @@ const WrapTimeToRead = styled.span`
 
 export default function PageDefaultTemplate({ data }) {
   const post = data.markdownRemark;
+
+  const isBook =
+    post.frontmatter.tags &&
+    post.frontmatter.tags.split(",").find(tag => tag.trim() === "books");
+
   return (
     <Fragment>
       <SEO
@@ -35,6 +41,13 @@ export default function PageDefaultTemplate({ data }) {
         </WrapTimeToRead>
       </Box>
       <h1 style={{ paddingTop: "1rem" }}>{post.frontmatter.title}</h1>
+      {isBook && (
+        <BookPreview
+          cover={post.frontmatter.cover}
+          author={post.frontmatter.author}
+          title={post.frontmatter.title}
+        />
+      )}
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </Fragment>
   );
@@ -50,6 +63,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM D, YYYY")
         tags
+        author
+        cover
       }
       fields {
         slug

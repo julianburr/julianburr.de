@@ -9,6 +9,8 @@ import Card from "../components/card";
 import { List, Item } from "../components/list";
 import Pagination from "../components/pagination";
 
+import { ReactComponent as BookSvg } from "../images/icons/book.svg";
+
 dayjs.extend(customParseFormat);
 
 const WrapHeading = styled.div`
@@ -25,6 +27,21 @@ const PostDate = styled.span`
   display: inline-block;
   padding: 0 0.8rem 0 0;
   font-size: 75%;
+`;
+
+const Description = styled.p`
+  margin: 0;
+  padding: 0.2rem 0 0.6rem;
+  line-height: 1.2;
+`;
+
+const BookIcon = styled(BookSvg)`
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  height: 6rem;
+  width: auto;
+  opacity: 0.05;
 `;
 
 export default function TILPage({ data }) {
@@ -68,6 +85,11 @@ export default function TILPage({ data }) {
                 p.node.timeToRead === 1
                   ? "1 min read"
                   : `${p.node.timeToRead} mins read`;
+
+              const isBook = p.node.frontmatter.tags
+                .split(",")
+                .find(tag => tag.trim() === "books");
+
               return (
                 <Item key={p.node.fields.slug} pb=".8rem">
                   <Card linkTo={p.node.fields.slug}>
@@ -77,9 +99,10 @@ export default function TILPage({ data }) {
                         {p.node.frontmatter.title}
                       </span>
                     </WrapHeading>
-                    <p>
+                    <Description>
                       {p.node.frontmatter.description} — {ttr}
-                    </p>
+                    </Description>
+                    {isBook && <BookIcon />}
                   </Card>
                 </Item>
               );
@@ -111,6 +134,7 @@ export const pageQuery = graphql`
             dateFormatted: date(formatString: "MMMM D, YYYY")
             title
             description
+            tags
           }
         }
       }

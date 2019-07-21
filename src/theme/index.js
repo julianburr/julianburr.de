@@ -10,7 +10,8 @@ export const COLORS = {
 
   GREY: {
     LIGHT: "#F7F4EE",
-    MEDIUM: "#E8E4DE"
+    MEDIUM: "#E8E4DE",
+    DARK: "#CAC5BE"
   },
 
   BEIGE: "#C5AC8B",
