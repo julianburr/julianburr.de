@@ -14,10 +14,10 @@ dayjs.extend(customParseFormat);
 const WrapHeading = styled.div`
   display: inline-block;
   word-wrap: break-word;
-  padding: 0.4rem 0;
+  padding: 0.4rem 0 0;
   font-size: 2.2rem;
   font-family: Staatliches;
-  line-height: 1.2;
+  line-height: 1.1;
 `;
 
 const PostDate = styled.span`
@@ -63,19 +63,27 @@ export default function TILPage({ data }) {
             id="top"
           />
           <List mt="3rem">
-            {pagePosts.map(p => (
-              <Item key={p.node.fields.slug} pb=".8rem">
-                <Card linkTo={p.node.fields.slug}>
-                  <WrapHeading>
-                    <PostDate>{p.node.frontmatter.date} —</PostDate>
-                    <span role="heading" aria-level="2">
-                      {p.node.frontmatter.title}
-                    </span>
-                  </WrapHeading>
-                  <p>{p.node.frontmatter.description}</p>
-                </Card>
-              </Item>
-            ))}
+            {pagePosts.map(p => {
+              const ttr =
+                p.node.timeToRead === 1
+                  ? "1 min read"
+                  : `${p.node.timeToRead} mins read`;
+              return (
+                <Item key={p.node.fields.slug} pb=".8rem">
+                  <Card linkTo={p.node.fields.slug}>
+                    <WrapHeading>
+                      <PostDate>{p.node.frontmatter.dateFormatted} —</PostDate>
+                      <span role="heading" aria-level="2">
+                        {p.node.frontmatter.title}
+                      </span>
+                    </WrapHeading>
+                    <p>
+                      {p.node.frontmatter.description} — {ttr}
+                    </p>
+                  </Card>
+                </Item>
+              );
+            })}
           </List>
           <Pagination currentPage={page} totalPages={pages} url="/til/" />
         </Fragment>
@@ -94,11 +102,13 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          timeToRead
           fields {
             slug
           }
           frontmatter {
             date(formatString: "DD/MM/YYYY")
+            dateFormatted: date(formatString: "MMMM D, YYYY")
             title
             description
           }

@@ -31,6 +31,7 @@ export default function PageDefaultTemplate({ data }) {
         <WrapDate>{post.frontmatter.date} — </WrapDate>
         <WrapTimeToRead>
           {post.timeToRead === 1 ? "1 min" : `${post.timeToRead} mins`} read
+          {post.frontmatter.tags ? ` — ${post.frontmatter.tags}` : ""}
         </WrapTimeToRead>
       </Box>
       <h1 style={{ paddingTop: "1rem" }}>{post.frontmatter.title}</h1>
@@ -47,7 +48,8 @@ export const pageQuery = graphql`
       timeToRead
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM D, YYYY")
+        tags
       }
       fields {
         slug
