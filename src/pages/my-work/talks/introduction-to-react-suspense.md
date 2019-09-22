@@ -2,7 +2,7 @@
 title: Introduction to React Suspense
 type: Talk
 date: 2018-04-24
-medium: Talk
+platform: Meetup
 ---
 
 ## The evolution of data fetching in React

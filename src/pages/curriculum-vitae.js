@@ -9,6 +9,12 @@ import { List, Item } from "../components/list";
 const Container = styled.div`
   width: 100%;
   max-width: 50rem;
+
+  p {
+    margin: 0;
+    padding: 0.2rem 0 0.6rem;
+    line-height: 1.2;
+  }
 `;
 
 const WrapHeading = styled.div`
@@ -40,26 +46,27 @@ export default function CurriculumVitaePage({ data }) {
         them. Every single role made me grow professionally and personally.
       </p>
       <List mt="3rem">
-        {roles.map(role => (
-          <Item key={role.node.fields.slug} pb=".8rem">
-            <Card linkTo={role.node.fields.slug}>
-              <WrapHeading>
-                <RoleDate>
-                  {role.node.frontmatter.from}
-                  {!role.node.frontmatter.to ||
-                  dayjs(role.node.frontmatter.toFmt).isAfter(dayjs())
-                    ? " till now"
-                    : ` to ${role.node.frontmatter.to}`}{" "}
-                  —
-                </RoleDate>
-                <span role="heading" aria-level="2">
-                  {role.node.frontmatter.title}
-                </span>
-              </WrapHeading>
-              <p>{role.node.frontmatter.role}</p>
-            </Card>
-          </Item>
-        ))}
+        {roles.map(role => {
+          const { frontmatter } = role.node;
+          const current = dayjs(frontmatter.toFmt).isAfter(dayjs());
+          return (
+            <Item key={role.node.fields.slug} pb=".8rem">
+              <Card linkTo={role.node.fields.slug}>
+                <WrapHeading>
+                  <RoleDate>
+                    {current
+                      ? `since ${frontmatter.from} — `
+                      : `${frontmatter.from} to ${frontmatter.to} — `}
+                  </RoleDate>
+                  <span role="heading" aria-level="2">
+                    {role.node.frontmatter.title}
+                  </span>
+                </WrapHeading>
+                <p>{role.node.frontmatter.role}</p>
+              </Card>
+            </Item>
+          );
+        })}
       </List>
     </Container>
   );

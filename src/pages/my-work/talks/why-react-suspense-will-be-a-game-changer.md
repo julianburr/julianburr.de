@@ -1,7 +1,7 @@
 ---
 title: Why React Suspense Will Be a Game Changer
 type: Talk
-date: 2019-01-29
-medium: Blog
-externalUrl: https://medium.com/react-in-depth/why-react-suspense-will-be-a-game-changer-37b40fea71ec
+date: 2019-02-25
+platform: Meetup
+externalUrl: https://github.com/julianburr/talk-suspense-game-changer
 ---

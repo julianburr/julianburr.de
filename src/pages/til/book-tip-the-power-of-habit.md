@@ -5,6 +5,7 @@ date: 2019-07-22
 tags: books
 author: Charles Duhigg
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545854312l/12609433._SY475_.jpg
+externalUrl: https://www.goodreads.com/book/show/12609433-the-power-of-habit
 ---
 
 Trying something new here: most of the TIL entries so far are directly development related, some small snippets of dev knowledge I picked up here and there. All of it with the intend to keep track of my learnings primarily for me, but also for others.

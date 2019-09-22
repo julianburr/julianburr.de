@@ -5,12 +5,12 @@ import SEO from "../components/seo";
 import { Grid, Column } from "../components/grid";
 import Card from "../components/card";
 
-import { ReactComponent as TalkSvg } from "../images/icons/talk.svg";
-import { ReactComponent as BlogSvg } from "../images/icons/blog.svg";
+import { ReactComponent as MediumLogoSvg } from "../images/icons/medium.svg";
+import { ReactComponent as MeetupLogoSvg } from "../images/icons/meetup.svg";
 
 const Icons = {
-  Talk: TalkSvg,
-  Blog: BlogSvg
+  Medium: MediumLogoSvg,
+  Meetup: MeetupLogoSvg
 };
 
 const Group = styled(Grid)`
@@ -50,13 +50,13 @@ const Desc = styled.p`
 
 const WrapIcon = styled.div`
   position: absolute;
-  top: 0.7rem;
-  right: 0.7rem;
+  top: 1.2rem;
+  right: 1.2rem;
 
   & svg {
     color: #000;
     opacity: 0.05;
-    height: 3.4rem;
+    height: 2rem;
     width: auto;
   }
 `;
@@ -70,6 +70,7 @@ export default function MyWorkPage({ data }) {
 
   const projects = work.filter(createFilter("Project"));
   const talks = work.filter(createFilter("Talk"));
+  const blogs = work.filter(createFilter("Blog"));
   const oss = work.filter(createFilter("Open Source"));
 
   return (
@@ -78,24 +79,23 @@ export default function MyWorkPage({ data }) {
 
       <h1>My Work</h1>
 
-      <h2>Talks & Blog Posts</h2>
+      <h2>Talks</h2>
       <p>
         Even though I don't like public speaking, I always try to share my
-        experience and the things I learn with others. On top of the snippets in
-        the <Link to="/til">TIL section</Link>, I also did some talks at local
-        meetups and published some other blog posts on the internet.
+        experience and the things I learn with others. The following are some of
+        the talks I gave at local meetups.
       </p>
       <Group>
         {talks.map((talk, i) => {
-          const Icon = Icons[talk.node.frontmatter.medium];
+          const Icon = Icons[talk.node.frontmatter.platform];
           return (
             <GroupItem width={4}>
               <Card
                 linkTo={talk.node.fields.slug}
                 href={talk.node.frontmatter.externalUrl}
               >
-                {!!Icon && (
-                  <WrapIcon>
+                {Icon && (
+                  <WrapIcon title={talk.node.frontmatter.platform}>
                     <Icon />
                   </WrapIcon>
                 )}
@@ -103,6 +103,39 @@ export default function MyWorkPage({ data }) {
                   <WorkYear>{talk.node.frontmatter.date} —</WorkYear>
                   <span role="heading" aria-level="3">
                     {talk.node.frontmatter.title}
+                  </span>
+                </WrapHeading>
+              </Card>
+            </GroupItem>
+          );
+        })}
+      </Group>
+
+      <h2>Blog Posts</h2>
+      <p>
+        On top of the snippets in the <Link to="/til">TIL section</Link>, I also
+        published articles on other platforms. My goal is to write more in the
+        future, not only sharing my experience with others but also improving my
+        own skills at the same time.
+      </p>
+      <Group>
+        {blogs.map((post, i) => {
+          const Icon = Icons[post.node.frontmatter.platform];
+          return (
+            <GroupItem width={4}>
+              <Card
+                linkTo={post.node.fields.slug}
+                href={post.node.frontmatter.externalUrl}
+              >
+                {Icon && (
+                  <WrapIcon title={post.node.frontmatter.platform}>
+                    <Icon />
+                  </WrapIcon>
+                )}
+                <WrapHeading>
+                  <WorkYear>{post.node.frontmatter.date} —</WorkYear>
+                  <span role="heading" aria-level="3">
+                    {post.node.frontmatter.title}
                   </span>
                 </WrapHeading>
               </Card>
@@ -177,7 +210,7 @@ export const pageQuery = graphql`
             description
             date(formatString: "YYYY")
             type
-            medium
+            platform
             externalUrl
           }
         }

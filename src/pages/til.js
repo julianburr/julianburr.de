@@ -45,19 +45,9 @@ const BookIcon = styled(BookSvg)`
 `;
 
 export default function TILPage({ data }) {
-  const limit = 9;
-  const page =
-    typeof window !== "undefined"
-      ? qs.parse(window.location.search).page || 1
-      : 1;
   const posts = data.allMarkdownRemark.edges.filter(e =>
     dayjs(e.node.frontmatter.date, "DD/MM/YYYY").isBefore(dayjs())
   );
-
-  const pages = Math.ceil(posts.length / limit);
-
-  const skip = (page - 1) * limit;
-  const pagePosts = posts.slice(skip, skip + limit);
 
   return (
     <Fragment>
@@ -71,16 +61,10 @@ export default function TILPage({ data }) {
         with links to further resources.
       </p>
 
-      {pagePosts.length ? (
+      {posts.length ? (
         <Fragment>
-          <Pagination
-            currentPage={page}
-            totalPages={pages}
-            url="/til/"
-            id="top"
-          />
           <List mt="3rem">
-            {pagePosts.map(p => {
+            {posts.map(p => {
               const ttr =
                 p.node.timeToRead === 1
                   ? "1 min read"
@@ -108,7 +92,6 @@ export default function TILPage({ data }) {
               );
             })}
           </List>
-          <Pagination currentPage={page} totalPages={pages} url="/til/" />
         </Fragment>
       ) : (
         <p>No posts found.</p>

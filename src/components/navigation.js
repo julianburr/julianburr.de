@@ -244,16 +244,6 @@ function Navigation({ location }) {
             </Link>
           </Item>
           <Item>
-            <Link to="/curriculum-vitae" onClick={handleLinkClick}>
-              Curriculum vitae
-            </Link>
-          </Item>
-          {/*<Item>
-            <Link to="/skills" onClick={handleLinkClick}>
-              Skills
-            </Link>
-          </Item>*/}
-          <Item>
             <Link to="/my-work" onClick={handleLinkClick}>
               My Work
             </Link>
@@ -263,9 +253,22 @@ function Navigation({ location }) {
               TIL
             </Link>
           </Item>
+
+          <Item>
+            <Link to="/curriculum-vitae" onClick={handleLinkClick}>
+              Curriculum Vitae
+            </Link>
+          </Item>
+          {/*
+          <Item>
+            <Link to="/around-the-world" onClick={handleLinkClick}>
+              Around The World
+            </Link>
+          </Item>
+          */}
           <Item>
             <Link to="/get-in-touch" onClick={handleLinkClick}>
-              Get in touch
+              Get In Touch
             </Link>
           </Item>
         </List>
