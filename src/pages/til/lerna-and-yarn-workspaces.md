@@ -2,7 +2,7 @@
 title: Lerna and Yarn Workspaces
 description: Working with monorepos
 date: 2018-10-20
-tags: git, JS
+tags: git, js
 ---
 
 With our [component library at rexlabs](../../my-work/projects/vivid/) I have to deal with monorepos on a daily basis. Actually, many of our products are set up as monorepos, allowing us to maintain multiple apps belonging to the same product in one place (source control wise). This also means I have to deal a lot with [Lerna](https://github.com/lerna/lerna) and [yarn workspaces](https://yarnpkg.com/lang/en/docs/workspaces/), these are some thoughts and takeaways from that.

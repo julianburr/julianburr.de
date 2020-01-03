@@ -25,9 +25,9 @@ const Container = styled(p =>
   }
 `;
 
-export default function Card({ children, linkTo, href }) {
+export default function Card({ children, linkTo, linkState, href, onClick }) {
   return (
-    <Container to={linkTo} href={href}>
+    <Container to={linkTo} href={href} state={linkState} onClick={onClick}>
       {children}
     </Container>
   );

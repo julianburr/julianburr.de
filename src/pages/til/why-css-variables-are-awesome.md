@@ -2,7 +2,7 @@
 title: Why CSS Variables are Awesome
 description: And interesting use cases I learned about
 date: 2019-01-07
-tags: CSS, JS
+tags: css, js
 ---
 
 ## What they are

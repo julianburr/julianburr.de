@@ -2,7 +2,7 @@
 title: Optional chaining
 description: And complimentary nullish coalescing
 date: 2019-09-11
-tags: JS
+tags: js
 ---
 
 If you'd ask me which [lodash](https://lodash.com/docs/4.17.15) method I use most frequently, I'd probably say [`_.get`](https://lodash.com/docs/4.17.15#get). It's super convenient for reading nested objects safely, while also defining fallback values if the requested value doesn't exist. For everyone who never used `_.get`, here's how it works:

@@ -2,7 +2,7 @@
 title: Pre-render React applications with webpack
 description: SSR without service side rendering
 date: 2019-05-10
-tags: react ssr
+tags: react
 ---
 
 Today I spent some time working on out internal JS toolkit we use at rexlabs. It helps us bootstrap, develop and build JS modules, React components and React applications in a quick manner, similar to [`create-react-app`](https://github.com/facebook/create-react-app/tree/master/packages/create-react-app) (with [`react-scripts`](https://github.com/facebook/create-react-app/tree/master/packages/react-scripts)). While we usually build CRUD applications that are hidden behind authentication, where server side rendering would be benefitial but isn't a major concern, we also build landing pages for these applications in React. We currently don't have any architechture for actual server side rendering set up, so I was playing around with alternatives.

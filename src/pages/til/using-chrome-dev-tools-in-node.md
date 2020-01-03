@@ -2,7 +2,7 @@
 title: Using Chrome Dev Tools in Node
 description: How to access and use Chrome Dev Tools features
 date: 2019-01-17
-tags: JS, Node
+tags: js, node
 ---
 
 I love playing with headless Chrome and puppeteer, writing scripts automating processes or testing websites. But did you know you could access the Chrome Dev Tools in your node scripts? No? Me neither 🤯

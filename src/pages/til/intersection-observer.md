@@ -2,7 +2,7 @@
 title: Intersection Observer
 description: Never measure positions on a page manually again
 date: 2018-11-10
-tags: JS
+tags: js
 ---
 
 Do you remember the good old days, when we measured the position of elements on the page, so that we could show effects etc. whenever the user scrolled to the measured position. It always felt hacky, and never really right.

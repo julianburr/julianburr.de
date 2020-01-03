@@ -2,7 +2,7 @@
 title: JS Proxies
 description: The most powerful thing you should probably never use
 date: 2019-03-22
-tags: JS
+tags: js
 ---
 
 ## What are JS Proxies

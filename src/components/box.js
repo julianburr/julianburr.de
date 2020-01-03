@@ -11,7 +11,34 @@ function hasFlexProps(props) {
   ].some(flexProp => Object.keys(props).includes(flexProp));
 }
 
-const Div = props => <div {...props} />;
+function cleanProps(props) {
+  return Object.keys(props)
+    .filter(
+      name =>
+        ![
+          "flex",
+          "flexDirection",
+          "flexWrap",
+          "justifyContent",
+          "alignItems",
+          "width",
+          "height",
+          "margin",
+          "mt",
+          "ml",
+          "mb",
+          "mr",
+          "padding",
+          "pt",
+          "pl",
+          "pb",
+          "pr"
+        ].includes(name)
+    )
+    .reduce((all, name) => ({ ...all, [name]: props[name] }), {});
+}
+
+const Div = props => <div {...cleanProps(props)} />;
 
 const Box = styled(p => p.as || <Div {...p} />)`
   margin: ${p =>

@@ -7,10 +7,12 @@ import Card from "../components/card";
 
 import { ReactComponent as MediumLogoSvg } from "../images/icons/medium.svg";
 import { ReactComponent as MeetupLogoSvg } from "../images/icons/meetup.svg";
+import { ReactComponent as DevToLogoSvg } from "../images/icons/devto.svg";
 
 const Icons = {
   Medium: MediumLogoSvg,
-  Meetup: MeetupLogoSvg
+  Meetup: MeetupLogoSvg,
+  DevTo: DevToLogoSvg
 };
 
 const Group = styled(Grid)`

@@ -2,7 +2,7 @@
 title: Why Reducers Are Awesome
 description: And how I never noticed it until I did
 date: 2018-12-01
-tags: JS
+tags: js
 ---
 
 ## What are reducers

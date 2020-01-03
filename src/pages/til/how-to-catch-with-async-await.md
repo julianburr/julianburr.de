@@ -2,7 +2,7 @@
 title: How to catch with async await
 description: And some other tipps
 date: 2019-02-12
-tags: JS
+tags: js
 ---
 
 ## The Basics

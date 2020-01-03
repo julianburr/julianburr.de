@@ -2,7 +2,7 @@
 title: Warnings and errors with React component stack trace
 description: Just use the framework
 date: 2019-03-23
-tags: JS, React
+tags: js, react
 ---
 
 This is gonna be a quick one, I just learned about it and thought it was a shame I didn't know it existed before 😅

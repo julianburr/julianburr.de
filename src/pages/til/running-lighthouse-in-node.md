@@ -2,7 +2,7 @@
 title: Running lighthouse in node
 description: How to run lighthouse audits in node
 date: 2019-01-30
-tags: JS, Node
+tags: js, node
 ---
 
 Similar to other [Dev Tool features](../using-chrome-dev-tools-in-node) with headless Chrome there is a very easy way to use Lighthouse on the website you're currently on, all within node.

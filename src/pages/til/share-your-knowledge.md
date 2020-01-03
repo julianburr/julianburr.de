@@ -2,7 +2,7 @@
 title: Share Your Knowledge
 description: It helps others and yourself
 date: 2019-02-10
-tags: Personal
+tags: personal
 ---
 
 Well, this is basically the whole point of this part of my website, but it's still worth explaining why I do this.

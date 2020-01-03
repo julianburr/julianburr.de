@@ -3,7 +3,7 @@ import styled from "styled-components";
 import dayjs from "dayjs";
 import customParseFormat from "dayjs/plugin/customParseFormat";
 import qs from "query-string";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import SEO from "../components/seo";
 import Card from "../components/card";
 import { List, Item } from "../components/list";
@@ -44,10 +44,66 @@ const BookIcon = styled(BookSvg)`
   opacity: 0.05;
 `;
 
-export default function TILPage({ data }) {
+const WrapTags = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+`;
+
+const Tag = styled(Link)`
+  display: inline-flex;
+  padding: 0.8rem 1.2rem;
+  margin: 0 0.4rem 0.4rem 0;
+  background: ${p => (p.active ? "var(--main-bg-color)" : "#f7f4ee")};
+  color: ${p => (p.active ? "#fff" : "#333")};
+  font-family: Staatliches;
+  transition: color 0.2s, background 0.2s;
+  line-height: 1.1;
+
+  &:hover {
+    text-decoration: none;
+    background: var(--main-bg-color);
+    color: #fff;
+  }
+`;
+
+export default function TILPage({ data, location }) {
   const posts = data.allMarkdownRemark.edges.filter(e =>
     dayjs(e.node.frontmatter.date, "DD/MM/YYYY").isBefore(dayjs())
   );
+
+  const tags = posts
+    .reduce((all, e) => {
+      e.node.frontmatter.tags
+        .split(",")
+        .map(tag => tag.trim())
+        .forEach(tag => {
+          if (!all.includes(tag)) {
+            all = [...all, tag];
+          }
+        });
+      return all;
+    }, [])
+    .sort();
+
+  const selectedTags = (qs.parse(location.search).tags || "")
+    .split(",")
+    .map(tag => tag.trim())
+    .filter(Boolean);
+
+  // Filter by selected tags
+  const filteredPosts = posts.filter(e => {
+    if (!selectedTags.length) {
+      return true;
+    }
+    const tags = e.node.frontmatter.tags.split(",").map(tag => tag.trim());
+    for (let i = 0; i < selectedTags.length; i++) {
+      if (tags.includes(selectedTags[i])) {
+        return true;
+      }
+    }
+  });
 
   return (
     <Fragment>
@@ -61,10 +117,31 @@ export default function TILPage({ data }) {
         with links to further resources.
       </p>
 
-      {posts.length ? (
+      {!!tags.length && (
+        <WrapTags>
+          {tags.map(tag => {
+            const active = selectedTags.includes(tag);
+            const newTags = active
+              ? selectedTags.filter(t => t !== tag).filter(Boolean)
+              : [...selectedTags, tag].filter(Boolean);
+
+            const to = newTags.length
+              ? `/til?tags=${newTags.join(",")}`
+              : "/til";
+
+            return (
+              <Tag active={active} to={to}>
+                {tag}
+              </Tag>
+            );
+          })}
+        </WrapTags>
+      )}
+
+      {filteredPosts.length ? (
         <Fragment>
           <List mt="3rem">
-            {posts.map(p => {
+            {filteredPosts.map(p => {
               const ttr =
                 p.node.timeToRead === 1
                   ? "1 min read"
@@ -76,7 +153,10 @@ export default function TILPage({ data }) {
 
               return (
                 <Item key={p.node.fields.slug} pb=".8rem">
-                  <Card linkTo={p.node.fields.slug}>
+                  <Card
+                    linkTo={p.node.fields.slug}
+                    linkState={{ fromList: true }}
+                  >
                     <WrapHeading>
                       <PostDate>{p.node.frontmatter.dateFormatted} —</PostDate>
                       <span role="heading" aria-level="2">

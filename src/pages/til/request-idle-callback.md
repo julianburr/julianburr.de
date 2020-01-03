@@ -2,7 +2,7 @@
 title: Doing stuff once the network is idle
 description: The requestIdleCallback API
 date: 2019-03-30
-tags: JS
+tags: js
 ---
 
 While doing a lot of performance related research lately I stumbled upon this gem.

@@ -2,7 +2,7 @@
 title: CSS specificity
 description: What it is, how it works and how to take advantage of it in the age of CSS-in-JS
 date: 2019-08-06
-tags: CSS
+tags: css
 ---
 
 CSS specificity is not necessarily something I learned today, but this specific usage of it certainly is.

@@ -2,7 +2,7 @@
 title: Array slice vs. splice
 description: Which does what and when should they be used
 date: 2019-07-19
-tags: JS
+tags: js
 ---
 
 This is not something I learned today, but mainly something my brain just can't seem to comprehend. Every (and I mean EVERY) time I need to get a section of an array I need to go to MDN and look up which of these methods I need to use. 99.9% of the time it's `slice`, since I really just want to get a sub section and I rarely want to mutate my arrays, but my brain just can't remember which of these 2 does the mutating and which returns the requested section 😅

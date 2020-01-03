@@ -2,7 +2,7 @@
 title: Semver and Semantic Versioning
 description: How to version apps and libraries and why
 date: 2019-02-16
-tags: JS, git
+tags: js, git
 ---
 
 ## What is semver?

@@ -2,7 +2,7 @@
 title: href vs. src
 description: The differences and inconsistence in use
 date: 2019-08-07
-tags: HTML
+tags: html
 ---
 
 I've always been struggling to remember a lot of the HTML attributes for various tags, but probably the one I get most frequently wrong is `<link src="styles.css" />`. Or was is `<link href="styles.css" />`? 😉

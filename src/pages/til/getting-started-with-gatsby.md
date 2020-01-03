@@ -2,7 +2,7 @@
 title: Getting started with Gatsby
 description: My brief takeaway from setting up this website using GatsbyJS
 date: 2019-01-28
-tags: JS, Node
+tags: js, node
 ---
 
 I decided to have a closer look at [Gatsby](https://www.gatsbyjs.org/), mainly because I heard many good things about it and wanted to have a closer look at the concept and development strategies behind it. But I never really had a good use case for it to start playing around.

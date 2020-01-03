@@ -1,15 +1,23 @@
 import React, { Fragment } from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 import SEO from "../components/seo";
 import Box from "../components/box";
 import BookPreview from "../components/book-preview";
 import { COLORS } from "../theme";
 
+const BackLink = styled(Link)`
+  color: var(--main-bg-color);
+  font-family: Staatliches;
+  font-size: 1.5rem;
+  font-weight: 500;
+`;
+
 const WrapDate = styled.span`
   color: var(--main-bg-color);
   font-family: Staatliches;
   font-size: 1.5rem;
+  margin-left: 0.4rem;
 `;
 
 const WrapTimeToRead = styled.span`
@@ -19,7 +27,7 @@ const WrapTimeToRead = styled.span`
   font-size: 1.5rem;
 `;
 
-export default function PageDefaultTemplate({ data }) {
+export default function PageDefaultTemplate({ data, location }) {
   const post = data.markdownRemark;
 
   const isBook =
@@ -34,7 +42,18 @@ export default function PageDefaultTemplate({ data }) {
         image="preview-til.png"
       />
       <Box flexDirection="row" alignItems="center" mt="1rem">
-        <WrapDate>{post.frontmatter.date} — </WrapDate>
+        <BackLink
+          to="/til"
+          onClick={e => {
+            if (location.state.fromList) {
+              e.preventDefault();
+              history && history.go(-1);
+            }
+          }}
+        >
+          ← Back to the list
+        </BackLink>
+        <WrapDate> — {post.frontmatter.date} — </WrapDate>
         <WrapTimeToRead>
           {post.timeToRead === 1 ? "1 min" : `${post.timeToRead} mins`} read
           {post.frontmatter.tags ? ` — ${post.frontmatter.tags}` : ""}

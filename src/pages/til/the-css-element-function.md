@@ -2,7 +2,7 @@
 title: The CSS "element" function
 description: And how to use it
 date: 2019-02-06
-tags: CSS
+tags: css
 ---
 
 I can't believe this is a thing, it blew my mind when I found this today in my twitter feed:

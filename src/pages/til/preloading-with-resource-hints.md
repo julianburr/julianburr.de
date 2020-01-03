@@ -2,7 +2,7 @@
 title: Preloading with resource hints
 description: How you can optimise performance using them
 date: 2019-09-21
-tags: HTML
+tags: html
 ---
 
 If you're working on web apps or even static websites, one of the common buzz words is "performance optimisations". And for good reason, the performance of your website has a huge impact on the user experience, and can therefore make or break a product's success in the market.

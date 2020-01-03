@@ -2,7 +2,7 @@
 title: How to use css selectors on JS objects
 description: And how it works under the hood
 date: 2019-02-25
-tags: JS, Node
+tags: js, node
 ---
 
 A co-worker shared this crazy codepen today: [https://codepen.io/tomhodgins/pen/ErqeXm](https://codepen.io/tomhodgins/pen/ErqeXm). In it, it shows the usage of css selectors on Javascript objects 🤯
