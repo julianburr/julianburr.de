@@ -85,17 +85,33 @@ const MenuGrid = styled.menu`
     margin: 0.3rem 0.3rem 0 0;
     display: flex;
     flex-shrink: 0;
-    opacity: 0.4;
-    transition: opacity 0.2s, background 0.2s;
+    transition: background 0.2s;
+    border: 0 solid currentColor;
+    position: relative;
     background: ${COLORS.GREY.MEDIUM};
 
-    &:hover {
-      background: currentColor;
+    &:before {
+      content: " ";
+      position: absolute;
+      background: transparent;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transform-origin: center;
+      transition: opacity 0.2s, background 0.2s;
+      opacity: 0;
+      border: 0.4rem solid currentColor;
     }
 
-    &.active {
-      background: currentColor;
+    &:hover:before {
       opacity: 1;
+    }
+
+    &.active:before,
+    &.active:hover:before {
+      opacity: 1;
+      background: currentColor;
     }
   }
 `;
