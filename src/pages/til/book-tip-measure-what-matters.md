@@ -44,7 +44,7 @@ John Doerr’s points to 4-key values, or "OKR superpowers", good OKRs should ha
 - **Measure progress** towards our goals and be acountable for outcomes
 - **Stretch** to achieve things you wouldn’t have thought possible
 
-### Some personal key learnings
+## Some personal key learnings
 
 Some key learnings for me from this are around what is needed to make progress and success actually happen:
 

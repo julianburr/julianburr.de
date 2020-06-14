@@ -27,9 +27,11 @@ const Stage = styled.div`
   position: relative;
   padding: 4rem 4rem 4rem 25rem;
   overflow: auto;
+  transition: background 0.4s, color 0.4s;
 
   & a {
     color: ${p => (p.invert ? "#999" : undefined)};
+    transition: color 0.4s;
   }
 
   ${BREAKPOINTS.MOBILE} {
