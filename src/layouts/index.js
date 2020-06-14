@@ -21,11 +21,16 @@ const Stage = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: ${COLORS.WHITE};
+  background: ${p => (p.invert ? "#111" : COLORS.WHITE)};
+  color: ${p => (p.invert ? "#ddd" : undefined)};
   box-shadow: 0 0.5rem 3.5rem -1rem rgba(0, 0, 0, 0.2);
   position: relative;
   padding: 4rem 4rem 4rem 25rem;
   overflow: auto;
+
+  & a {
+    color: ${p => (p.invert ? "#999" : undefined)};
+  }
 
   ${BREAKPOINTS.MOBILE} {
     padding: 2.5rem 2.5rem 2.5rem 7.5rem;
@@ -42,7 +47,7 @@ function Layout({ children }) {
   return (
     <Container background={context.currentGridColor}>
       <GlobalStyles />
-      <Stage id="stage">
+      <Stage id="stage" invert={context.currentGrid === "blm"}>
         <Navigation />
         <Content>{children}</Content>
       </Stage>

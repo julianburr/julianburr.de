@@ -9,7 +9,8 @@ export const gridColors = {
   skills: COLORS.YELLOW,
   "get-in-touch": COLORS.PURPLE,
   til: COLORS.BLUE,
-  "my-work": COLORS.RED
+  "my-work": COLORS.RED,
+  blm: COLORS.BLACK
 };
 
 export function RoutingProvider({ children, location }) {
@@ -20,8 +21,11 @@ export function RoutingProvider({ children, location }) {
   const [currentGrid, setCurrentGrid] = useState(getGridId(location.pathname));
 
   function getGridId(path) {
-    const parts = path.split("/").filter(Boolean);
-    return parts.length ? parts[0] : "home";
+    if (path === "/til/black-lives-matter/") {
+      return "blm";
+    }
+    const [firstPart] = path.split("/").filter(Boolean);
+    return firstPart || "home";
   }
 
   function handleLocationChange(path) {
@@ -37,12 +41,9 @@ export function RoutingProvider({ children, location }) {
     );
   }
 
-  useEffect(
-    () => {
-      handleLocationChange(location.pathname);
-    },
-    [location]
-  );
+  useEffect(() => {
+    handleLocationChange(location.pathname);
+  }, [location]);
 
   return (
     <RoutingContext.Provider
