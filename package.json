@@ -56,7 +56,7 @@
     "lint": "eslint '**/*.{js,jsx}'",
     "lint:staged": "lint-staged",
     "lighthouse": "gatsby-lighthouse --performance=100 --accessibility=100 --best-practices=100 --seo=100",
-    "deploy": "yarn clean && yarn build && cp now.json ./public/now.json && cd ./public && now --public && now alias && cd -"
+    "deploy": "yarn clean && yarn build && cp vercel.json ./public/vercel.json && cd ./public && vercel --prod --confirm && cd -"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.3.2",
@@ -68,7 +68,8 @@
     "lint-staged": "^8.1.0",
     "prettier": "^1.16.4",
     "prettier-eslint-cli": "^4.7.1",
-    "twemoji": "^12.0.0"
+    "twemoji": "^12.0.0",
+    "vercel": "^19.1.0"
   },
   "lint-staged": {
     "linters": {
