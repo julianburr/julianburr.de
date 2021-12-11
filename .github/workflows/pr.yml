@@ -49,6 +49,10 @@ jobs:
               environment: process.env.URL,
               description: `Staging environment available at ${URL}`
             });
+
+            const deployments = await github.rest.repos.listDeployments({...context.repo});
+            console.log({ deployments, deployment })
+
             core.setOutput("id", deployment.data.id);
 
       - name: Add comment with deployment url
@@ -58,7 +62,7 @@ jobs:
           script: |
             const { issue: { number: issue_number }, repo: { owner, repo } } = context;
 
-            const comments = await github.issues.listComments({issue_number, owner, repo});
+            const comments = await github.rest.issues.listComments({issue_number, owner, repo});
             const comment = comments.data.find(comment => comment.body.startsWith('<!-- automated PR comment -->'));
             if (comment) {
               github.issues.deleteComment({issue_number, owner, repo, comment_id: comment.id});
