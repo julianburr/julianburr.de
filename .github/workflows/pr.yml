@@ -41,7 +41,8 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const deployment = await github.repos.createDeployment({
+            console.log({ github, rest: github.rest });
+            const deployment = await github.rest.repos.createDeployment({
               ...context.repo,
               ref: "${{ github.sha }}",
               required_contexts: [],
@@ -52,23 +53,10 @@ jobs:
 
       - name: Add comment with deployment url
         uses: actions/github-script@v5
-        env:
-          URL: ${{ steps.deploy.outputs.url }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const { URL, GITHUB_SHA } = process.env;
             const { issue: { number: issue_number }, repo: { owner, repo } } = context;
-
-            await github.repos.createDeployment({ 
-              owner, 
-              repo, 
-              ref: GITHUB_SHA, 
-              environment: URL, 
-              payload: { 
-                url: URL 
-              } 
-            });
 
             const comments = await github.issues.listComments({issue_number, owner, repo});
             const comment = comments.data.find(comment => comment.body.startsWith('<!-- automated PR comment -->'));
@@ -76,7 +64,7 @@ jobs:
               github.issues.deleteComment({issue_number, owner, repo, comment_id: comment.id});
             }
 
-            const body = `<!-- automated PR comment -->\n\nPR has been deployed to: ${URL}`
+            const body = `<!-- automated PR comment -->\n\nPR has been deployed to: ${{ steps.deploy.outputs.url }}`
             github.issues.createComment({
               issue_number,
               owner,
@@ -90,7 +78,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.repos.createDeploymentStatus({
+            github.rest.repos.createDeploymentStatus({
               ...context.repo,
               deployment_id: '${{ steps.deployment.outputs.id }}',
               state: 'success'
@@ -102,7 +90,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.repos.createDeploymentStatus({
+            github.rest.repos.createDeploymentStatus({
               ...context.repo,
               deployment_id: '${{ steps.deployment.outputs.id }}',
               state: 'failure'
