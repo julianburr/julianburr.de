@@ -36,17 +36,15 @@ jobs:
       - name: Create deployment entry
         id: deployment
         uses: actions/github-script@v5
-        env:
-          URL: ${{ steps.deploy.outputs.url }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const deployment = await github.rest.repos.createDeployment({
               ...context.repo,
-              ref: "${{ github.sha }}",
+              ref: "${{ github.event.pull_request.head.sha }}",
               required_contexts: [],
-              environment: process.env.URL,
-              description: `Staging environment available at ${URL}`
+              environment: ${{ steps.deploy.outputs.url }},
+              description: `Staging environment available at ${{ steps.deploy.outputs.url }}`
             });
 
             const deployments = await github.rest.repos.listDeployments({...context.repo});
