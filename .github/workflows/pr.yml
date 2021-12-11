@@ -3,7 +3,7 @@ name: Deploy Staging Website
 on: "pull_request"
 
 jobs:
-  deploy_app:
+  deploy_staging:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,6 +12,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "14.x"
+
+      - name: Install dependencies
+        run: yarn
 
       - name: Linting and typechecks
         run: |-
