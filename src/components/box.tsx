@@ -1,6 +1,7 @@
+import { DetailedHTMLProps, HTMLAttributes } from "react";
 import styled from "styled-components";
 
-function hasFlexProps(props) {
+function hasFlexProps(props: any) {
   return [
     "flex",
     "flexDirection",
@@ -10,7 +11,7 @@ function hasFlexProps(props) {
   ].some((flexProp) => Object.keys(props).includes(flexProp));
 }
 
-function cleanProps(props) {
+function cleanProps(props: any) {
   return Object.keys(props)
     .filter(
       (name) =>
@@ -37,7 +38,9 @@ function cleanProps(props) {
     .reduce((all, name) => ({ ...all, [name]: props[name] }), {});
 }
 
-const Div = (props) => <div {...cleanProps(props)} />;
+const Div = (
+  props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+) => <div {...cleanProps(props)} />;
 
 export const Box = styled((p) => p.as || <Div {...p} />)`
   margin: ${(p) =>

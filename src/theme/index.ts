@@ -31,7 +31,7 @@ export const BREAKPOINTS = {
   MOBILE: "@media (max-width: 600px)",
   TABLET: "@media (max-width: 1024px)",
   DESKTOP: "@media (max-width: 1280px)",
-  CUSTOM: (maxWidth) => `@media (max-width: ${maxWidth})`,
+  CUSTOM: (maxWidth: string | number) => `@media (max-width: ${maxWidth})`,
 };
 
 export const GlobalStyles = createGlobalStyle`

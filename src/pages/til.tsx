@@ -77,16 +77,16 @@ export default function TILPage({
   data: any;
   location: any;
 }) {
-  const posts = data.allMarkdownRemark.edges.filter((e) =>
+  const posts = data.allMarkdownRemark.edges.filter((e: any) =>
     dayjs(e.node.frontmatter.date, "DD/MM/YYYY").isBefore(dayjs())
   );
 
   const tags = posts
-    .reduce((all, e) => {
+    .reduce((all: string[], e: any) => {
       e.node.frontmatter.tags
         .split(",")
-        .map((tag) => tag.trim())
-        .forEach((tag) => {
+        .map((tag: string) => tag.trim())
+        .forEach((tag: string) => {
           if (!all.includes(tag)) {
             all = [...all, tag];
           }
@@ -101,11 +101,13 @@ export default function TILPage({
     .filter(Boolean);
 
   // Filter by selected tags
-  const filteredPosts = posts.filter((e) => {
+  const filteredPosts = posts.filter((e: any) => {
     if (!selectedTags.length) {
       return true;
     }
-    const tags = e.node.frontmatter.tags.split(",").map((tag) => tag.trim());
+    const tags = e.node.frontmatter.tags
+      .split(",")
+      .map((tag: string) => tag.trim());
     for (let i = 0; i < selectedTags.length; i++) {
       if (tags.includes(selectedTags[i])) {
         return true;
@@ -127,7 +129,7 @@ export default function TILPage({
 
       {!!tags.length && (
         <WrapTags>
-          {tags.map((tag) => {
+          {tags.map((tag: string) => {
             const active = selectedTags.includes(tag);
             const newTags = active
               ? selectedTags.filter((t) => t !== tag).filter(Boolean)
@@ -149,7 +151,7 @@ export default function TILPage({
       {filteredPosts.length ? (
         <>
           <List mt="3rem">
-            {filteredPosts.map((p) => {
+            {filteredPosts.map((p: any) => {
               const ttr =
                 p.node.timeToRead === 1
                   ? "1 min read"
@@ -157,7 +159,7 @@ export default function TILPage({
 
               const isBook = p.node.frontmatter.tags
                 .split(",")
-                .find((tag) => tag.trim() === "books");
+                .find((tag: string) => tag.trim() === "books");
 
               return (
                 <Item key={p.node.fields.slug} pb=".8rem">

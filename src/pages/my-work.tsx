@@ -15,6 +15,8 @@ const Icons = {
   DevTo: DevToLogoSvg,
 };
 
+type Platform = keyof typeof Icons;
+
 const Group = styled(Grid)`
   margin-top: 1.6rem;
   margin-bottom: 2.4rem;
@@ -66,8 +68,8 @@ const WrapIcon = styled.div`
 export default function MyWorkPage({ data }: { data: any }) {
   const work = data.allMarkdownRemark.edges;
 
-  function createFilter(type) {
-    return (e) => e.node.frontmatter.type === type;
+  function createFilter(type: string) {
+    return (e: any) => e.node.frontmatter.type === type;
   }
 
   const projects = work.filter(createFilter("Project"));
@@ -87,8 +89,9 @@ export default function MyWorkPage({ data }: { data: any }) {
         the talks I gave at local meetups.
       </p>
       <Group>
-        {talks.map((talk) => {
-          const Icon = Icons[talk.node.frontmatter.platform];
+        {talks.map((talk: any) => {
+          const platform: Platform = talk.node.frontmatter.platform;
+          const Icon = Icons[platform];
           return (
             <GroupItem
               width={4}
@@ -123,8 +126,9 @@ export default function MyWorkPage({ data }: { data: any }) {
         own skills at the same time.
       </p>
       <Group>
-        {blogs.map((post) => {
-          const Icon = Icons[post.node.frontmatter.platform];
+        {blogs.map((post: any) => {
+          const platform: Platform = post.node.frontmatter.platform;
+          const Icon = Icons[platform];
           return (
             <GroupItem
               width={4}
@@ -157,7 +161,7 @@ export default function MyWorkPage({ data }: { data: any }) {
         own.
       </p>
       <Group>
-        {oss.map((project) => (
+        {oss.map((project: any) => (
           <GroupItem
             width={4}
             key={
@@ -184,7 +188,7 @@ export default function MyWorkPage({ data }: { data: any }) {
         as private side projects.
       </p>
       <Group>
-        {projects.map((project) => (
+        {projects.map((project: any) => (
           <GroupItem
             width={4}
             key={

@@ -1,18 +1,31 @@
 {
   "compilerOptions": {
-    "noImplicitAny": false,
-    "target": "es6",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "lib": ["es5", "es6", "dom"],
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "declaration": true
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "outDir": "dist"
   },
-  "include": ["src/**/*"],
-  "exclude": ["./node_modules", "./**/node_modules"]
+  "include": ["src"],
+  "exclude": [
+    "./gatsby-browser.js",
+    "./gatsby-config.js",
+    "./gatsby-node.js",
+    "./commitlint.config.js",
+    "node_modules",
+    "dist",
+    "public",
+    ".cache"
+  ]
 }

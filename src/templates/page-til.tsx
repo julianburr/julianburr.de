@@ -37,7 +37,9 @@ export default function PageDefaultTemplate({
 
   const isBook =
     post.frontmatter.tags &&
-    post.frontmatter.tags.split(",").find((tag) => tag.trim() === "books");
+    post.frontmatter.tags
+      .split(",")
+      .find((tag: string) => tag.trim() === "books");
 
   return (
     <>

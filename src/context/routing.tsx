@@ -20,18 +20,14 @@ export const gridColors = {
   blm: COLORS.BLACK,
 };
 
+type GridId = keyof typeof gridColors;
+
 type RoutingProviderProps = PropsWithChildren<{
   location: any;
 }>;
 
 export function RoutingProvider({ children, location }: RoutingProviderProps) {
-  const [routingGrids, setRoutingGrids] = useState({
-    [getGridId(location.pathname)]: location.pathname,
-  });
-
-  const [currentGrid, setCurrentGrid] = useState(getGridId(location.pathname));
-
-  function getGridId(path) {
+  function getGridId(path: string): string {
     if (path === "/til/black-lives-matter/") {
       return "blm";
     }
@@ -39,7 +35,13 @@ export function RoutingProvider({ children, location }: RoutingProviderProps) {
     return firstPart || "home";
   }
 
-  function handleLocationChange(path) {
+  const [routingGrids, setRoutingGrids] = useState({
+    [getGridId(location.pathname)]: location.pathname,
+  });
+
+  const [currentGrid, setCurrentGrid] = useState(getGridId(location.pathname));
+
+  function handleLocationChange(path: string) {
     const gridId = getGridId(path);
     setCurrentGrid(gridId);
     setRoutingGrids({
@@ -48,7 +50,7 @@ export function RoutingProvider({ children, location }: RoutingProviderProps) {
     });
     document.documentElement.style.setProperty(
       "--main-bg-color",
-      gridColors[gridId]
+      gridColors[gridId as GridId]
     );
   }
 
@@ -61,7 +63,7 @@ export function RoutingProvider({ children, location }: RoutingProviderProps) {
       value={{
         routingGrids,
         currentGrid,
-        currentGridColor: gridColors[currentGrid],
+        currentGridColor: gridColors[currentGrid as GridId],
         location,
       }}
     >

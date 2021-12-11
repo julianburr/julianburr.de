@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ComponentProps, useState } from "react";
 import styled from "styled-components";
 import { lighten, darken } from "polished";
 
@@ -125,7 +125,7 @@ const Text = styled.span`
   color: ${darken(0.25, BOX_COLOR)};
 `;
 
-export function MovingIn(props) {
+export function MovingIn(props: ComponentProps<typeof Container>) {
   const [turned, setTurned] = useState(false);
   return (
     <Container {...props}>

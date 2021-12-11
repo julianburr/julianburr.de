@@ -8,8 +8,8 @@ import { Skill } from "../components/skill";
 export default function SkillsPage({ data }: { data: any }) {
   const skills = data.allMarkdownRemark.edges;
 
-  function createFilter(name) {
-    return (e) => e.node.frontmatter.category === name;
+  function createFilter(name: string) {
+    return (e: any) => e.node.frontmatter.category === name;
   }
 
   const languages = skills.filter(createFilter("Programming Languages"));
@@ -17,12 +17,12 @@ export default function SkillsPage({ data }: { data: any }) {
   const tools = skills.filter(createFilter("Software & Tools"));
   const professional = skills.filter(createFilter("Professional Skills"));
 
-  function renderSkills(skills) {
+  function renderSkills(skills: any[]) {
     return (
       <List pt=".5rem">
-        {skills.map((l) => (
-          <Item key={l.id}>
-            <Skill data={l.node} />
+        {skills.map((skill: any) => (
+          <Item key={skill.id}>
+            <Skill data={skill.node} />
           </Item>
         ))}
       </List>

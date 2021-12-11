@@ -341,7 +341,7 @@ export function Navigation({ location }: NavigationProps) {
             <li key={key}>
               <Link
                 className={key === context.currentGrid ? "active" : undefined}
-                style={{ color: gridColors[key] }}
+                style={{ color: gridColors[key as keyof typeof gridColors] }}
                 to={context.routingGrids[key]}
               />
             </li>

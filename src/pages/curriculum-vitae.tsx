@@ -47,7 +47,7 @@ export default function CurriculumVitaePage({ data }: { data: any }) {
         them. Every single role made me grow professionally and personally.
       </p>
       <List mt="3rem">
-        {roles.map((role) => {
+        {roles.map((role: any) => {
           const { frontmatter } = role.node;
           const current = dayjs(frontmatter.toFmt).isAfter(dayjs());
           return (

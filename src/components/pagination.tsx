@@ -46,12 +46,12 @@ export default function Pagination({
 }: PaginationProps) {
   return (
     <List {...rest}>
-      {Array.from({ length: totalPages }, (_, i) => (
+      {Array.from({ length: totalPages || 0 }, (_, i) => (
         <Item active={i + 1 === parseInt(currentPage as string)} key={i}>
           <a
             href={i === 0 ? `${url}` : `${url}?page=${i + 1}`}
             onClick={() =>
-              window.document.getElementById("top").scrollIntoView({
+              window.document.getElementById("top")?.scrollIntoView?.({
                 behavior: "smooth",
               })
             }
