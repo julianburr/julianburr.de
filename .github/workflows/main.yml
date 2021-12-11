@@ -1,0 +1,33 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy_app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Linting and typechecks
+        run: |-
+          yarn lint
+          yarn typecheck
+
+      - name: Deploy via vercel
+        run: |-
+          mkdir .vercel
+          echo '{ "projectId": "${{ secrets.VERCEL_PROJECT_ID }}", "orgId": "${{ secrets.VERCEL_ORG_ID}}" }' \
+            > .vercel/project.json
+
+          vercel --prod --token=${{ secrets.VERCEL_TOKEN }}

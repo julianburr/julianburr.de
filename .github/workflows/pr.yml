@@ -1,0 +1,55 @@
+name: Deploy Staging Website
+
+on: "pull_request"
+
+jobs:
+  deploy_app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
+
+      - name: Linting and typechecks
+        run: |-
+          yarn lint
+          yarn typecheck
+
+      - name: Deploy via vercel
+        id: deploy
+        run: |-
+          yarn
+
+          mkdir .vercel
+          echo '{ "projectId": "${{ secrets.VERCEL_PROJECT_ID }}", "orgId": "${{ secrets.VERCEL_ORG_ID}}" }' \
+            > .vercel/project.json
+
+          vercel --token=${{ secrets.VERCEL_TOKEN }} > url.txt
+          echo "::set-output name=url::$(cat url.txt)"
+
+      - name: Add comment with deployment url
+        uses: actions/github-script@0.3.0
+        env:
+          URL: ${{ steps.deploy.outputs.url }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { URL } = process.env;
+            const { issue: { number: issue_number }, repo: { owner, repo } } = context;
+
+            const comments = await github.issues.listComments({issue_number, owner, repo});
+            const comment = comments.data.find(comment => comment.body.startsWith('<!-- automated PR comment -->'));
+            if (comment) {
+              github.issues.deleteComment({issue_number, owner, repo, comment_id: comment.id});
+            }
+
+            const body = `<!-- automated PR comment -->\n\nPR has been deployed to: ${URL}`
+            github.issues.createComment({
+              issue_number,
+              owner,
+              repo,
+              body
+            });

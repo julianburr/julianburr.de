@@ -25,7 +25,7 @@ const CounterMixin = {
 
   increase() {
     this.setState({ count: this.state.count + 1 });
-  }
+  },
 };
 
 // NOTE: React dropped `createClass` in v16!
@@ -40,7 +40,7 @@ const App = React.createClass({
         <button onClick={this.increase}>+</button>
       </div>
     );
-  }
+  },
 });
 
 export default App;
@@ -67,7 +67,7 @@ HOCs are basically functions, that take in a component as an argument, and retur
 ```js
 import React, { Component } from "react";
 
-const withCounter = Component =>
+const withCounter = (Component) =>
   class extends Component {
     state = { counter: 0 };
 
@@ -88,7 +88,7 @@ const withCounter = Component =>
           counter={{
             count: this.state.count,
             decrement: this.decrement,
-            increment: this.increment
+            increment: this.increment,
           }}
         />
       );
@@ -147,7 +147,7 @@ class Counter extends Component {
     return this.props.children({
       count: this.state.count,
       decrease: this.decrease,
-      increase: this.increase
+      increase: this.increase,
     });
   }
 }
@@ -195,5 +195,5 @@ Render props are just a very powerful alternative pattern to HOCs, but there are
 - https://reactjs.org/docs/higher-order-components.html
 - https://reactpatterns.com/#higher-order-component
 - https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce
-- https://twitter.com/mjackson/status/885910553432018945
-- https://youtu.be/BcVAq3YFiuc
+- <a href="https://twitter.com/mjackson/status/885910553432018945" target="_blank">https://twitter.com/mjackson/status/885910553432018945</a>
+- <a href="https://youtu.be/BcVAq3YFiuc" target="_blank">https://youtu.be/BcVAq3YFiuc</a>

@@ -7,7 +7,7 @@ tags: css
 
 CSS specificity is not necessarily something I learned today, but this specific usage of it certainly is.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In CSS, `input[type=text]` is more specific than a class name (eg. `.fun-input`). What do you do when you want to override default input styles?<br><br>Turns out, you can double-up class selectors, and it increases their specificity. `.fun-input.fun-input` overrides `input[type=text]`!</p>&mdash; Josh ✨ (@JoshWComeau) <a href="https://twitter.com/JoshWComeau/status/1158429802526924801?ref_src=twsrc%5Etfw">August 5, 2019</a></blockquote>
+https://twitter.com/JoshWComeau/status/1158429802526924801
 
 ## What is CSS specificity
 

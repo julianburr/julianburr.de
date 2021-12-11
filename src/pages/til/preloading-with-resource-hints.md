@@ -43,7 +43,7 @@ All of these features should be used with care. To aggressive preloading means y
 
 So all of this wasn't really new to me, but I recently stumbled across this tweet mentioning the `as` attribute, which I didn't know existed. It essentially helps with the `prefetch` functionality, telling the browser exactly what kind of resource it's prefetching, so it can send the appropriate header information etc. to the server.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">using resource hints is a one line quick win!✌🏻 <a href="https://t.co/60nlnxyh8g">pic.twitter.com/60nlnxyh8g</a></p>&mdash; Mario Sommer (@mario_sommer) <a href="https://twitter.com/mario_sommer/status/1172214727113609216?ref_src=twsrc%5Etfw">September 12, 2019</a></blockquote>
+https://twitter.com/mario_sommer/status/1172214727113609216
 
 The whole thread started by [David Walsh](https://twitter.com/davidwalshblog) is pretty interesting to be honest.
 

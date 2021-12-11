@@ -1,93 +1,78 @@
 {
   "name": "julianburr.de",
-  "private": true,
-  "description": "Personal Website",
   "version": "1.0.0",
-  "author": "Julian Burr <hello@julianburr.de>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "private": true,
+  "description": "Personal website",
+  "author": {
+    "email": "hello@julianburr.de",
+    "name": "Julian Burr"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "lint": "eslint .",
+    "lint:staged": "lint-staged",
+    "typecheck": "tsc .",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "@svgr/webpack": "^4.1.0",
-    "babel-plugin-styled-components": "^1.10.0",
-    "dayjs": "^1.8.0",
-    "gatsby": "^2.0.76",
-    "gatsby-image": "^2.0.20",
-    "gatsby-plugin-catch-links": "^2.0.10",
-    "gatsby-plugin-google-analytics": "^2.0.14",
-    "gatsby-plugin-layout": "^1.0.11",
-    "gatsby-plugin-manifest": "^2.0.9",
-    "gatsby-plugin-offline": "^2.0.16",
-    "gatsby-plugin-react-helmet": "^3.0.2",
-    "gatsby-plugin-sharp": "^2.0.14",
-    "gatsby-plugin-styled-components": "^3.0.4",
-    "gatsby-plugin-svgr": "^2.0.1",
-    "gatsby-plugin-twitter": "^2.0.9",
-    "gatsby-remark-copy-linked-files": "^2.0.8",
-    "gatsby-remark-external-links": "^0.0.4",
-    "gatsby-remark-images": "^3.0.1",
-    "gatsby-remark-prettier": "^1.0.0",
-    "gatsby-remark-prismjs": "^3.2.2",
-    "gatsby-remark-smartypants": "^2.0.8",
-    "gatsby-source-filesystem": "^2.0.17",
-    "gatsby-transformer-remark": "^2.2.0",
-    "gatsby-transformer-sharp": "^2.1.8",
-    "polished": "^2.3.3",
-    "prismjs": "^1.15.0",
-    "prop-types": "^15.6.2",
-    "query-string": "^6.4.2",
-    "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1",
-    "react-helmet": "^5.2.0",
-    "styled-components": "^4.1.3"
-  },
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "serve": "gatsby build && gatsby serve",
-    "clean": "rm -rf ./.cache ./public",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write '**/*.{js,jsx,json,css,md}'",
-    "lint": "eslint '**/*.{js,jsx}'",
-    "lint:staged": "lint-staged",
-    "lighthouse": "gatsby-lighthouse --performance=100 --accessibility=100 --best-practices=100 --seo=100",
-    "deploy": "yarn clean && yarn build && cp vercel.json ./public/vercel.json && cd ./public && vercel --prod --confirm && cd -"
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "dayjs": "^1.10.7",
+    "polished": "^4.1.3",
+    "prismjs": "^1.25.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.3",
+    "twemoji": "^13.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.3.2",
-    "@commitlint/config-conventional": "^7.3.1",
-    "eslint": "^5.12.1",
-    "eslint-plugin-react": "^7.12.4",
-    "gatsby-lighthouse-cli": "^0.0.1",
-    "husky": "^1.3.1",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.16.4",
-    "prettier-eslint-cli": "^4.7.1",
-    "twemoji": "^12.0.0",
-    "vercel": "^19.1.0"
-  },
-  "lint-staged": {
-    "linters": {
-      "**/*.{js,jsx}": [
-        "prettier-eslint --write",
-        "git add",
-        "eslint"
-      ],
-      "**/*.{json,css,md}": [
-        "prettier --write '**/*.{json,css,md}'",
-        "git add"
-      ]
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "@babel/plugin-transform-react-jsx": "^7.16.0",
+    "@svgr/webpack": "^6.1.1",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.17",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^2.0.2",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "gatsby": "^4.3.0",
+    "gatsby-plugin-google-analytics": "^4.3.0",
+    "gatsby-plugin-image": "^2.3.0",
+    "gatsby-plugin-layout": "^3.3.0",
+    "gatsby-plugin-manifest": "^4.3.0",
+    "gatsby-plugin-mdx": "^3.3.0",
+    "gatsby-plugin-react-helmet": "^5.3.0",
+    "gatsby-plugin-sharp": "^4.3.0",
+    "gatsby-plugin-sitemap": "^5.3.0",
+    "gatsby-plugin-styled-components": "^5.3.0",
+    "gatsby-plugin-svgr": "^3.0.0-beta.0",
+    "gatsby-plugin-typescript": "^4.3.0",
+    "gatsby-remark-copy-linked-files": "^5.3.0",
+    "gatsby-remark-embedder": "^5.0.0",
+    "gatsby-remark-external-links": "^0.0.4",
+    "gatsby-remark-images": "^6.3.0",
+    "gatsby-remark-prismjs": "^6.3.0",
+    "gatsby-remark-smartypants": "^5.3.0",
+    "gatsby-source-filesystem": "^4.3.0",
+    "gatsby-transformer-remark": "^5.3.0",
+    "gatsby-transformer-sharp": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.3"
   }
 }

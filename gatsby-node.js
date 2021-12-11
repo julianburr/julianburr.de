@@ -1,9 +1,9 @@
 const path = require("path");
 const fs = require("fs");
-const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`);
 const twemoji = require("twemoji");
+const { createFilePath } = require("gatsby-source-filesystem");
 
-exports.createPages = ({ actions, graphql }) => {
+function createPages({ actions, graphql }) {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
@@ -24,7 +24,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
         }
-      `).then(result => {
+      `).then((result) => {
         if (result.errors) {
           // eslint-disable-next-line
           console.log(result.errors);
@@ -32,7 +32,9 @@ exports.createPages = ({ actions, graphql }) => {
         }
 
         // Individual blog posts
-        const defaultTemplate = path.resolve("./src/templates/page-default.js");
+        const defaultTemplate = path.resolve(
+          "./src/templates/page-default.tsx"
+        );
         const pagesPath = path.resolve("./src/pages/");
 
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
@@ -40,7 +42,7 @@ exports.createPages = ({ actions, graphql }) => {
             .substring(pagesPath.length)
             .split("/")[1];
 
-          const typeTemplate = path.resolve(`./src/templates/page-${type}.js`);
+          const typeTemplate = path.resolve(`./src/templates/page-${type}.tsx`);
           const template = fs.existsSync(typeTemplate)
             ? typeTemplate
             : defaultTemplate;
@@ -49,30 +51,45 @@ exports.createPages = ({ actions, graphql }) => {
             path: node.fields.slug,
             component: template,
             context: {
-              slug: node.fields.slug
-            } // additional data can be passed via context
+              slug: node.fields.slug,
+            }, // additional data can be passed via context
           });
         });
         return;
       })
     );
   });
-};
+}
 
-exports.onCreateNode = ({ node, getNode, actions, loadNodeContent }) => {
+function onCreateNode({ node, getNode, actions }) {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` });
     createNodeField({
       node,
       name: `slug`,
-      value: slug
+      value: slug,
     });
 
     const content = node.internal.content;
     node.internal.content = twemoji.parse(content, {
       ext: ".svg",
-      size: "svg"
+      size: "svg",
     });
   }
+}
+
+function onCreateBabelConfig({ actions }) {
+  actions.setBabelPlugin({
+    name: "@babel/plugin-transform-react-jsx",
+    options: {
+      runtime: "automatic",
+    },
+  });
+}
+
+module.exports = {
+  createPages,
+  onCreateNode,
+  onCreateBabelConfig,
 };
