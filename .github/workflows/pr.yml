@@ -43,8 +43,7 @@ jobs:
               ...context.repo,
               ref: "${{ github.event.pull_request.head.sha }}",
               required_contexts: [],
-              environment: "Preview",
-              description: `Staging environment available at ${{ steps.deploy.outputs.url }}`
+              environment: "Preview"
             });
 
             const deployments = await github.rest.repos.listDeployments({...context.repo});
@@ -82,7 +81,9 @@ jobs:
             github.rest.repos.createDeploymentStatus({
               ...context.repo,
               deployment_id: '${{ steps.deployment.outputs.id }}',
-              state: 'success'
+              state: 'success',
+              environment_url: "${{ steps.deploy.outputs.url }}",
+              description: `Preview deployed to ${{ steps.deploy.outputs.url }}`,
             });
 
       - name: On error
