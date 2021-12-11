@@ -13,19 +13,6 @@ jobs:
         with:
           node-version: "14.x"
 
-      - name: Initialize deployment
-        id: deployment
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const deployment = await github.rest.repos.createDeployment({
-              ...context.repo,
-              ref: "${{ github.sha }}",
-              required_contexts: []
-            });
-            core.setOutput("id", deployment.data.id);
-
       - name: Install dependencies
         run: yarn
 
@@ -45,6 +32,23 @@ jobs:
 
           vercel --token=${{ secrets.VERCEL_TOKEN }} > url.txt
           echo "::set-output name=url::$(cat url.txt)"
+
+      - name: Create deployment entry
+        id: deployment
+        uses: actions/github-script@v5
+        env:
+          URL: ${{ steps.deploy.outputs.url }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const deployment = await github.repos.createDeployment({
+              ...context.repo,
+              ref: "${{ github.sha }}",
+              required_contexts: [],
+              environment: process.env.URL,
+              description: `Staging environment available at ${URL}`
+            });
+            core.setOutput("id", deployment.data.id);
 
       - name: Add comment with deployment url
         uses: actions/github-script@v5
@@ -86,7 +90,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.rest.repos.createDeploymentStatus({
+            github.repos.createDeploymentStatus({
               ...context.repo,
               deployment_id: '${{ steps.deployment.outputs.id }}',
               state: 'success'
@@ -98,7 +102,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.rest.repos.createDeploymentStatus({
+            github.repos.createDeploymentStatus({
               ...context.repo,
               deployment_id: '${{ steps.deployment.outputs.id }}',
               state: 'failure'
