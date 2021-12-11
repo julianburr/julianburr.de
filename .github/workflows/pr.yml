@@ -41,7 +41,6 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            console.log({ github, rest: github.rest });
             const deployment = await github.rest.repos.createDeployment({
               ...context.repo,
               ref: "${{ github.sha }}",
@@ -51,7 +50,7 @@ jobs:
             });
 
             const deployments = await github.rest.repos.listDeployments({...context.repo});
-            console.log({ deployments, deployment })
+            console.log({ deployments: deployments.data })
 
             core.setOutput("id", deployment.data.id);
 
@@ -65,11 +64,11 @@ jobs:
             const comments = await github.rest.issues.listComments({issue_number, owner, repo});
             const comment = comments.data.find(comment => comment.body.startsWith('<!-- automated PR comment -->'));
             if (comment) {
-              github.issues.deleteComment({issue_number, owner, repo, comment_id: comment.id});
+              github.rest.issues.deleteComment({issue_number, owner, repo, comment_id: comment.id});
             }
 
             const body = `<!-- automated PR comment -->\n\nPR has been deployed to: ${{ steps.deploy.outputs.url }}`
-            github.issues.createComment({
+            github.rest.issues.createComment({
               issue_number,
               owner,
               repo,
