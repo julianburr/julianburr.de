@@ -41,7 +41,9 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { URL } = process.env;
-            const { issue: { number: issue_number }, repo: { owner, repo } } = context;
+            const { ref, issue: { number: issue_number }, repo: { owner, repo } } = context;
+
+            await github.repos.createDeployment({ owner, repo, ref, environment: URL, payload: { url: URL } });
 
             const comments = await github.issues.listComments({issue_number, owner, repo});
             const comment = comments.data.find(comment => comment.body.startsWith('<!-- automated PR comment -->'));
