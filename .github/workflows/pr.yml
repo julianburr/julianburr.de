@@ -43,7 +43,7 @@ jobs:
               ...context.repo,
               ref: "${{ github.event.pull_request.head.sha }}",
               required_contexts: [],
-              environment: ${{ steps.deploy.outputs.url }},
+              environment: "Preview",
               description: `Staging environment available at ${{ steps.deploy.outputs.url }}`
             });
 
