@@ -13,6 +13,19 @@ jobs:
         with:
           node-version: "14.x"
 
+      - name: Initialize deployment
+        id: deployment
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const deployment = await github.rest.repos.createDeployment({
+              ...context.repo,
+              ref: "${{ github.sha }}",
+              required_contexts: []
+            });
+            core.setOutput("id", deployment.data.id);
+
       - name: Install dependencies
         run: yarn
 
@@ -34,16 +47,24 @@ jobs:
           echo "::set-output name=url::$(cat url.txt)"
 
       - name: Add comment with deployment url
-        uses: actions/github-script@0.3.0
+        uses: actions/github-script@v5
         env:
           URL: ${{ steps.deploy.outputs.url }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const { URL } = process.env;
-            const { ref, issue: { number: issue_number }, repo: { owner, repo } } = context;
+            const { URL, GITHUB_SHA } = process.env;
+            const { issue: { number: issue_number }, repo: { owner, repo } } = context;
 
-            await github.repos.createDeployment({ owner, repo, ref, environment: URL, payload: { url: URL } });
+            await github.repos.createDeployment({ 
+              owner, 
+              repo, 
+              ref: GITHUB_SHA, 
+              environment: URL, 
+              payload: { 
+                url: URL 
+              } 
+            });
 
             const comments = await github.issues.listComments({issue_number, owner, repo});
             const comment = comments.data.find(comment => comment.body.startsWith('<!-- automated PR comment -->'));
@@ -57,4 +78,28 @@ jobs:
               owner,
               repo,
               body
+            });
+
+      - name: On success
+        if: success()
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.repos.createDeploymentStatus({
+              ...context.repo,
+              deployment_id: '${{ steps.deployment.outputs.id }}',
+              state: 'success'
+            });
+
+      - name: On error
+        if: failure() || cancelled()
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.repos.createDeploymentStatus({
+              ...context.repo,
+              deployment_id: '${{ steps.deployment.outputs.id }}',
+              state: 'failure'
             });
