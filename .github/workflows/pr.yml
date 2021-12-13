@@ -1,4 +1,4 @@
-name: Deploy Staging Website
+name: Deploy Preview
 
 on: "pull_request"
 
@@ -14,26 +14,15 @@ jobs:
           node-version: "14.x"
 
       - name: Install dependencies
-        run: yarn
+        run: |-
+          yarn
 
       - name: Linting and typechecks
         run: |-
           yarn lint
           yarn typecheck
 
-      - name: Deploy via vercel
-        id: deploy
-        run: |-
-          yarn
-
-          mkdir .vercel
-          echo '{ "projectId": "${{ secrets.VERCEL_PROJECT_ID }}", "orgId": "${{ secrets.VERCEL_ORG_ID}}" }' \
-            > .vercel/project.json
-
-          vercel --token=${{ secrets.VERCEL_TOKEN }} > url.txt
-          echo "::set-output name=url::$(cat url.txt)"
-
-      - name: Create deployment entry
+      - name: Create github deployment
         id: deployment
         uses: actions/github-script@v5
         with:
@@ -45,11 +34,17 @@ jobs:
               required_contexts: [],
               environment: "Preview"
             });
-
-            const deployments = await github.rest.repos.listDeployments({...context.repo});
-            console.log({ deployments: deployments.data })
-
             core.setOutput("id", deployment.data.id);
+
+      - name: Deploy via vercel
+        id: vercel
+        run: |-
+          mkdir .vercel
+          echo '{ "projectId": "${{ secrets.VERCEL_PROJECT_ID }}", "orgId": "${{ secrets.VERCEL_ORG_ID}}" }' \
+            > .vercel/project.json
+
+          vercel --token=${{ secrets.VERCEL_TOKEN }} > url.txt
+          echo "::set-output name=url::$(cat url.txt)"
 
       - name: Add comment with deployment url
         uses: actions/github-script@v5
@@ -64,7 +59,7 @@ jobs:
               github.rest.issues.deleteComment({issue_number, owner, repo, comment_id: comment.id});
             }
 
-            const body = `<!-- automated PR comment -->\n\nPR has been deployed to: ${{ steps.deploy.outputs.url }}`
+            const body = `<!-- automated PR comment -->\n\nPR has been deployed to: ${{ steps.vercel.outputs.url }}`
             github.rest.issues.createComment({
               issue_number,
               owner,
@@ -82,8 +77,8 @@ jobs:
               ...context.repo,
               deployment_id: '${{ steps.deployment.outputs.id }}',
               state: 'success',
-              environment_url: "${{ steps.deploy.outputs.url }}",
-              description: `Preview deployed to ${{ steps.deploy.outputs.url }}`,
+              environment_url: "${{ steps.vercel.outputs.url }}",
+              description: `Preview deployed to ${{ steps.vercel.outputs.url }}`,
             });
 
       - name: On error

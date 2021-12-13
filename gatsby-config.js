@@ -6,7 +6,6 @@ module.exports = {
     author: "@jburr90",
   },
   plugins: [
-    "gatsby-plugin-vercel",
     "gatsby-plugin-typescript",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-layout",
