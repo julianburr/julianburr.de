@@ -2,7 +2,7 @@
 title: Writing good commit messages
 description: And why it matters
 date: 2019-10-03
-tags: git
+tags: git, opinion
 ---
 
 I recently stumbled across a tweet that resonated a lot with me, cause it touches on something I've been trying to bring to my team at rexlabs for a while now: the importance of good commit messages in git.

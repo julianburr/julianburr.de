@@ -159,6 +159,11 @@ export const GlobalStyles = createGlobalStyle`
     margin: 3rem 0 !important;
   }
 
+  p img {
+    width: 100%;
+    height: auto;
+  }
+
   ${BREAKPOINTS.MOBILE} {
     body {
       font-size: 1.3rem;

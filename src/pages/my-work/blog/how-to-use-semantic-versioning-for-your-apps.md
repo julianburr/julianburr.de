@@ -3,7 +3,7 @@ title: How to Use Semantic Versioning for Your Apps
 type: Blog
 date: 2020-04-28
 platform: DevTo
-url: https://dev.to/julianburr/how-to-use-semantic-versioning-for-your-apps-38o8-temp-slug-4232311?preview=0391e857a69e7f4ae199bdd0a2bd64efc0e858386d28c2210b96888627b02c98fdb23bff7ae5bceb5ca03c0120472d3156f9b877aa1a05a5211b0cc8
+url: https://dev.to/julianburr/how-to-use-semantic-versioning-for-your-apps-2dak
 heroUrl: https://res.cloudinary.com/practicaldev/image/fetch/s--ynYRXJUK--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/6eb7320q2c5svtr6qki6.png
 ---
 

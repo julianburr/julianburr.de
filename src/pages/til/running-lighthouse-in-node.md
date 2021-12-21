@@ -2,7 +2,7 @@
 title: Running lighthouse in node
 description: How to run lighthouse audits in node
 date: 2019-01-30
-tags: js, node
+tags: js, node, perf
 ---
 
 Similar to other [Dev Tool features](../using-chrome-dev-tools-in-node) with headless Chrome there is a very easy way to use Lighthouse on the website you're currently on, all within node.
@@ -16,16 +16,16 @@ const lighthouse = require("lighthouse");
 const launcher = require("chrome-launcher");
 
 const options = {
-  chromeFlags: ["--headless"]
+  chromeFlags: ["--headless"],
 };
 
 launcher
   .launch(options)
-  .then(chrome => {
+  .then((chrome) => {
     const url = "http://my-awesome-website.com";
     return lighthouse(url, options, null);
   })
-  .then(results => {
+  .then((results) => {
     // use results.lhr for the JS-consumeable output
     // https://github.com/GoogleChrome/lighthouse/blob/master/typings/lhr.d.ts
     // ...
