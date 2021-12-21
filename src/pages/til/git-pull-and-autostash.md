@@ -19,6 +19,6 @@ In the end you either end up with your changes applied on top of latest origin, 
 
 This is easy and straight forward, but it's still 3 individual steps to do whenever I want to perform this action, which just adds up over time. So when I found this on twitter today it absolutely made my day:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">git tip:<br><br>if you&#39;ve been frustrated by not being able to pull or rebase because you have existing changes,<br><br>say hello to my little friend: <br><br>`git pull --autostash` <a href="https://t.co/gDutlj5A3m">pic.twitter.com/gDutlj5A3m</a></p>&mdash; Tejas Kumar (@TejasKumar_) <a href="https://twitter.com/TejasKumar_/status/1149700419129618433?ref_src=twsrc%5Etfw">July 12, 2019</a></blockquote>
+https://twitter.com/TejasKumar_/status/1149700419129618433
 
 Being able to do all the stashing logic with one git command is just nice. Not solving the biggest problem in the world here, but I think it was neat and I'm definitely gonna use it a lot moving forward 😄

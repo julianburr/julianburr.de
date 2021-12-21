@@ -1,0 +1,74 @@
+name: Deploy Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy_production:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
+
+      - name: Install dependencies
+        run: |-
+          yarn
+
+      - name: Linting and typechecks
+        run: |-
+          yarn lint
+          yarn typecheck
+
+      - name: Create github deployment
+        id: deployment
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const deployment = await github.rest.repos.createDeployment({
+              ...context.repo,
+              ref: "${{ github.event.pull_request.head.sha }}",
+              required_contexts: [],
+              environment: "Preview"
+            });
+            core.setOutput("id", deployment.data.id);
+
+      - name: Deploy via vercel
+        run: |-
+          mkdir .vercel
+          echo '{ "projectId": "${{ secrets.VERCEL_PROJECT_ID }}", "orgId": "${{ secrets.VERCEL_ORG_ID}}" }' \
+            > .vercel/project.json
+
+          vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: On success
+        if: success()
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.repos.createDeploymentStatus({
+              ...context.repo,
+              deployment_id: '${{ steps.deployment.outputs.id }}',
+              state: 'success',
+              environment_url: "https://www.julianburr.de",
+              description: `Production deployed to https://www.julianburr.de`,
+            });
+
+      - name: On error
+        if: failure() || cancelled()
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.repos.createDeploymentStatus({
+              ...context.repo,
+              deployment_id: '${{ steps.deployment.outputs.id }}',
+              state: 'failure'
+            });

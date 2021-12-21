@@ -11,8 +11,8 @@ So out of this personal desperation, I created a small landing page (mostly for 
 
 It's also great seing on twitter that I'm not the only one having this problem:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Me: I&#39;ve been doing JavaScript for 10 years.<br><br>Also me: SLICE OR SPLICE WHICH ONE IS IT</p>&mdash; Jack Franklin (@Jack_Franklin) <a href="https://twitter.com/Jack_Franklin/status/1149670372100452353?ref_src=twsrc%5Etfw">July 12, 2019</a></blockquote>
+https://twitter.com/Jack_Franklin/status/1149670372100452353
 
-Main take away imo from this: build stupid tools and stuff that helps you remember shit, even if it's just for yourself. I will now (hopefully) always remember which one to use just because I remember building this stupid landing page 🎉
+Main take away imo from this: build stupid tools and stuff that helps you remember, even if it's just for yourself. I will now (hopefully) always remember which one to use just because I remember building this stupid landing page 🎉
 
 PS: probably gonna have to do the same for substr vs. substring soon 😅

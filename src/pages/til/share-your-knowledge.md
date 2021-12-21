@@ -2,7 +2,7 @@
 title: Share Your Knowledge
 description: It helps others and yourself
 date: 2019-02-10
-tags: personal
+tags: opinion
 ---
 
 Well, this is basically the whole point of this part of my website, but it's still worth explaining why I do this.
@@ -15,4 +15,4 @@ But beyond all of this, the main reason why I have this section on my website an
 
 So go ahead, keep notes or your thoughts and TIL moments somewhere accessible, you won't regret it 😊
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I want to start keeping track of my TIL moments, and I can only encourage everyone to do the same, doesn&#39;t even need to be public, just for yourself if you prefer<br><br>First take away: I was not aware of how many small things I learn every day 🤓<a href="https://t.co/ZonLbNAIyE">https://t.co/ZonLbNAIyE</a></p>&mdash; Julian Burr (@jburr90) <a href="https://twitter.com/jburr90/status/1094526652074229761?ref_src=twsrc%5Etfw">February 10, 2019</a></blockquote>
+https://twitter.com/jburr90/status/1094526652074229761

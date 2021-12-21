@@ -2,12 +2,12 @@
 title: Writing good commit messages
 description: And why it matters
 date: 2019-10-03
-tags: git
+tags: git, opinion
 ---
 
 I recently stumbled across a tweet that resonated a lot with me, cause it touches on something I've been trying to bring to my team at rexlabs for a while now: the importance of good commit messages in git.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Most commit messages are next to useless because they focus on WHAT was done instead of WHY.<br><br>This is exactly the wrong thing to focus on. <br><br>You can always reconstruct what changes a commit contains, but it&#39;s near impossible to unearth the reason it was done.<br><br>(thread)</p>&mdash; Ben Orenstein (@r00k) <a href="https://twitter.com/r00k/status/1175100703829909505?ref_src=twsrc%5Etfw">September 20, 2019</a></blockquote>
+https://twitter.com/r00k/status/1175100703829909505
 
 Below some of the rules I try to follow and the reasons why.
 
