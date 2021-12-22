@@ -28,7 +28,11 @@ type WorldMapProps = {
 
 export function WorldMap({ destinations }: WorldMapProps) {
   useEffect(() => {
+    // eslint-disable-next-line
+    // @ts-ignore
     import("mapbox-gl/dist/mapbox-gl.css")
+      // eslint-disable-next-line
+      // @ts-ignore
       .then(() => import("mapbox-gl/dist/mapbox-gl.js"))
       .then(({ default: mapboxgl }) => {
         mapboxgl.accessToken =
@@ -45,7 +49,7 @@ export function WorldMap({ destinations }: WorldMapProps) {
             type: "geojson",
             data: {
               type: "FeatureCollection",
-              features: destinations.reduce((all, dest) => {
+              features: destinations.reduce<any[]>((all, dest) => {
                 if (!dest.node.frontmatter.latlng) {
                   return all;
                 }
@@ -118,14 +122,14 @@ export function WorldMap({ destinations }: WorldMapProps) {
             },
           });
 
-          map.on("click", "clusters", (e) => {
+          map.on("click", "clusters", (e: any) => {
             const features = map.queryRenderedFeatures(e.point, {
               layers: ["clusters"],
             });
             const clusterId = features[0].properties.cluster_id;
             map
               .getSource("places")
-              .getClusterExpansionZoom(clusterId, (err, zoom) => {
+              .getClusterExpansionZoom(clusterId, (err: any, zoom: number) => {
                 if (err) return;
 
                 map.easeTo({
@@ -135,7 +139,7 @@ export function WorldMap({ destinations }: WorldMapProps) {
               });
           });
 
-          map.on("click", "unclustered-point", (e) => {
+          map.on("click", "unclustered-point", (e: any) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
             const mag = e.features[0].properties.mag;
             const tsunami =
