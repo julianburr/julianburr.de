@@ -15,7 +15,9 @@ export const gridColors = {
   "curriculum-vitae": COLORS.GREEN,
   skills: COLORS.YELLOW,
   "get-in-touch": COLORS.PURPLE,
-  til: COLORS.BLUE,
+  til: COLORS.BLUE.MEDIUM,
+  library: COLORS.BLUE.DARK,
+  "around-the-world": COLORS.TURQUOISE,
   "my-work": COLORS.RED,
   blm: COLORS.BLACK,
 };
@@ -27,12 +29,14 @@ type RoutingProviderProps = PropsWithChildren<{
 }>;
 
 export function RoutingProvider({ children, location }: RoutingProviderProps) {
-  function getGridId(path: string): string {
+  function getGridId(path: string): GridId {
     if (path === "/til/black-lives-matter/") {
       return "blm";
     }
     const [firstPart] = path.split("/").filter(Boolean);
-    return firstPart || "home";
+    return firstPart && gridColors[firstPart as GridId] !== undefined
+      ? (firstPart as GridId)
+      : "home";
   }
 
   const [routingGrids, setRoutingGrids] = useState({
@@ -50,7 +54,7 @@ export function RoutingProvider({ children, location }: RoutingProviderProps) {
     });
     document.documentElement.style.setProperty(
       "--main-bg-color",
-      gridColors[gridId as GridId]
+      gridColors[gridId]
     );
   }
 
@@ -63,7 +67,7 @@ export function RoutingProvider({ children, location }: RoutingProviderProps) {
       value={{
         routingGrids,
         currentGrid,
-        currentGridColor: gridColors[currentGrid as GridId],
+        currentGridColor: gridColors[currentGrid],
         location,
       }}
     >

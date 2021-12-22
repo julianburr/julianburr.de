@@ -31,21 +31,28 @@ function createPages({ actions, graphql }) {
           return reject(result.errors);
         }
 
-        // Individual blog posts
+        // Individual page
         const defaultTemplate = path.resolve(
           "./src/templates/page-default.tsx"
         );
         const pagesPath = path.resolve("./src/pages/");
+
+        // Individual blog post (TIL or library entry)
+        const blogTemplate = path.resolve("./src/templates/page-blog.tsx");
 
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
           const type = node.fileAbsolutePath
             .substring(pagesPath.length)
             .split("/")[1];
 
+          const baseTemplate = ["til", "library"].includes(type)
+            ? blogTemplate
+            : defaultTemplate;
+
           const typeTemplate = path.resolve(`./src/templates/page-${type}.tsx`);
           const template = fs.existsSync(typeTemplate)
             ? typeTemplate
-            : defaultTemplate;
+            : baseTemplate;
 
           createPage({
             path: node.fields.slug,
