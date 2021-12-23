@@ -26,31 +26,30 @@ const WrapTimeToRead = styled.span`
   font-size: 1.5rem;
 `;
 
-export default function PageDefaultTemplate({
+export default function PageBlogTemplate({
   data,
   location,
 }: {
   data: any;
   location: any;
 }) {
+  const isBook = location.pathname?.startsWith("/library");
   const post = data.markdownRemark;
-
-  const isBook =
-    post.frontmatter.tags &&
-    post.frontmatter.tags
-      .split(",")
-      .find((tag: string) => tag.trim() === "books");
 
   return (
     <>
       <SEO
-        title={`Today I Learned: ${post.frontmatter.title}`}
+        title={
+          isBook
+            ? `My Library: ${post.frontmatter.title}`
+            : `Today I Learned: ${post.frontmatter.title}`
+        }
         slug={post.fields.slug}
         image="preview-til.png"
       />
       <Box flexDirection="row" alignItems="center" mt="1rem">
         <BackLink
-          to="/til"
+          to={isBook ? "/library" : "/til"}
           onClick={(e) => {
             if (location.state.fromList) {
               e.preventDefault();

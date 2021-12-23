@@ -19,8 +19,12 @@ export const COLORS = {
   GREEN: "#9CCA6C",
   YELLOW: "#F7AD08",
   PURPLE: "#CA85D8",
-  BLUE: "#599AE5",
+  BLUE: {
+    MEDIUM: "#599AE5",
+    DARK: "#3176C5",
+  },
   RED: "#DA7A70",
+  TURQUOISE: "#6CCAB9",
 
   TWITTER_BLUE: "#1EA1F2",
   MEDIUM_GREEN: "#029E74",
@@ -180,5 +184,18 @@ export const GlobalStyles = createGlobalStyle`
     display: inline;
     vertical-align: middle;
     transform: translateY(-.2rem)
+  }
+
+  .mapboxgl-ctrl-bottom-right {
+    display: none;
+  }
+
+  .mapboxgl-ctrl-bottom-left {
+    left: auto;
+    right: 0;
+  }
+
+  .mapboxgl-ctrl-bottom-left .mapboxgl-ctrl {
+    margin: 1rem;
   }
 `;

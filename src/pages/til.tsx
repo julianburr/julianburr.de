@@ -8,8 +8,6 @@ import { SEO } from "../components/seo";
 import { Card } from "../components/card";
 import { List, Item } from "../components/list";
 
-import { ReactComponent as BookSvg } from "../images/icons/book.svg";
-
 dayjs.extend(customParseFormat);
 
 const WrapHeading = styled.div`
@@ -32,15 +30,6 @@ const Description = styled.p`
   margin: 0;
   padding: 0.2rem 0 0.6rem;
   line-height: 1.2;
-`;
-
-const BookIcon = styled(BookSvg)`
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  height: 6rem;
-  width: auto;
-  opacity: 0.05;
 `;
 
 const WrapTags = styled.div`
@@ -126,6 +115,12 @@ export default function TILPage({
         sharing easier. Most of it is just random thoughts and code snippets,
         with links to further resources.
       </p>
+      <p>
+        I also start listing{" "}
+        <Link to="/library">books that I've read and recommend reading</Link> in
+        a separate section of my website, in case you're interested in that kind
+        of stuff.
+      </p>
 
       {!!tags.length && (
         <WrapTags>
@@ -157,10 +152,6 @@ export default function TILPage({
                   ? "1 min read"
                   : `${p.node.timeToRead} mins read`;
 
-              const isBook = p.node.frontmatter.tags
-                .split(",")
-                .find((tag: string) => tag.trim() === "books");
-
               return (
                 <Item key={p.node.fields.slug} pb=".8rem">
                   <Card
@@ -176,7 +167,6 @@ export default function TILPage({
                     <Description>
                       {p.node.frontmatter.description} — {ttr}
                     </Description>
-                    {isBook && <BookIcon />}
                   </Card>
                 </Item>
               );
