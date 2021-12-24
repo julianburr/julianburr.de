@@ -32,6 +32,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          html
           timeToRead
           fields {
             slug
@@ -43,6 +44,8 @@ export const pageQuery = graphql`
             place
             type
             latlng
+            thumb
+            images
           }
         }
       }

@@ -6,8 +6,8 @@ import { RoutingProvider, RoutingContext } from "../context/routing";
 import { GlobalStyles, BREAKPOINTS, COLORS } from "../theme";
 
 const Container = styled.div<{ background: string }>`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: ${(p) => p.background};
   padding: 5rem;
   display: flex;
@@ -45,13 +45,18 @@ const Content = styled.main`
   max-width: 70rem;
 `;
 
+const GalleryContainer = styled.main`
+  width: 100%;
+  height: 100%;
+  background: yellow;
+`;
+
 type InnerProps = PropsWithChildren<Record<never, any>>;
 
 function Inner({ children }: InnerProps) {
   const context = useContext(RoutingContext);
   return (
     <Container background={context.currentGridColor}>
-      <GlobalStyles />
       <Stage id="stage" invert={context.currentGrid === "blm"}>
         <Navigation />
         <Content>{children}</Content>
@@ -60,12 +65,24 @@ function Inner({ children }: InnerProps) {
   );
 }
 
+function InnerGallery({ children }: InnerProps) {
+  return <GalleryContainer>{children}</GalleryContainer>;
+}
+
 type LayoutProps = PropsWithChildren<{ location: any }>;
 
 export default function Layout({ location, children }: LayoutProps) {
+  const isGallery =
+    location.pathname?.startsWith("/around-the-world/") &&
+    location.pathname !== "/around-the-world/";
   return (
     <RoutingProvider location={location}>
-      <Inner>{children}</Inner>
+      <GlobalStyles />
+      {isGallery ? (
+        <InnerGallery>{children}</InnerGallery>
+      ) : (
+        <Inner>{children}</Inner>
+      )}
     </RoutingProvider>
   );
 }
