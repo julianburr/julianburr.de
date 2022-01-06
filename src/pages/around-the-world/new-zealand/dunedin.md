@@ -1,9 +1,17 @@
 ---
 country: New Zealand
+region: Otago
 place: Dunedin
 type: location
 date: 2014-01
-latlng: -45.8820864, 170.1845745
+latlng: -45.86667, 170.5
+thumb: https://lh3.googleusercontent.com/UWUkU_HMtTb8l10fOqi_gDhoRlsaTR8zeHckgdnm33_1_rtL9VLx7HvQCZH1qi1kJ5GvBQZd6qAA9EwyWqw8VBD2uOzAzupQRgz-kv7zosHzaLMCch-SnBoPuNoVqQV_8z02DhMS-w
+images:
+  - https://lh3.googleusercontent.com/UWUkU_HMtTb8l10fOqi_gDhoRlsaTR8zeHckgdnm33_1_rtL9VLx7HvQCZH1qi1kJ5GvBQZd6qAA9EwyWqw8VBD2uOzAzupQRgz-kv7zosHzaLMCch-SnBoPuNoVqQV_8z02DhMS-w
+  - https://lh3.googleusercontent.com/iwf802nI1SprMcT4NvZlFgDnS8nRoT0vIslBQm-dQSclzY_jS-F3V-sEZ4t2wisrqt0cB_hvWboJqSbEsA8F2HsIpV_Z4Hbo5a8cl8z3OJhh1F7WdqcDYuaA0Qoe2DhPo-3QPVSEFw
+  - https://lh3.googleusercontent.com/2xBtg9_whssFdMKSPNJuLAdqOMDV7DUGnRTuBPwcgCQfMHOIaR1wgajjlgl1CKGfJy1k-d196s9oBoDqIn2l_RL4sZZ_pftfYnyL7dcBwCpO3wJNJ_2-A6J2cCjr2GJ8cfn2gzM2HA
+  - https://lh3.googleusercontent.com/yWWMkujcxx-3pvohVC6dEbjbc9uLARmZDl7YBGMhD_DylsSFks-C_4Uj81688uQAkRZkRM6_4smDsTXqEscwO5q-zBYyTBtlZ3mKcxjXlPIREcPbKU-SKcWOzzVqFQX-EAgUSXTjmA
+  - https://lh3.googleusercontent.com/QKRMbHhvXWuiWd7FOktxtHFYvPbpndl3VuIIUXu7dNrPWjfBmbuojouG4PsVW4velxXwftuokKkwxQT36MSqZ1aiolDaMyPXHZ0zA7UTiyVuNWxSUayO2rbYbyaiUU2WDxjIGTThWA
+  - https://lh3.googleusercontent.com/56lcI69yGdmiHGOMEfF7mOz_6HFSGnqJB-rW1g6Uv7T-NSIvZBWcTn6uDP2dbFjJqXdo33EWI0Ib5p72zjBJMY634zqWfEeC3txfZhBAvt7r68PZu1a8dWv3_TVGNI6Nwvb2TQ7x3A
+  - https://lh3.googleusercontent.com/olNjoCallTojar9BD1guxtnUbu042wwCucmQt6Yjr826-Qpmgm089yuoPDkfAWJaLOEkib2-LYhq9wVm6OksAoGIslUSjbrCkFpESWBX6MIafv-yFE4HvuE7wHbKS6gX5XPPRx3Ltw
 ---
-
-TODO

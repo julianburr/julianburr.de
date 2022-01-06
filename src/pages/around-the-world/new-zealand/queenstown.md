@@ -1,9 +1,16 @@
 ---
 country: New Zealand
+region: Otago
 place: Queenstown
 type: location
 date: 2014-01
-latlng: -44.9965171, 168.5593729
+latlng: -45.021452499999995, 168.73932100000002
+thumb: https://lh3.googleusercontent.com/k4ZRcTlNy-ZGHCcfYy2O1f7zDleND23hMKGTc_6awxIp5xDi8hCQP6VSoGzJ2D5JbUopGnrq0Y4d0B5BxVpq8DSFer5hUk3Gk4yY89HhJzSGWvRgnugxlEbHvSfyiP4OKp6IhP35pUc
+images:
+  - https://lh3.googleusercontent.com/WWoA68arUgPHfEIDckLr-G6Jt7t_1mssrAX4uDv_TQQH6L_8zazs_ypjPtvliUYPEKnp-7W0VxWZ1HIZyKLC6n2R_AHOwSnqSRvotvwScZHWAW5O5e34r0yu9dptebwI5uwxB933peU
+  - https://lh3.googleusercontent.com/GxZ_95YUUK17mIuBcQnKC8gvE3Fua7QqoBYEEkI4MqbSp4dHoUtAuHjKPDX2u9u6NS6KJjpWjzEznA6toLQX2zaHlzBD3ShBn8YOwQdPXe3I9fPl-a5PPei5iYJVAOPuTq0rRnzE8J0
+  - https://lh3.googleusercontent.com/k4ZRcTlNy-ZGHCcfYy2O1f7zDleND23hMKGTc_6awxIp5xDi8hCQP6VSoGzJ2D5JbUopGnrq0Y4d0B5BxVpq8DSFer5hUk3Gk4yY89HhJzSGWvRgnugxlEbHvSfyiP4OKp6IhP35pUc
+  - https://lh3.googleusercontent.com/97jO2zZh5d8b_47Mnqu24Us4pIpU4xUGq1x-cbSONl_F6LT7esXyWn3d0An1R2Z6wBFu8fHwr8JezzyDdhljzv3zy_bsKhfFfzTHsaAx8HdRYlGz6Jt-rbvbaT7HKnAem4BULbolh1A
+  - https://lh3.googleusercontent.com/y9BzJ-JyNDZl32Rhp3ocSDtY84mNF-oQqNbTM5Y86tN3eXGhy4G68-snHtQ6SOiAa2qgO3Ru6BaWlhsktQRUfmHZMSTCgld7SCaqQ12CBrM7BUaya_9kv87W0_3iW6a-O53K9Nnia44
+  - https://lh3.googleusercontent.com/G5SvIvp58ZWV3jaou5oV2yC5xyp4_H6HigoGM-3cBJePtqXJChifCjQeJBqCvNW1oP6cmFZ6xe2JgDoDib_K_fX9905GNfLrg6xmOyPJVjNUkQCdAIE5_AeMeQRoklqjJmJJ0Au68ds
 ---
-
-TODO

@@ -1,9 +1,20 @@
 ---
 country: Vietnam
+region: Dong Phu
 place: Dong Hoi
 type: location
 date: 2014-01
-latlng: 17.4545811, 106.4655126
+latlng: 17.476970683800147, 106.61370053763312
+thumb: https://lh3.googleusercontent.com/802tZ4gkS6q0uY5EzThKRzYu9Z1TYmTyXPu8z7v_DFbFrMPzvZpzoxyPAjBpw2RqKJKZQYlNd1YnGgNJfINMYcjWB5dbOYgbAR-wmnHcMITUC8iWNvlQDTCLgvP-0yTTtiVnBCPAYg
+images:
+  - https://lh3.googleusercontent.com/zfLbI283w5o9QJHdHg5if-85xwDEOgJC3ZJbXKAJp1tY3GhKKouiU0_A3iZXOX3FqRsrQakf9FWlCD0L_5odbkF6pF2FKQIRiKu9JBl18IQiqB9QvogwKRD5njltTkAc2SN93k_NAA
+  - https://lh3.googleusercontent.com/DU_VOTV4GTud8T3XVM-Ou5vdSrHLPHJy0QlEJG9cj4qs86Z_7SR4-2YHZmc5sS0-OEh90E_xciQF7SZu1ai7s71zSJLlIXaHkhGrnYHO9mabbBuPo1ShUIa6YsqMgBsyejLP-S47oA
+  - https://lh3.googleusercontent.com/K2lc8KyBaGigSdfCrS7FVTG-MfjPGfLd7mZ9WtHqFl5yiRxG701g3lrJmwDmuMDkV5r76SMV8UPrGhwhX84Kp0PP55qw8h7F2K-sLmVQCVneM_lQjaZaQmMJQQj4HOEcwz8-0840hg
+  - https://lh3.googleusercontent.com/NdfbCi78QpucXhwEyBKJYhrySAe-Vw1YtqUIzILkjnBiC0wbsfjUeBu1mrC38JHOwpwa6XdU1olqXzT3VeTAPTUZ2V2-wuFfQZMZQhGiWIhlWWXoDQ48gM85jPZCPBjeQJkRYb-AEw
+  - https://lh3.googleusercontent.com/3-Xx06MWDXxgxztApdNpSlPy60NcNyS-nR37vgpEMd-Qu7fZDzEbM6KvJWPAi_0AByUwYjEZrqzTncRsFJwZ4TEbjicLLOBqAeTLIxq-zqEf_s_tor0A4Th0J0_TIEyMZQyUtVzlAQ
+  - https://lh3.googleusercontent.com/YAQlAhGjFwkWth4nujWurP6K3VklWD95Q6nZaAjUrU7dWLYkW-Jc-dIQpOycyIc54rH7uSSYtLDWQuA6ZsqS7xDbxxYkdOJDAl7s-MDOl9JAxoH36c7_gDz4AacyjwqC8nr0J6rT8g
+  - https://lh3.googleusercontent.com/FXWb-b4so8uBwpJFcFJTkb1w7rM6UDL2G79KZilLf5L1ic-KTvHRPrrDYDKvVK38dInWq23xVIVq74_8qH8xNK8nHsU8l6aQsBh-qcmLFVTlEqwKXj8zcFynWk5diXtf6_kbguziCg
+  - https://lh3.googleusercontent.com/tf6AMbKAqKAj0VrOA19epe9lAXriQxSWoIcyHv1nsuzTC1BlI6gQCEzJK0LnSzNIuF6q1UZGzO6UOjCpd4cUQpZtZ8VDN2AXqwyVTHvo2YgxPWPWU-gI3GT7O6We5NDI9zpJ4lJXeQ
+  - https://lh3.googleusercontent.com/802tZ4gkS6q0uY5EzThKRzYu9Z1TYmTyXPu8z7v_DFbFrMPzvZpzoxyPAjBpw2RqKJKZQYlNd1YnGgNJfINMYcjWB5dbOYgbAR-wmnHcMITUC8iWNvlQDTCLgvP-0yTTtiVnBCPAYg
+  - https://lh3.googleusercontent.com/ec6zd-uKdRExS-MfQ0xEY2CX6nThXydwc_Msth2Y6cC9vVfLoGskt7TRJ5YiglibBABRWjYvUiM-ZDtvvU7j_zuFksLcnLbd1QKPC6iUJB7x4nE-Uq96VdHGv6VumkirrNuOuaw3uw
 ---
-
-TODO

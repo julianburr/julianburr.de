@@ -3,7 +3,5 @@ country: South Korea
 place: Busan
 type: location
 date: 2014-01
-latlng: 35.1646497, 128.9313717
+latlng: 35.18298763511321, 129.0761022149207
 ---
-
-TODO

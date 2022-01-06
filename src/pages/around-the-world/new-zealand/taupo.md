@@ -1,9 +1,14 @@
 ---
 country: New Zealand
-place: Taupō
+region: Waikato
+place: Taupo
 type: location
 date: 2014-01
-latlng: -38.6658441, 175.9405195
+latlng: -38.68517375560219, 176.07526624351152
+thumb: https://lh3.googleusercontent.com/1apabhjPUYQDih5ekpjgck7EbyxEUQY4Qc6nzENxo6txbS52SwnOba01zhCodOvzjCL7ywgPec5APBNqAnvMjLt_BK5IhQnGyv5A9GlE9KJ3k-9OdQhZ8cbaO2k9dlhZUnYpOIAn14k
+images:
+  - https://lh3.googleusercontent.com/77krF1H0cWgeGMeZ1xLfJ7rvXXWqyYCQjPTCowjJhEff7Ehh3HvC-wF20I2JUg89NzdY3aqc2sMNBPis5q0CA5IHc7tTYI4Q5ZM-kZTadl5SVbFD83q32ub6rXiXKN7F_AnNAl55HsE
+  - https://lh3.googleusercontent.com/1apabhjPUYQDih5ekpjgck7EbyxEUQY4Qc6nzENxo6txbS52SwnOba01zhCodOvzjCL7ywgPec5APBNqAnvMjLt_BK5IhQnGyv5A9GlE9KJ3k-9OdQhZ8cbaO2k9dlhZUnYpOIAn14k
+  - https://lh3.googleusercontent.com/-lNJ0VK0CjKyaNX-u9kTabnCZk3YzuXkHcFESupoLCvYBdlAMd04xJhsxyo9QcqINWRrTEh_6DeoYZvx-ctVqxS-LgAriZCffmF8uyBtCh8XIeXiaViy8gClo8SEZTi3OEyCClEY9CY
+  - https://lh3.googleusercontent.com/nmfrpwAoBSVxH0GEyvjoLlbh3X3KDhwVn06anwRyyKmC_4D3x6VXTBAYf6pyc4JVrK0pBLPYSh1gyw7-pmWNe-8VH6Xi0MA6qmB5PBt8R8R2fWdXS-Dfafc3yjlohFOrfTXhApbEmNs
 ---
-
-TODO

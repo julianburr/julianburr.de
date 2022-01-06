@@ -3,7 +3,12 @@ country: Vietnam
 place: Hanoi
 type: location
 date: 2014-01
-latlng: 21.0228854, 105.7667516
+latlng: 21.061399092503265, 105.8497470004296
+thumb: https://lh3.googleusercontent.com/R1K8VSzZDyLv9xSMx5q3Xc6mmEglIbK4ziVMPFzFgCyvVKOW8xGzrdL6IfNsACQsPF81g_LpwAym7HC2pRELKYw5Ey4Z6ktBoXZJbgPoJwHYAN11Z7KNplTp_RH9YePe3r08b1c9Gw
+images:
+  - https://lh3.googleusercontent.com/zVTR20WkhQf4MTsZCZqjrWQOBHo3vY5y5lMcy_5mjxOXYpO4ElKDKgANchywKbn4KiLU3wAR4Zt6JY2BG2p48aVNIwxoZ8gL-S7BhU9-umyMZqS3sFT0ASWHfCLvu8YEoH0QPi6vrg
+  - https://lh3.googleusercontent.com/Uc4zZgo3KWmJua4SaqE3VRHFtI87-t7wxQf0W4RyAC1Fz5GsK5M8ASE-ggSktbC4KZ4NpzjkDJFPS4eZkUlwPfn9WLLv1MCqCMTUelIhEtuE3UG1aEnV_UiTP5nQQcsXW9aWJYsOAw
+  - https://lh3.googleusercontent.com/R1K8VSzZDyLv9xSMx5q3Xc6mmEglIbK4ziVMPFzFgCyvVKOW8xGzrdL6IfNsACQsPF81g_LpwAym7HC2pRELKYw5Ey4Z6ktBoXZJbgPoJwHYAN11Z7KNplTp_RH9YePe3r08b1c9Gw
+  - https://lh3.googleusercontent.com/vxv_reWJYX1NUY9X6wofUC7pORiUtoSKOT86piAGE3L2RLc_lAaGW8Qxk2U8Y14_tl7DHaiyYVACM6xvNUZ2KDZ3mhk96wVUd9quRVGO_rNX0JUARWTctBjJyVvVS34AMhNh98v3iA
+  - https://lh3.googleusercontent.com/2crN6j0hNxzxXCY-lWfdsXcreolSd9tHEc5U7wat0Sk6zKvL8UQMbRIw8iX0RzOz_MQaIxicglJlDjNXSxQ7_26FbVawYL8acGLRmaIwW2u6BLYBG2wN0Jm27RNaZikU6gv7gUmtng
 ---
-
-TODO

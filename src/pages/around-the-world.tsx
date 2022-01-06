@@ -10,7 +10,6 @@ const Content = styled.div`
 `;
 
 export default function AroundTheWorldPage({ data }: { data: any }) {
-  console.log({ data });
   return (
     <>
       <SEO title="Around the World" />

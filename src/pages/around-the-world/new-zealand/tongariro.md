@@ -1,9 +1,17 @@
 ---
 country: New Zealand
+region: Manawatu-Wanganui
 place: Tongariro
 type: national park
 date: 2014-01
-latlng: -39.014917, 175.546019
+latlng: -39.201232, 175.537362
+thumb: https://lh3.googleusercontent.com/PtShVxwMP3yTfYxSXvKnY9hLlTkoJvm2Xvt-HJdR_ztrNHrbPeI01oeEGTenDQyeMqwivkKsowk3CspJxu7I5axcipoS4eG1tsmt-p6Zxt3xc3On2c6vUDmvC_PlDf9m2CJgAxWtzDA
+images:
+  - https://lh3.googleusercontent.com/l8upyrZbH4arF8CpD1wYdTYdiAUcGkZfZcsdufH223gox8xYTeG35Hpbp5lHFH5pSYQFOaD7U5kGssNHB8Kk_J46J7mAsTDIpavvvWZqq6vpEZyb2Mi6ctRWBvPfxjX04yPGJF1-kk0
+  - https://lh3.googleusercontent.com/LeAq4mpytS9Gf5FRw2bQQn5D23dRRkfNScftzJllSRCUioY2oRRhgX2uNY1qTyOBV7BH9oBCxH9StIb0Ba2p_PArCSsAfGIvHtqubJn8J43coEklx8M2_j6-mJ54CVi5Zph7IaJIjs4
+  - https://lh3.googleusercontent.com/x3-UKbA1eB0XRV11JNufPVjcF_zrzIzLDd2jyE1J4fLV7eKqOt3Jb6ouqlamRk1K7MqTZKpF42S26TSZY3buPU7DG-MnrTw5jbecyQpNPSwAT5r40a25B7mhDDUg3gqfK1wOQmKuc50
+  - https://lh3.googleusercontent.com/jvIMvPVdp68A21X0nX9jK3dIuc5YZNexUEND_GEVr7hcM1Qw9-yWxj9IEM6c3CkDnF0Huqn-Zl6sTuJAJLnP-RSsrdJfClmwINyKa_X8Oersq4JvvpK8uGJunt2suwvLX943G33mmZU
+  - https://lh3.googleusercontent.com/Dwsk9Sk3o1tgF285k4tZrmGKdqA1b-0fYuOUdgqpF183TE3QnI_-Wyr_GUes5uX395kaHjoI03ptW3IWkS_UAabN4nhdlHMAyc3ED5K5KRPTESEwaLDCFXod6m1D-lBmVD16fw-CyzI
+  - https://lh3.googleusercontent.com/x0_c9-YORViFrOqoifV6SsAvGfUbr6pflto4elwKU-cPtHHn6VHvXQqthiVuFTj1CasVpVixDtqkXG-uDvYJYaPQQvyH6j9y8DFi4E70NHyVEf5oUAqJ5gw3RyLXuuA7JDX_Yu_cKxU
+  - https://lh3.googleusercontent.com/PtShVxwMP3yTfYxSXvKnY9hLlTkoJvm2Xvt-HJdR_ztrNHrbPeI01oeEGTenDQyeMqwivkKsowk3CspJxu7I5axcipoS4eG1tsmt-p6Zxt3xc3On2c6vUDmvC_PlDf9m2CJgAxWtzDA
 ---
-
-TODO

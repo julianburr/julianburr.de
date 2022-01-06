@@ -1,9 +1,15 @@
 ---
 country: Vietnam
+region: Binh Thuan
 place: Mui Ne
 type: location
 date: 2014-01
-latlng: 10.9605994, 108.2405571
+latlng: 10.943773236239565, 108.28261888439778
+thumb: https://lh3.googleusercontent.com/HxT2IRHX3rCymnMVSYskzq5trSHMDrvlYCfM_FcFyEz2-5ZFP9mjDKxRXS-PoJzWTs6DTH3Y6AGTRLJketGPXFKZpSCH5RFzRnB6FTSLxsZBBTy9oM0bmmDegTFfBcfg9x09oTm6MQ
+images:
+  - https://lh3.googleusercontent.com/HxT2IRHX3rCymnMVSYskzq5trSHMDrvlYCfM_FcFyEz2-5ZFP9mjDKxRXS-PoJzWTs6DTH3Y6AGTRLJketGPXFKZpSCH5RFzRnB6FTSLxsZBBTy9oM0bmmDegTFfBcfg9x09oTm6MQ
+  - https://lh3.googleusercontent.com/x4CImEFlJcrnRU5SLncCVZFJLyNo1BD1-rXsRQGo9o0s7L83F-KC5Z0a1bqpnwtX4sV42GqNtw71mpqxipSNv951g5BsuryKer3Iljfpz_TeDulyM0yuhZwc-mK0P-CqlzZaKYXLGA
+  - https://lh3.googleusercontent.com/QippltCT2SuUrftq28pw4NHBO-DhSOr1Tp0tbG1DBumXyjwut04lMtOEAiscb85ez8k4hqEkUiQcYVp6pVnAMOOgb01na2wbQNo2G-u6uUeuiC06IN3BCCGnmh1CpYF7IbM6dEucWA
+  - https://lh3.googleusercontent.com/IwXE9_vN3v8XhXWzP_43168rg3NbFcKDMCg49p7xrB7mvvf9NdLEpYmnivsyffLmptibDvG6yNNlg632Sb_E6TNn6wN5Mwd3DF6DzHAollN2HieS9idCcvnhWOwtS4k7ftVFBmUzkQ
+  - https://lh3.googleusercontent.com/WRg1ISl9GMvGKWGRSWgoMXfF1_Cp9a9v5w1Q4g0COwkKG4iErQp9n8Bu4-SRqrEkETkYYR9OPQyrFOAWX5zxCXTZ6EK50Cppkez4n_5u0QZ-sidmDVZPCA2MQl5rLoh6lOEv4yjiQQ
 ---
-
-TODO

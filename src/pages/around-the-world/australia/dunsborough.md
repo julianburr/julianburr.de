@@ -1,9 +1,20 @@
 ---
 country: Australia
+region: Western Australia
 place: Dunsborough
 type: location
 date: 2014-01
-latlng: -33.609993, 115.0784579
+latlng: -33.615437, 115.10629
+thumb: https://lh3.googleusercontent.com/4tc1GSr4Xm9wlfik8Sqj8-EvgHdOYhl_MKybljqL3jsk4M0eSFR5yjIbOicI6FW2ZNj5DucDXpZ1JbPKhH8wLa4JTMJIBMeyGqq2iwpk6ZvIYosN6wb_5FJPwNGuqaFBHAUhnTqS1g
+images:
+  - https://lh3.googleusercontent.com/1c_Dtkyi157iCyn2H0xl6KztwFiek7Yjilwx6061jtu1YLBofE0j5nDCgO8vb-6EXGYaZw1YZasc6JUVuArWDml_-CTrTcSIhX60VUSdkUnqrjt3VBNiIDk0s9IMmmhxpbGWHdjYSA
+  - https://lh3.googleusercontent.com/602kd341_IwqPxMz_a3gE9r1r7ZKvOT4D09D6WKq3RcHABdGzcntbytiYzPx21Re00o2wXz_bI3tk9HGxtTI7XO82cjqjC5Q-wpUkMLtFx4202OBG17-yiSdJ6VNqjRDkiC2xhgj5A
+  - https://lh3.googleusercontent.com/4tc1GSr4Xm9wlfik8Sqj8-EvgHdOYhl_MKybljqL3jsk4M0eSFR5yjIbOicI6FW2ZNj5DucDXpZ1JbPKhH8wLa4JTMJIBMeyGqq2iwpk6ZvIYosN6wb_5FJPwNGuqaFBHAUhnTqS1g
+  - https://lh3.googleusercontent.com/pXAgOA-w2ClChm5HUxQXDGiQxYles1ht5XPWXhxmz466Pu1ZHXX5HqP9On2NPYV8BOuQLt_sdzBUGzNTj03vEI_pDMrdrZaV15N9d4ulDktRf7YymOXxwtcsH8aJbD_b0u16DibpiQ
+  - https://lh3.googleusercontent.com/rOjkhUFP59k8jI6KPXK8ownTPkwZyPX6Q8wYgnwMT8b8vzWnUOLb-5ZTCid9fHaIVS_2NWyWg5W_xzGIteapFqg79tHtQr72l4nyOC5K7xqX8BKaiP560L24OMsTz9Wo-M43mEgayg
+  - https://lh3.googleusercontent.com/Xs07WnOSNgL0HOwsyl_3VTX4SoT0hIlKfpZsJIRPS5WDXXDrK5fqaeFN1R-gFosvfWhAnss75138wxXPNWq0u7aZCDNQVngP5uKrqY3s4Q__PFV7VqJYl8xusOli5EJpvtfZrQr38Q
+  - https://lh3.googleusercontent.com/1ODBZ1PU1x2t1bMAmXUd6VvvNCTrN7eAc7B4hKsJi428NEY40kmNZoTogvVbZ3x1EO-GC8nxNl_fYBzy9n_8R2TxYx_PDNS4sL1OnPjvOZX4wejOZ815r456Nhf9i1U5JlBajxQeqw
+  - https://lh3.googleusercontent.com/oSwhsg7MLPPix_krv1oto_CG-iRYqtIvvRPZWdbLMqPE5G-7PkmVsZvj3JoL9AFRyuQlQ0S6K51UiXUNX0PnLyR8SKbzGLEXGkHtipVzlz3n_9vrQOYBql0PRhtSQQI3-6686d3GHw
+  - https://lh3.googleusercontent.com/dSwuo3Q7T-o3jpjLF9aGHYZKiR-SqANz9U3evWgoAOd01BLqNhSX1xf6qB0xTSYQK42oPW18fxPjPB26-nXLg3zJRd7gFwJ3hK56Ii5fJda0rC8wfym6ptPcVSKGF_5WHRu8eJWqpg
+  - https://lh3.googleusercontent.com/WRB48JCch3NF-jscVyO2RkyrOkF5mmIRfGhaYlwB0jl-R_V6b_5NFHziB_2lvVnnU3zBCPMCllKqs1NrMgaZok9OfqadfQCbYjeGAWSjBVh-SV8XX5YPBsxz1N8EyEP5L1l12oWTKg
 ---
-
-TODO

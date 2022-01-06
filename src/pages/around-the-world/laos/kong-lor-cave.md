@@ -1,9 +1,15 @@
 ---
 country: Laos
+region: Khammouane
 place: Kong Lor Cave
 type: landmark
 date: 2014-01
-latlng: 17.9586489, 104.7536634
+latlng: 17.962, 104.744081
+thumb: https://lh3.googleusercontent.com/1MnvO3CAh3lhdeyWSFjfUJAiVDegoC1E6ISAJurKu4vf1uZcajrjdN8T625Uq3MUN5Hf8d-jV6bpqOjDKGvtO9x5f1au3nkCE4R5SELvCWxLDEWaXQIgF37-aleOAa9XK1zpHE7CKA
+images:
+  - https://lh3.googleusercontent.com/pt4JnqDBhNA8woqsKhKi1MLwt7zdGXOOS9Q2I9vSm8xOr88qufaM1_6gGmg5HerLoFbGYbccANnv4rDXasWhsyV-b_AiEmYdEPhMSVxkm89KLlJkSeKbS148KsatdmXPH0mSEDST_g
+  - https://lh3.googleusercontent.com/1MnvO3CAh3lhdeyWSFjfUJAiVDegoC1E6ISAJurKu4vf1uZcajrjdN8T625Uq3MUN5Hf8d-jV6bpqOjDKGvtO9x5f1au3nkCE4R5SELvCWxLDEWaXQIgF37-aleOAa9XK1zpHE7CKA
+  - https://lh3.googleusercontent.com/lDITx9Sn8jYjZ7BVO2-DYRor-zyOpu6C-4f-gBp2a5iae1R7Bo3Ew06TV92JRS6J_6zMYnYJj-XXJne9DoQtiguADIyh4IugULqYbQA4KVNn0SG1bFg8oUFcMurdqSBP6a2Qcqk1tw
+  - https://lh3.googleusercontent.com/7k37vmdNJx7em6xJ2pAv8rWXCw9uzZwqqfnhIX8Jb-nXqNxZuyiRGCFKSHqNhxmW0xQsJ2q5AGgx9YG1OQhOYgEZp3yqF--S7HaFrYKcYZcHSfkaCQXvjUGiVlRUAImS4n_pMUvqOA
+  - https://lh3.googleusercontent.com/SOlM9HwDBoPHVajHLdD-3tnmaHjPSUPDeqxsYnPH1OnlXet3mGdSeRa72VOa0lCCyZEwqv_cKCg8iVQ3sOXr9e-dozrknOMGMjQkVxxLU8yIdgYFt6alzmwLOnA3QxavezMuLN7gcw
 ---
-
-TODO

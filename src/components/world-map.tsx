@@ -93,7 +93,7 @@ function Popout({ title, subTitle, imgSrc, slug }: PopoutProps) {
   );
 }
 
-let lastZoom = 1.5;
+let lastZoom = 0.9;
 let lastCenter = [26.3824618, 26.8447825];
 
 type WorldMapProps = {
@@ -148,6 +148,7 @@ export function WorldMap({ destinations }: WorldMapProps) {
               }, []),
             },
             cluster: true,
+            clusterRadius: 35,
           });
 
           map.addLayer({

@@ -1,9 +1,18 @@
 ---
 country: Vietnam
+region: Quang Nam
 place: Hoi An
 type: location
 date: 2014-01
-latlng: 15.9185769, 108.2766434
+latlng: 15.886150805060495, 108.32440781739814
+thumb: https://lh3.googleusercontent.com/ars8SFaZoIFMkfDm7tAbOUQ1QHAgNp7u9FMc4Kx4WJtVN4cRR6WOxwXInI1yAOnwX2bDFSb7MDACkX6o1ApEBJRrV3uxDZjkaGH9ohENLBlNMOPpAh5rDObLr8OC-SAehpJhKRE_VA
+images:
+  - https://lh3.googleusercontent.com/CLTEHj-yQDlIK3hPBztqKGlJsel25E9r0dyHgpzzuELda_bOVT4V3aJJTxKFAiSEyMCbCC2gq05kGR07AJOjSe45p2qHaAwy8ni6u_p_Smb4HJTgFIu_tl3CFdbLJjL5yVgKww9wVw
+  - https://lh3.googleusercontent.com/IgOFGfUVVATh79zMkdIDcTiPbqO0k7-QVB-M8kgv4kvHnx0v20SPQzJUsyR602OKBEK6qqsg61d3Eohv8TYO7uWlUZHHL0LF8EUOdsl28Y83k4QlrFZMeHc2ZLDmunGXb07er_E0Lw
+  - https://lh3.googleusercontent.com/wBGxpiYQwuEmFrjb3djD8-Gm3m9HbaKl636jlCLyhZERiVbBAT4Pz-3e928GSdm-Tl26h5NWvIaRTj3p0v0i8qm95PJOeG2M3eMezU6ff2ZLNaTszhX2cZfxstEr1I47em5UPEsmgg
+  - https://lh3.googleusercontent.com/ars8SFaZoIFMkfDm7tAbOUQ1QHAgNp7u9FMc4Kx4WJtVN4cRR6WOxwXInI1yAOnwX2bDFSb7MDACkX6o1ApEBJRrV3uxDZjkaGH9ohENLBlNMOPpAh5rDObLr8OC-SAehpJhKRE_VA
+  - https://lh3.googleusercontent.com/DzQuopdncsQqW6k64Ino1P7QWYTrvORjwatbz0rspsT7-6qcfAxC6Hw32tNNbHP6eGSfRk4QWIL-yV1VYuKm6FLATQa_mSeb-b1NxslRkWd5Xg66Es49mZEkaY0gWSG28eZJ9jG47w
+  - https://lh3.googleusercontent.com/eaMui_L3wMjhUbvnQ0WWHirLPJWwnkFz9tJObNfbPTvvLDGMw65gi9B8_RyuILLNID_ly_8_2sOvKN1pBGlXrP5VPRvc5JUce7eknpC2y9QMgFdMCo2IMAcAh1Ja5K9W9KUyBFd76A
+  - https://lh3.googleusercontent.com/JHHjIQqjYOhD_LFPGxweJ_xBq-4VaZK8p_yJ_6OI-8bPsmVu4FeaB3ovQYwsgMIbLGoXzVbkwaN8yVGYYZwNMaeglt3q9B3ddYBLyrb8R3oNCHqRDD4TQp4_UtMuAIEf-x41zvXUeg
+  - https://lh3.googleusercontent.com/nP_uxDnSCIdW9O8Y_DaHkYUYZfl_-ewv7ToAzqXJSKKekhNDeRH8UZf1uTBo6F0VdASSTfcC_K6kO82sqBc-VAk8BpzAWan0ZNopoHCCZJR_MTLFDJ15hjE-YZs6kj0-E7F88Alxcw
 ---
-
-TODO

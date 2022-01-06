@@ -1,9 +1,17 @@
 ---
 country: Laos
+region: Luang Prabang
 place: Luang Prabang
 type: location
 date: 2014-01
-latlng: 19.8856916, 102.1105394
+latlng: 19.890337, 102.132951
+thumb: https://lh3.googleusercontent.com/xqJj72mFSPqLdoIwvB56QgDIxazLO3it-StJ_6ZROfU0ZJVNBnlLsHgKxHlVBlT2ZgXx4hAvKvzENo59mXRxtcmO6xTZg189vsW3Ltqg6fYcKKKlBxkaNiOd9UzyrjkXBzRG5zlmSw
+images:
+  - https://lh3.googleusercontent.com/cQTJUL1Fp3d_TRyUyXJMj7sFCa9Rted3DbX-oHqWlcP9XbxrvQcrIsAKiM-JXe8WNxnwMCq1G0-wG9sfna_G8JzBEM5MFZe-A2tfcPQcbzDGImiP8Va9K8jCebLRdTcusF-BNgSO9g
+  - https://lh3.googleusercontent.com/-JPAl8mcIF_rSnyfIE4djiP0vDa3bW7z4ilJ_iIllBTm5FT6sU0yHZwIR1dsN-8HznHZd0sDPcggAhHHWOnPNr57L2FlvYAKssgwmcRatDsjJVWCnfTSQKudR28QA2MZouT3VnEYUw
+  - https://lh3.googleusercontent.com/sL3_xFaiNoAgxm2D6czyhVL4agWgBAmCA9uUHgc6SvhUpCOrBS0A4HLluKnHXnbKKM6DudJr9gfOuxLWatNWPzYgc7UQkkbkbaXCE6caZ032tjTxUs3A8cNPMPFq_DH7llRZFX5xjg
+  - https://lh3.googleusercontent.com/xqJj72mFSPqLdoIwvB56QgDIxazLO3it-StJ_6ZROfU0ZJVNBnlLsHgKxHlVBlT2ZgXx4hAvKvzENo59mXRxtcmO6xTZg189vsW3Ltqg6fYcKKKlBxkaNiOd9UzyrjkXBzRG5zlmSw
+  - https://lh3.googleusercontent.com/6UxhxXKCU0ObEFtjGoYfYtK3DMoSmt6AROOmRB-95CZMULqsaycJlY40WTdUIc8SCuWeLkwGXmZV6-OSuLymAyQVh0f9Eck1UADde_nR0bC113EVfi2L-7jxUhh2P16kvDyut_TtOA
+  - https://lh3.googleusercontent.com/pQyaBabnCBEJ4eiPbj6DQaue1Pyzo_L4Z8bJRZxupxk66NSEIKeFdqgI906pcgEi2sGz7SqRRfGyBzZM_ylHNhSy_We_pF9cLmW4dssCRWXCsDjfXq6zdvWcMWdE1SRApKUUnNbcaQ
+  - https://lh3.googleusercontent.com/HDjKMvc8T53z6MTNL14PllCqZLi0zOVkmP8LvEa51ltPg0a4GNEQLckKPBTHvRciRo6aMLIn_rRPk9qMt4-EsygWC89k7ovAgJHth_jdIaj_u8FwG9-KarmRV1LMwg6BHsXx0Bmg9Q
 ---
-
-TODO

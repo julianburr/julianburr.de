@@ -3,7 +3,16 @@ country: Macao
 place: Macao
 type: location
 date: 2014-01
-latlng: 22.161976, 113.4999406
+latlng: 22.175294143611254, 113.54061447247364
+thumb: https://lh3.googleusercontent.com/-WHbgq-OjdoBqFAFwPxZu8gvN6nFkqFHlOSRjoYl8DxfK4U7Bf1MgRP8RR6wEYJAmqg4wUlDyO2YP5OaCYbTFrb69lGfY5vd8bpIuRuCEStU9zQdGniYSWb7WJ5bo72XxXA3AAsJiA
+images:
+  - https://lh3.googleusercontent.com/_4HQU9x5EbtA5c3zsDAmrp45ifF7s1wVliAeOvi_jtOgjhworKtqe-rfuYlsFc_My4RGQr4JWF-lspGMlsD_hDHUIsExHPSqCDo2_tQlExawLhjSz_DzqDXgVn8xS3MiiX5KGRxyXw
+  - https://lh3.googleusercontent.com/5BD5Z4UrlFTUgRAWYPAbaj3OXY8iwEfjsXpcx0d1eRHAdMOImNEYbMQPAmDa0-PPqa0H2nf09PXHTgsVzKEfSYTLgSuA93MQvPU40T95RAX6znbLMKl9QsS14JUpvS3e2RQYawH3BA
+  - https://lh3.googleusercontent.com/q0G-xFuMPfkNmIDPPSBmjorLeF6iFETHK8ePbvSXKwkJhSV4qOsOpe8w5X0IfkUAUEWmvGZ8Mb4xkwOtZ9pSxF4E2c8inBb1zKfr3tmPL1WjDw3Geb6CsG-JmNDEMGexqrp-jqSmaw
+  - https://lh3.googleusercontent.com/QMfdb75Qo7zykTJ1p1AAPyjo7NA0n9-OUEBWvDmenWQnywqo1jBEiPFBJTV-c0eh016eBs204vXPrKOmdik3vW02XfX7yX0rEiMYsFPlF_xjWKeLpmlRSRhHSfYEx6KTZrkGe__37Q
+  - https://lh3.googleusercontent.com/-WHbgq-OjdoBqFAFwPxZu8gvN6nFkqFHlOSRjoYl8DxfK4U7Bf1MgRP8RR6wEYJAmqg4wUlDyO2YP5OaCYbTFrb69lGfY5vd8bpIuRuCEStU9zQdGniYSWb7WJ5bo72XxXA3AAsJiA
+  - https://lh3.googleusercontent.com/4AmgJCRhtn0SM-59bjeY3BljDFXoxaAq8CQ91F_l-suSqGXpQZmZ02dm7GU-zXWkgiAZKmadq1nn5OruW6geJ7C5XbCmBRjYzbAcvAsGirXS4dr0x-ZwayIx6nBD6XvhqrGW7MuAIg
+  - https://lh3.googleusercontent.com/2EVFVYequ2vpmptDspwQ88ABI6fDtUnSMkef0jilJOhhQiLG-UxJIL0TWAtLFW2BycuqgceJwnvnsi8NNuk9wLLq6TzqzY3UqVcOUoO7HSkK5vlHce90Yf7xMJhqO5xPKFMjkjmDOw
+  - https://lh3.googleusercontent.com/Cht7c4Bog2fvX4GcX3qDmey_QVZfnHI7-j2sSMbI8OgC0WTWF6wubbKPebebIp0f9u-brYJL9b0zoCTB9TeImLux69D55XYkf0oFL0E7JTRrfJ-L-INaItpRbo4NCCWHHK8mjjY1Ng
+  - https://lh3.googleusercontent.com/O5f7KtstPimyhgpxSGVeDjO2xwjdfWx3tpGmqCtTOJGud1HVXIWhXv4lVoHpHIw6ABdiapb7oUov7xnJwz5MuXmBptof8FydzuPq-J7f24PvALIYo0lJ-_GCe3QrfTWCIUORCKQf-Q
 ---
-
-TODO

@@ -1,9 +1,17 @@
 ---
 country: Australia
+region: New South Wales
 place: Sydney
 type: location
 date: 2014-01
-latlng: -33.8458351, 150.3715373
+latlng: -33.868, 151.21
+thumb: https://lh3.googleusercontent.com/gCAYwyvcGgLixaibKQLdKWf3wpIe0mQXsrQRG0wotj1ruYBjx_hLaMB797597Xb1_jdzgkvR9kW7oFHQiGNM1ldwzn6DXPVDSisgA_B6GGA91FSBR4s_nBaO1GVegPyhELo2dDVXIg
+images:
+  - https://lh3.googleusercontent.com/ubTClLkRVp9DPkN2ramrz40l6UyrIsETTeI6cABkul-T_FRDC2IAYBV8ULDL3xWiTXVUODfMQLdaVX8_x5uH4KFNj9H7487o71xOUcmvj7C5GjbMQI6jSneR0RC9eF1fedu3ZO5slg
+  - https://lh3.googleusercontent.com/gCAYwyvcGgLixaibKQLdKWf3wpIe0mQXsrQRG0wotj1ruYBjx_hLaMB797597Xb1_jdzgkvR9kW7oFHQiGNM1ldwzn6DXPVDSisgA_B6GGA91FSBR4s_nBaO1GVegPyhELo2dDVXIg
+  - https://lh3.googleusercontent.com/pJ95KP97smeoXycjs-nquFTFzDmg8MTkRcL0oEm1M5FpnKlAOml6dAivxEpWLjP2eAt4RCM4xOq44EAnPCj7vn92F9wxgJOw4taaDLWSWc9_QgIzIi_3pJyN-MNgLr8vK4REC7PgFg
+  - https://lh3.googleusercontent.com/KtPTARTwOM44dRJug8vVttxqTcg-VoZwh6dHb3kUoYSebXZ4o9NR-UVSiSjoffCTeW0T_Xw8jjJ2x5m_LJmrUo-KNHyoeXUSXSr2lohMRaGK1fQtjwjnGeAKISvhTVNJA9Jq9MpHMA
+  - https://lh3.googleusercontent.com/_RWKc2QR75maNl9CZjvyj14CaGfCsDnFyS1CMs_tHN-r5NPNDXKwcnaqPrUEBLysFkIcLjvMnO1KiJ4iGPX3FjWQIRk_4IHzT5VNdE5SYRqTrMrpxboh8PurIvvZQnfVGj5dvW93PA
+  - https://lh3.googleusercontent.com/5CH5r2DEW3TlEqZotFgvarmmkLEQ5ueNHshMyAebBlyfTTZ6Flvp65uC6GFAz4NPlEsqnzZGZ1lIsO4mOEUTHtTii4la68JwZnZvkU6d6YObkq1mQTZ81IfvLwSTfx_SbPCvmiv4nQ
+  - https://lh3.googleusercontent.com/S1EUsPbjKGtpkHzVeRaUI5fNvc85GWZFolk7RvcvG7wXUqbalHgRRHtzjKtBi6f1jwNPsbe_y--JGglmrMhxXeqVOln3JEbqLm3EXlMdqoJomE7OuJWDUt8IU3s3UdutVKD8SPYzEQ
 ---
-
-TODO

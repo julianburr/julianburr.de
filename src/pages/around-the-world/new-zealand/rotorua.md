@@ -1,9 +1,15 @@
 ---
 country: New Zealand
+region: Rotorua
 place: Rotorua
 type: location
 date: 2014-01
-latlng: -38.1334285, 176.1535385
+latlng: -38.137065104635646, 176.25284918434937
+thumb: https://lh3.googleusercontent.com/rhwR9gC3bY-w2Ni7FFyKUfTEpL5VLiSdSSEVf_0j-pP_8X7hhGnFmZMwI8sY-sNc1kjMz3sFcVVrsbvJBJ495WxtdMF6At5zTGUnx03FSKjZQfqtAjUpWxeitX0iiCmkxIcKZmueAdA
+images:
+  - https://lh3.googleusercontent.com/4iWlHa1-PAZSHIt81vBnY_Wl5E1d-GJj9n8PJyOXR5xrDnMfhjMXhaVWK-BYY_vU9KHSpBuGg1m3D53HOWzfb7n2H2proG7gdGTCQnHMIbIyU5wbjI1iO95dLJwSOf4Cn7Mo6lM--Uc
+  - https://lh3.googleusercontent.com/rhwR9gC3bY-w2Ni7FFyKUfTEpL5VLiSdSSEVf_0j-pP_8X7hhGnFmZMwI8sY-sNc1kjMz3sFcVVrsbvJBJ495WxtdMF6At5zTGUnx03FSKjZQfqtAjUpWxeitX0iiCmkxIcKZmueAdA
+  - https://lh3.googleusercontent.com/3-3zW_Dd_hSqjx2CfbwCzrVKjPQFywRnOI-Z-zSvWfjDNaU7AHI5TxzEb_pCXYNl9IiQ3lNU38vvGOTCLwF1lrxkbq1qZfPKEdmPX5j_9VUbtIuLWnZbR9_dzrrylaZ2o9bCnDsZ7_Q
+  - https://lh3.googleusercontent.com/Qt7Q1W1uNEGt5Ka_d38DnD1RtZzGnDbTCWNGE0zEOq7ea2WRIKhYVHSmrbmyxXSdj6gOWNQOqFdkK1JKoi10ndqKTZcTObD9WS58nJuS_OMNznSFuryK_ftfmVzzoK4NT6jeJa9_9Ww
+  - https://lh3.googleusercontent.com/np87XdmWcZXp7SWk5lwaSHr4ZTytlfvQcw7IrGky73rmuojSG2nhJBMtWz2e3Zqk8l_FhbTGzUcpf5tO_ceEa9oNGr7drEYZ4o8KXXxd62VwCQMYYv3X0Z7FtzAHccM0aJLz6j8YUPY
 ---
-
-TODO

@@ -1,9 +1,16 @@
 ---
 country: Malaysia
+region: Kedah
 place: Langkawi
 type: location
 date: 2014-01
-latlng: 6.3500422, 99.7824475
+latlng: 6.330049569716493, 99.8270789603846
+thumb: https://lh3.googleusercontent.com/TykjhSUepglcRftluLVT44i2v6unb9xhiyxFYDQvM8lvUEnd-rHOWiVXbEoL9lQgJ8HyoZkeN3k088HQrca9YrOO2ueDcCOWpDh0CXOuR9t6pXoBLR2_PIGRNCcGhUV50SDct5ioLw
+images:
+  - https://lh3.googleusercontent.com/rXyHh7dME4XXx8AnkBA9YqiGM_XARtSFB8parESWUdSvaAczy7OOMZM42lyCX0zvU7N5E4b5UjWcbnmWNfUjJd05KhuU5Tq9kVdBtKDQ-nK2bWtTLuRJu9MD5HpdmSMcVDmIibj1ig
+  - https://lh3.googleusercontent.com/RHrfnRA50gTJ9atdFJvqrPxmawdckdh623XK1ju3BHYpIbkH2iVfAjtO8IdEp9djoubCTV0y0MB38-rxQ3r3tRRiNO2nCIeGejaXEObl-3jIQdg7XqDCyBtutw6Htjj0gXT15rnMdw
+  - https://lh3.googleusercontent.com/0AL0-FH2oVpD3x6Yn4ylYj1W_l5PgV3n73GQaCk5xjl-TZtPtp60R-QdcRS_9ZfHyRajqvvh6QksfN7fLfMjT4-6NZl3T5vML8uFu5OPbB6BDJoCStWQEI_3LI0ulD5mKKv_iBwYiw
+  - https://lh3.googleusercontent.com/9A3LCfnV2GAsd7O2CrrnLIP5ZGBABFbGetl0UhQ6JpiDl4NSfXK4D5RdU_1HTYxETVQbqF1-48tOWFJBJ2PilHau5FGfLy1a7bFyOlZYJjexlwAhfhjesPLupXMo0ze5PH6CX0UWTA
+  - https://lh3.googleusercontent.com/TykjhSUepglcRftluLVT44i2v6unb9xhiyxFYDQvM8lvUEnd-rHOWiVXbEoL9lQgJ8HyoZkeN3k088HQrca9YrOO2ueDcCOWpDh0CXOuR9t6pXoBLR2_PIGRNCcGhUV50SDct5ioLw
+  - https://lh3.googleusercontent.com/6jpSwQGhlfYb-wCydlUSHzZ_pS29qPoVq_TopUaJdKZwnK4dBaBv0kvAY5vgrg-nrwIuTsLYZ9Ku8Wv1Xd-GSdoBVS6HgxwEWf0Px-uo53s3U8Oos2CfW-guxHfnh8lSQ0T0dh33bw
 ---
-
-TODO
