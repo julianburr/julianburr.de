@@ -35,7 +35,7 @@ jobs:
               ...context.repo,
               ref: "${{ github.sha }}",
               required_contexts: [],
-              environment: "Preview"
+              environment: "Production"
             });
             core.setOutput("id", deployment.data.id);
 
