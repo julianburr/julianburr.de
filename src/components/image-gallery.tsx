@@ -111,8 +111,13 @@ type ImageGallery = {
 };
 
 export function ImageGallery({ title, images = [] }: ImageGallery) {
-  const maxIndex = images.length - 1;
+  const maxIndex = images && images.length ? images.length - 1 : 0;
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  if (!images || !images.length) {
+    return null;
+  }
+
   return (
     <Container>
       <WrapClose>
@@ -131,7 +136,7 @@ export function ImageGallery({ title, images = [] }: ImageGallery) {
             ←
           </button>
           <Pagination>
-            {currentIndex + 1} / <MaxPage>{images.length}</MaxPage>
+            {currentIndex + 1} / <MaxPage>{maxIndex + 1}</MaxPage>
           </Pagination>
           <button
             onClick={() =>
