@@ -33,7 +33,7 @@ jobs:
           script: |
             const deployment = await github.rest.repos.createDeployment({
               ...context.repo,
-              ref: "${{ github.event.pull_request.head.sha }}",
+              ref: "${{ github.sha }}",
               required_contexts: [],
               environment: "Preview"
             });
