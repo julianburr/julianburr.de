@@ -1,9 +1,17 @@
 ---
 country: New Zealand
+region: West Coast
 place: Fox Glacier
 type: landscape
 date: 2014-01
-latlng: -43.4697859, 169.7832998
+latlng: -43.5011165, 170.08104425
+thumb: https://lh3.googleusercontent.com/q6Qwaqex3tQADTz3M1NfXp-MDvN1licZHgWLln04M2_Fs2Li7wxVloDj46DIC-RRMrpWax6Lo43qYGn5Ht3pE5vGP2SSPX7Ipn81DHRH2D816KQMuXxpUNrcFCsYaji9dLIFbFm1Tg
+images:
+  - https://lh3.googleusercontent.com/EUdclK5muNzRXxvvZBHFDm5ytAW2SxYgYAXHkED6idMFOhPHtw2AkxXhZVqcd2LneT8azlY4FcjzZuob0xZNvuUJAvgUVFAWsl0bjGj0loywFTPgxhmuhTc9BQXXui1L_WVMDvPA_g
+  - https://lh3.googleusercontent.com/2pHKUV5C-_v4ZdL6d047bJyIPk668Qmya7XydQz3gSLCXFUs4Tr3rVZSo8EDeHtzu4y3Cc4cERDLNN-jgRQ9en6rR1yM6Q06rP-wR7OsFc4IfCgPGklEdvs0_cKrFQlyWbQBj8QA1A
+  - https://lh3.googleusercontent.com/ac1bmUnsnlrA0Y__tJCRq5nzbTqLlHwYpqsUawFHgt9IG-r56dDUsp3XVu2aC1KYeq4MQ0ZYcHq7e3VdI-ULmwxBufBI1cnBmkrNw3OAtA36dHZmyUM2DJSmOUEqHKm0lrouTExe2Q
+  - https://lh3.googleusercontent.com/q6Qwaqex3tQADTz3M1NfXp-MDvN1licZHgWLln04M2_Fs2Li7wxVloDj46DIC-RRMrpWax6Lo43qYGn5Ht3pE5vGP2SSPX7Ipn81DHRH2D816KQMuXxpUNrcFCsYaji9dLIFbFm1Tg
+  - https://lh3.googleusercontent.com/QY81rhdZ6yXzgoRZ_GDytcyI1wzl98bRspqHl74aE5tsS7IDrXdl6G6gDdnoF61wcbxu8JXmK3s6jRccZHNZiJttcXeI6rdrVl9pOyePGWZUK7IxsCxbdEw0X8m67zfN6Urr3VVfNQ
+  - https://lh3.googleusercontent.com/zEPXUvTFDdz6s9CK62BOp7kCaiWlycYID_eMfDx8VgmnlDC5EQATE7Bnw3iGOzXKBXLGJt7WCb099mGAhJMKpxD-HmYsg5hDSIfiO7pyCXYHA4pM4PfwYMDgxR0VZJjZBgJQKBa1rQ
+  - https://lh3.googleusercontent.com/hehUeXtrjoOxR5CCvn9e5zGdwFK_bfwMwWTXsD9cHibdv1WZrxCxS8LLNCfmQhtdrH7TNAVWPfeO0d385Z9ZftSq6V8E7QSlqVMol_UzRgCLAMnXEW6N9KU-y0LWaiTpgkATOg6JcA
 ---
-
-TODO

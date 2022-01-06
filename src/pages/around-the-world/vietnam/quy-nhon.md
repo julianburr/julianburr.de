@@ -1,9 +1,14 @@
 ---
 country: Vietnam
+region: Binh Dinh
 place: Quy Nhon
 type: location
 date: 2014-01
-latlng: 13.7859157, 109.0872753
+latlng: 13.770532649575955, 109.23107671406785
+thumb: https://lh3.googleusercontent.com/F8rbJw5nvGdqgHKlkdA5T88ENJetc9kMkGq_wtTOSYZGuIlB0v_XE7zIWTME5ZNHTsFoA-bMsHru6HWc_kMSHYN7G1rtQGGOB91mUP0xDDS996HZPnw_AxY6jiVQZyLkeNNOOrmlSw
+images:
+  - https://lh3.googleusercontent.com/drlxKgfX74ohaR12eQClmRmSCUs5ABS-DrnLB432ZnZxkGgBPKllRdZDxIIsLQGFRcBPGsJiKmBnhTaExSUWzH8icSqJcdZnatdVZb4_tib4dsQ2VxcP55Q6_txWYuVWF5APUp9HNg
+  - https://lh3.googleusercontent.com/Bu01PNsGsPmyFU0qGgEJfVRllWykeribfUzjEBsc5VV14-_Odoc2g1RVmeIlWMRKwaSFcomGMmrTS9uQVN8ExUePcarr4rM-09fDM0pPtJdUigjL_C3xqTmKX5ObHn7sBb4S-t-Hdg
+  - https://lh3.googleusercontent.com/0KwLEbDyq2rMx7FmOOPEb1e7yinqpd5XUovKWnGeJMCagDiKqyyFavoLus99MwXgS7Dd4P8-Tf9Tkdk1C2e-gfy8crd1YfzKsutpFIL9dSlOJcGkp4TXJpqiQ--YeLTZskpA34dhyw
+  - https://lh3.googleusercontent.com/F8rbJw5nvGdqgHKlkdA5T88ENJetc9kMkGq_wtTOSYZGuIlB0v_XE7zIWTME5ZNHTsFoA-bMsHru6HWc_kMSHYN7G1rtQGGOB91mUP0xDDS996HZPnw_AxY6jiVQZyLkeNNOOrmlSw
 ---
-
-TODO

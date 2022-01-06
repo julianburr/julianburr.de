@@ -1,9 +1,17 @@
 ---
 country: Nepal
+region: Bagmati
 place: Kathmandu
 type: location
 date: 2013-12
-latlng: 27.7090946, 85.2559208
+latlng: 27.717231030454215, 85.31140627391403
+thumb: https://lh3.googleusercontent.com/VKgBfDzlMRHQCQAByK6PvtoH6lCfirVUKAZ0uej3Vceoc6Vy3n_iIhhf5-s-R_vlgaHpTa_gY_n_nodfHWoMnFKgiWzuee4Qrta8oIgdja2vxvX34Y6wLokQ67HUCPEArVhNpDHpOQ
+images:
+  - https://lh3.googleusercontent.com/XND3cd0W88R3Z6P6gXubbF3-G7uKZBoNeYgmtoVaDIh6fQI8Gzrs6CXa754Qxq24qmkBPCkNKPwKiYtyc-jRBXbfcaJi-zOxz9gJWGzpTvr64_dYtSk8zvjTzFVaS77jlEaXmxcAbg
+  - https://lh3.googleusercontent.com/VKgBfDzlMRHQCQAByK6PvtoH6lCfirVUKAZ0uej3Vceoc6Vy3n_iIhhf5-s-R_vlgaHpTa_gY_n_nodfHWoMnFKgiWzuee4Qrta8oIgdja2vxvX34Y6wLokQ67HUCPEArVhNpDHpOQ
+  - https://lh3.googleusercontent.com/Vz0G0RTyM6H25plAlvXlO8N59GXlRKN_SGa2OWwSQ2VofPnzv5r97sC57-wsXJcPLnncj4s3_yW-n1kkkthlGG5IwpLq1H1GmpsxUgJFwE5LE1RHjEUkqd-jEGNVSAzCA9qlDFlx-g
+  - https://lh3.googleusercontent.com/JeeAAEpLlTwfxC4FYsQvImOvzQCgWhxTBWZGwre5Lx3WVEhFxTMC1x2VPYYF-r8z18Q0twORqa7BPOzRST6BUl90agB_-Kt7Z0fSXcyDDiIOUY5-sLeKys33CFn_uyGTtDxMqrgH7g
+  - https://lh3.googleusercontent.com/Iw1ftO9UCqe0yFU-16yo1MqXZgjOwmXOsb68P1qrl7NqkIgtwPp1gXIHCO_JAL85SSVsusbA4Fg80Xxzmqd9r9ukZyqJSPjVATvWAz0vlft1kyeIpMu3PwCph6GZnzUkghLncFK2vg
+  - https://lh3.googleusercontent.com/vSJGQSzsxTDPszRgZzjDdoemdOGKOfTFHPOqlrzQzSC-gWjam-X8Nwhu9GvZ1QdobsMF4Tf2vgPFl7TUz0FmB589vRrqVzQTHeLTbkouuKHyxcrwx99QUodcWBi4FVPPIunZRATIQg
+  - https://lh3.googleusercontent.com/FNTJwDwz8YBSb-b8Y053rrhlNWJv2YSV59mVJGfEJ6_7u46swrhGvxyUuOqpS2DkdCtIWMqLU8g_1Hu8pjtpP9mzTXzN1Cvk8hd_nLHvSzu08YdLqPydqtaV1clK_Bofuy7JJVXwHQ
 ---
-
-TODO

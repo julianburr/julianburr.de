@@ -1,9 +1,16 @@
 ---
 country: Sri Lanka
+region: Galle
 place: Kosgoda
 type: location
 date: 2013-10
-latlng: 6.3375101, 80.0133202
+latlng: 6.338587932, 80.028901985
+thumb: https://lh3.googleusercontent.com/mSDzNgJkXmci_dEPphjShKeM6yvt4S6-ei5RzN2_4_6s8EHw3SfhxU5Cp-tMVVZLHg7WMLo6p7PR1-y7L1IUYJh1XvFG2bEnPFV8d9DAeAkyBrV7NJ4j7R0n1QooW4jyDLUfy6u5WQ
+images:
+  - https://lh3.googleusercontent.com/OWxP7W5aYjqdVbgjert_Uj6eZ_JiprTlUwaRS6oe-ELgiPQLJF9DdMdY47MIVbirFljRfM47lBIWmgH_HyXhCIredDZZzu2xmdoUm8DRJqNhPxM47-EK9WEcX5ynYBYvptFNl3f01w
+  - https://lh3.googleusercontent.com/rPZ0L2Xp9v9PTsnAb2RO7gghTb9m057SHCb8f95jX6TC-4KfJG0Oe3_h7Db6WcraaEPs4OJG317BGKK-JV6MZWHjfKqXcepKua-wsP8i_zSUg7Q0lnMkQCv-lD0BR907ShXpOxyBrw
+  - https://lh3.googleusercontent.com/uRbTa_VKioZNQTQmq8FHXcE-ZKOkkVaq3XX3x4U0Wov7VbQ_yX1JReklJ_oK86LaI1vaL6hHnoMwvDGoarjgbs5GEp6OkRi12BTprIRorKhQo_BCAgSAI6DGbrOweGQn82PfquZxgw
+  - https://lh3.googleusercontent.com/mSDzNgJkXmci_dEPphjShKeM6yvt4S6-ei5RzN2_4_6s8EHw3SfhxU5Cp-tMVVZLHg7WMLo6p7PR1-y7L1IUYJh1XvFG2bEnPFV8d9DAeAkyBrV7NJ4j7R0n1QooW4jyDLUfy6u5WQ
+  - https://lh3.googleusercontent.com/wNbwcy-f3a99zgSVYfYyKplrmYWmxy5kx3uF6dr0mLv5NPYYzrICYgAZwFHJ-YtXiaw9PAomPTDBYnu6kw30RmRCcwjMnW1n_MdB4akD7U7z8OFRAcCWIpWNSRz-MY2hn25eKb9B3g
+  - https://lh3.googleusercontent.com/o84PBo7EiLmbAV8JIeBtgpXybMQVd6l1h5LVAM16iirCsvnt9xAxDzSNEhzA2BZYNxBwRV6SCbyrVr6gMvwf1wPXjG4DOxzEbg2jXJvNLhLFpvEsnFsG_jDiBF1gcyWbz6GtYOp94g
 ---
-
-TODO

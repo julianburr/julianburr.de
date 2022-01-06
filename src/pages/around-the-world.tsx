@@ -10,7 +10,6 @@ const Content = styled.div`
 `;
 
 export default function AroundTheWorldPage({ data }: { data: any }) {
-  console.log({ data });
   return (
     <>
       <SEO title="Around the World" />
@@ -32,6 +31,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          html
           timeToRead
           fields {
             slug
@@ -43,6 +43,8 @@ export const pageQuery = graphql`
             place
             type
             latlng
+            thumb
+            images
           }
         }
       }

@@ -1,9 +1,16 @@
 ---
 country: Sri Lanka
+region: Badulla
 place: Ella
 type: location
 date: 2013-10
-latlng: 6.8653302, 81.0385708
+latlng: 6.9553304162178335, 81.03141837555569
+thumb: https://lh3.googleusercontent.com/ZX_4DKfP9vfq-E_nhXyshBqO8WG1-djvi3Al4c5wUdy4lebnUxJy6Axug_T-iv_1W-xhO1cYRbra_1MLR2-_OzRwG5MHRBFc0NjHVvqWr6e5z85hNoBVi7pLWIGYa_q4UuZ9dTP6XA
+images:
+  - https://lh3.googleusercontent.com/ZX_4DKfP9vfq-E_nhXyshBqO8WG1-djvi3Al4c5wUdy4lebnUxJy6Axug_T-iv_1W-xhO1cYRbra_1MLR2-_OzRwG5MHRBFc0NjHVvqWr6e5z85hNoBVi7pLWIGYa_q4UuZ9dTP6XA
+  - https://lh3.googleusercontent.com/Qn_ocgDkIJvrJ8lIVwkAtSZ03aii1K3We_bpd1Poh4lBm-tcVhA6Zp-ddBVWLr8GY3IUWiwYrQpzOJfMpwXri2ZdqP59TJH8tR9EObA1Unh4mxbZETgPVWyHTGzXW3Vy_gQcVPiLMA
+  - https://lh3.googleusercontent.com/dg5RRdTM3uplvof3IU_mp2p1DGV7uxwqnMHNfpX-YHFHBcbSs2L_VpjZXSZB-kONF_Y8GdrvRh4CQLVMXAjP6zPTesMbW94f-D28h4UQy_1yKP0Mll8h9ScnpeU5Uk3KSr2UNaiL9w
+  - https://lh3.googleusercontent.com/2oWxAX4giydV64B2PK0iN5IEZManQxKEDEk6Zk8ZRQYiNu4cqvNJAsq47Ii1omDSlBBaabjMnO_LScoDIpxIbjqy-d72C6u8a6tY7MRGO48QREOyNF__53AtwYlV7KMNUze1zqQBVg
+  - https://lh3.googleusercontent.com/v3Gl9YexF6KMyOxx_vi_LRGKYfZQf24WjmLdZ0WHSmginUSnNwyqU5peeMnEq7YV1l2MxXJae0xm3M5MtFo5C-WN1y3JoGA1fV8RnJTZEnQEJ6p9WUx5CkP3KA7zFQQBOUZDvD2Cpw
+  - https://lh3.googleusercontent.com/kP7zrl5zLvJSsle0JsT0Z-tXM5o7g3yIMO5WJN2gkLUbaAF4O89io825hIpu_vygTLEIBw1DuE839RzDaKk9NgxdA0q9n2d3rtT-kUAFfpyuF17xmFLWu-mqXV8FnfAuAZfXDw_LKA
 ---
-
-TODO

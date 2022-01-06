@@ -1,9 +1,8 @@
 ---
 country: Laos
+region: Champasak
 place: Pakse
 type: location
 date: 2014-01
-latlng: 15.1093598, 105.7428905
+latlng: 15.119505473081489, 105.80432557883626
 ---
-
-TODO

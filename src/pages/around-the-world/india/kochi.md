@@ -1,9 +1,18 @@
 ---
 country: India
+region: Kerala
 place: Kochi
 type: location
 date: 2013-11
-latlng: 9.9826808, 76.160504
+latlng: 9.986331, 76.236767
+thumb: https://lh3.googleusercontent.com/tazpljwqS9Ur-SKMKz-ljkkdLEF-ECLMo35_TC4L0LKovFAbrwhmTIz5C3SbZJISeAtlbxQ_0Ofi6BLJ56Tr5SYbmZvQxlWSJtHORD6uiWaNBubOYSEhtIALj19_Q75-OItLDxsCRA
+images:
+  - https://lh3.googleusercontent.com/1Kh7AMgkjoieH2hWIktSRuEf_aOIx_4odyKj_EXDC8L7rFpuNZ75X_Nfs3iIAwUKcbLX1LWLrlBIwm8y7qAuUf3A7hmazFeSdiZ5zxnWDG-Ki176-h6G50-nGMGtrPIN82lHUmFi_g
+  - https://lh3.googleusercontent.com/sgkUSlYp-iPgT6lMDc4wCuvnUqbgcDTTbZW9wp88o7JZNWhU7SFrOt-WthPZePzSlAv9d1zYgo-nWfZuMQktyLDN_NqqitHzY2ZOlLGk3ZdeTr879yXF-634nMuG-_pGW52zHunCow
+  - https://lh3.googleusercontent.com/kPAy1AeIZwy_f354HQWOfvbOXA1AJRf0Xwu1KHDh2Cn-dT3RSEf__-ug2ZtEvBD8pnTildejt1Jh0A_Wx4cN6q4U62u034ldkiQ-eS_lMma_vWY8nojMRyWqsMSja0wQBIL-fFqYlA
+  - https://lh3.googleusercontent.com/tazpljwqS9Ur-SKMKz-ljkkdLEF-ECLMo35_TC4L0LKovFAbrwhmTIz5C3SbZJISeAtlbxQ_0Ofi6BLJ56Tr5SYbmZvQxlWSJtHORD6uiWaNBubOYSEhtIALj19_Q75-OItLDxsCRA
+  - https://lh3.googleusercontent.com/eXDleGasyyiCuoXxipcMAK2KNCxKuAQhbdOpTcjmQPKIeB5aFVyDFPut6rfPpblc820o_Nz1xuJcaFPsdG4Kx4VdT89vDsrjLjESVRvwXdrUmkOhMQd0N0MEabF0aSXNZQYB5JQgYA
+  - https://lh3.googleusercontent.com/zQsfYZ1iwsRWOZty7QYvzBgZ-f-zp-MsLr1w-HlfOkyn9sQzDtxRHiPasQ_pNJohMv9rK-R23Om0eOEr3622wqUmPJzhAfZ-KiyyVUPNnCWuBIXGqEM1aqzgYMZoxLASVa1P6M9U1A
+  - https://lh3.googleusercontent.com/sps7mm_DmxhpT_XPFxyG_ILePcMNK-2GLZZaWjS7QxMM0-iEUlmdFMTEyk0oVww3V4Ki_sGQXeZQuaMDkAA-UKtoqOYqmig9z2SdIM1I-hmHMVmCl1IFYxCZZWR3fp-ZZoKvtXhLyg
+  - https://lh3.googleusercontent.com/kStfKmA7aiX3hvS5ZnYBUfH9_CHPOPNwW1H5-6ysyuPvHRN-5tS_XqfiFMsKljX_p-Sn7kdJFXNPggPzr_sf6BTV3kSN3iG0YIHuYAsAohMKk0DEj1Jnn-MHWy4YNb4dkUl_UZ__GA
 ---
-
-TODO

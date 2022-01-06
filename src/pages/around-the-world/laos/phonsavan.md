@@ -1,9 +1,18 @@
 ---
 country: Laos
+region: Xiangkhouang
 place: Phonsavan
 type: location
 date: 2014-01
-latlng: 19.4516057, 103.1284449
+latlng: 19.4517610169177, 103.20656315416295
+thumb: https://lh3.googleusercontent.com/dvqBFtVZ1Yi3Vj-KzlnRuNJ7A-PLEbcCi7DIfTFtyvaPGHliX0aZXUwuE3gGy2eJ2E8Mm6bZUoXaMBhJZOvQEK4lgDbL8ACfJEPgyOdwelmLfQ3dxOymiPfeZdwLY8TqtYsJ-Rt0Tw
+images:
+  - https://lh3.googleusercontent.com/6FHttGcPWgrKfLsIUetEujAuHf97Q1QJwfRqyliI4N3y25b3aw9kXixVvA0gEZAlZkXAm1lhOANL8PeXp4I_BS_MjkHYWAI5f1bF_ydgBXUUXJ5BSjMKdNRVyBd4kCnEeA1Gn5JOhQ
+  - https://lh3.googleusercontent.com/dZcVo74OmRJJTpnbQ2L4enQzfv9OVxz9RPm66F7aE5XunM_Tydb1xiRIIaCHsF1t2C2FM9mQW9VTQBxo8sQp8rpJdAOraDmFvY9Tsw4axXcIl4-2El8rSrgNmcwT0u721DzH4fVO8Q
+  - https://lh3.googleusercontent.com/bavmEU_brHWFgLmfXb3nqLm3yipEGSfq-cifO4waBHLbv83jTYD2qrJDTlnxy0cly3NwU0ZY5yi3bs1LmfrBMdcU5ILJ_yaugUR2tjmMhwwb3ClGH15dYVBr_V7-ZbFuDwA848PfdA
+  - https://lh3.googleusercontent.com/dvqBFtVZ1Yi3Vj-KzlnRuNJ7A-PLEbcCi7DIfTFtyvaPGHliX0aZXUwuE3gGy2eJ2E8Mm6bZUoXaMBhJZOvQEK4lgDbL8ACfJEPgyOdwelmLfQ3dxOymiPfeZdwLY8TqtYsJ-Rt0Tw
+  - https://lh3.googleusercontent.com/oBdHeyDvhcq4sc-fgz4yEZsWUusmjlYwwYEXYex6qaGGHRK0_HT3V4oEv1iQk-SxWFKzkn_UqdKSa6FaZuaFeB5IaerIm5L13qsFDAGkMQbq07qswPS2y3hFq9yIe11VJ3LedFzG_g
+  - https://lh3.googleusercontent.com/8ZcLW5KQo_SzjsnoHBjJXO_FmsKbbmhtBP8LD4UTRNiR2Wt_K77Ob2kwDPlmQ8E5U_odQQQtTYbzCRTk7mtCP3QrpkGErOjH7vqdBlZH9hu_DKlXvy-0yRIJW4n4rL5dpHSHKFP0uQ
+  - https://lh3.googleusercontent.com/FZN4AYtHXlnVbT7jN7jjzsOrKhSkCj-CYOEdThP6YghVe1lz6OYJMI4Ga1NCLGbev3bUXx8nL1Dc9SleKdFjL730hxgqGVDsXIW4JBoS4WEqFn31DyUHjxRV9aAOfxnes0t14rQcTw
+  - https://lh3.googleusercontent.com/VWZlJp5HT-GhxUHlFoT_3i492hNdwn4YWw01zQO29Jt0o9pPccCtKl1WMNiJzAzS90bEUlcW5RLtGf-NEpv2dHeT7cA3f82xUAWXyIpUUHEbEr_Hf9_dUWhNPy-IX-8oZ_cSfoWVLw
 ---
-
-TODO

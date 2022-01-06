@@ -1,9 +1,17 @@
 ---
 country: Sri Lanka
+region: Gampaha
 place: Negombo
 type: location
 date: 2013-10
-latlng: 7.1896134, 79.788041
+latlng: 7.206416, 79.843249
+thumb: https://lh3.googleusercontent.com/kw8xX_Dec2vbXARqQsQZFuTNZddfHr8GxWZfr9ojZVxeXjDkgnL41ZZczd8xsPAsE0SHHC9XX1xx1kq6hgG-FgT9b94W3huT6EHswBJp61HwaOLIMZdFJKXCZ6YDoutaE9AxFJvS9A
+images:
+  - https://lh3.googleusercontent.com/frvjsLIgxJjtet2-yuP8_ecYB7gBbVm1jOLiuhzoYMHnwHbs1fVaB5jMLYyXL-uThyAeGq_aBD7D5cw5MNBAy34pfAx0HOQ3K33uDFiI_FHlI7C_tuxaehDrreIVcZMKs4D8RKPdKw
+  - https://lh3.googleusercontent.com/FNCLWquqHu5GNGIkk93jypGL9fwLpfqB6jyPS9J3Yv_zAjW6_Bohwm4ObReCo1zyVeOsQqTr6uwdPRCWVo648d8xTojBgzkiM5LwPeKMbDjpE-qGkePOzZvDTyj65jVv_kP_uPj3Ag
+  - https://lh3.googleusercontent.com/oNZ1Q80Zep8LipbMm30Id9RY15CSCLvblX4TvHzpUdQgjzjWfBH0SWJKP5H405eUMmqjW4-7wohLVs4HfDCGZ15efSCJjcXGpN1BoavKtH3Vir4LkyDhkfTIuuBnljlbhgkxfUgA3A
+  - https://lh3.googleusercontent.com/7tB-vua_fM_7AzqSlordhItW4bLUzXWLi-tw2x97S90dj9Ktg1s2FuQX3m6pSLW0kcpc_tl9IBkS8hrwnYGuyT1ZHz4Sy4OYIHpUL3VIzOzYY7c2ZXuJYpgQo_B9xSeifu6MnwQLBQ
+  - https://lh3.googleusercontent.com/F03KIVDr-nyAHoSvKZhxr1vZQaB738NSz3xNMPcYucfyBXTOh1SvKQwbYTn3x8-0e72JeCYpOdAr1ugOnzBYCak_Shn-YqTguvOMpTuHJKSrS9PdHYJ27940-Nhx0oVijkXswWP80A
+  - https://lh3.googleusercontent.com/kw8xX_Dec2vbXARqQsQZFuTNZddfHr8GxWZfr9ojZVxeXjDkgnL41ZZczd8xsPAsE0SHHC9XX1xx1kq6hgG-FgT9b94W3huT6EHswBJp61HwaOLIMZdFJKXCZ6YDoutaE9AxFJvS9A
+  - https://lh3.googleusercontent.com/rUfVrXNnN8y0y_Zll0pAgsCgldkgXN9EPEvurpLpEqcEcEGlM0dxrlok-kytD2x0irj1VI3kQ1LP0Oo9YNCtylMdrIwgyEw4xFolbY3TVsB7pbpD801ckUQyg38RzWUHZ5Pw8RP0aA
 ---
-
-TODO

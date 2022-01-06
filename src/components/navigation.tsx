@@ -284,13 +284,11 @@ export function Navigation({ location }: NavigationProps) {
               Curriculum Vitae
             </Link>
           </Item>
-          {/*
           <Item>
             <Link to="/around-the-world" onClick={handleLinkClick}>
               Around The World
             </Link>
           </Item>
-          */}
           <Item>
             <Link to="/get-in-touch" onClick={handleLinkClick}>
               Get In Touch

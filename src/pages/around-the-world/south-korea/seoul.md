@@ -3,7 +3,12 @@ country: South Korea
 place: Seoul
 type: location
 date: 2014-01
-latlng: 37.5653116, 126.708676
+latlng: 37.5683602848854, 126.9779823737835
+thumb: https://lh3.googleusercontent.com/iU7aciC5N2i0uMJ3VEI093HCrPdrp_8l-vIQeJlrwA9QlGSSPGm212xk7HJ-2XfJTHvm4AzVsZcnNpdqmSnTeum3C8P6s_HZ8C_dPzCBSV9mLeZNLo4DwE74BbRLnW7-5erKD4Hb18w
+images:
+  - https://lh3.googleusercontent.com/iU7aciC5N2i0uMJ3VEI093HCrPdrp_8l-vIQeJlrwA9QlGSSPGm212xk7HJ-2XfJTHvm4AzVsZcnNpdqmSnTeum3C8P6s_HZ8C_dPzCBSV9mLeZNLo4DwE74BbRLnW7-5erKD4Hb18w
+  - https://lh3.googleusercontent.com/ra8MyUPO3c-1yu0ImDskWXE5WVOvXimY35edeMTYSjJeWMrByZv78fJjKS5CqkOga6b4lnw4WFZoyolbFCj-3UcqDNrvzO0hXl65t4T8UlFlSPDIrBftfG8pa8mQ028zsRO8qDFuLws
+  - https://lh3.googleusercontent.com/0N4kLd3pASRADH5juHyAcdUEkRKUtu4tZUhhH13lxH8FDLp1l5SLdrvMRwKEvgY3iblq7bt92-_Hf4C5MrBB46GulNBZdZoheBYO0X7wnuTlm5K_-Gz1FKN_F9QQhpEZDQiTe1agd4Y
+  - https://lh3.googleusercontent.com/Y7zqqi3lwbnJOvW19wrn7hKHuHF5fUDBQxWFO2FaiY0762NeLtRxapuR35bwnXal61ivvqnXTlDM5kvaFaTXDQkWIZWsKdOPix14rNY9uzJ8XgtpksgznjIgAtm5bCW1EDM3iyrxIM4
+  - https://lh3.googleusercontent.com/XGZQJcweP64v_shsIrHufNllzqqLe5Aa907_xbv-Xldp8QaEcJHkgeWv1QbUFeQP-RyeRr_MkY-8514xo-Sh7o56uDRz8sOjbtetUSpYz9gXMlZSqV-XcQE_5k2vmb-QLzRGCZu3VWw
 ---
-
-TODO

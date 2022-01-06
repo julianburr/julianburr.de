@@ -1,9 +1,18 @@
 ---
 country: Malaysia
+region: Pahang
 place: Cameron Highlands
 type: national park
 date: 2014-01
-latlng: 4.4679346, 101.3672343
+latlng: 4.491031, 101.386912
+thumb: https://lh3.googleusercontent.com/ti_KhW8VAhXAUXhZmdQlMwdrcHnvgkIe0sjeilfZVmOzSTo4ZXL-lduGsX2FEnnk-ty_Ibza26rmntbmWl0QA6NGcJuCy04ypeYsC7WKoVPjQq-wuzey6LQaDtODvvG8d97oSPzJ5w
+images:
+  - https://lh3.googleusercontent.com/j0tDkCkZR0XC6ZY0mxNHofnhDtK7n-_LE2H2hsjpO8faLwiyLAKGKjc70hnMCoNt7FtF5g-HgsjqRUGcrLKh5FC5b8sP6IQXIBWxVby0nf2hJ-LOBOA9r_o-5lWdOZa6GcCJDaXyJQ
+  - https://lh3.googleusercontent.com/8g95NcPyfvbs0eofNNIZa9jlSYYjNwS95TQiUNocyFlStaeAfRNgYo0RP-nqoGwkt3H73PqpAwTp6j7kxWZkUpiL6lo5cabIfcll51Twb3UuVDf54BVUXzboib6bo1rTNsCKvh9bMQ
+  - https://lh3.googleusercontent.com/wytjLOyggvKJvIT528VmAx7arLYrRQ-_TPtn6svcvtWJF6TKYgXURF1W8ah1mx59i2tiEqhZPPgPobb7X-2unkiKbPdMZbNiiQPFP_WsdhVHAiP7dIMhPA0UbMjChO9oehZnspOJqA
+  - https://lh3.googleusercontent.com/ti_KhW8VAhXAUXhZmdQlMwdrcHnvgkIe0sjeilfZVmOzSTo4ZXL-lduGsX2FEnnk-ty_Ibza26rmntbmWl0QA6NGcJuCy04ypeYsC7WKoVPjQq-wuzey6LQaDtODvvG8d97oSPzJ5w
+  - https://lh3.googleusercontent.com/YNk4ClH2vSS0_Kjfab11OTa8T3ky3JJ2EGYAOc1tzd6mCSqhRbawr7qosjdgyln2C-8ipa5c_NryKHn3TJeqWRtVEilqtbNGJkSWVwjD0mlB4YQ3Rjd75G1IVoRmXWfZAJm563L3eQ
+  - https://lh3.googleusercontent.com/NlQpenl_OxP-KT5NG8a3GJhwdcMn-Q-bmbzJnPgNPYZ0kYJP1PcCynmDMWu4wyBrbnOGEBKjQfqjz4yySKYrZBwa_jD0fG-i1ofhtkV7NasXcW-8zKxkKp3OE12Kenau1C8MFauU7w
+  - https://lh3.googleusercontent.com/oWrPpZROXS3vTXdZ4Kfl45MVTOIoITWjBFrJmW8tMnVImPUesVDSHu564iOVZmakTS-id0t4oftSSvtu6E91UmJ1of-i7-IyDHk1g3PCXtDyR28LxL09E89_-Rz6yyZOE_5_9WgHpQ
+  - https://lh3.googleusercontent.com/TjMqe2nWYSPZBclycjeFT-dxnUmp9i8omTv0D_8EWQ7jbypB0BgxpV1aq3oIfE7PN6XpyLgWugmP0cUgyWKNKk2muWh-KhLwKK1Xoi-_r4exhDrF1_ycvSCZ6YwDe--PRp3Z-wMw7w
 ---
-
-TODO

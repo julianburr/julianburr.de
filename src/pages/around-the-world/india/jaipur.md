@@ -1,9 +1,15 @@
 ---
 country: India
+region: Rejasthan
 place: Jaipur
 type: location
 date: 2013-11
-latlng: 26.8855456, 75.5096796
+latlng: 26.915426337066933, 75.82417315211222
+thumb: https://lh3.googleusercontent.com/WZXpvB4bMssUJWgfjjLhmXgQSAFN5vvI9Bh9CSJhBfGuLocissMpt5GWiXD_rTkgVon9tzuTSXoDFvlI1FF4_yyDeQ0vwq4Ntsgv0pGsGfa2C-jSbI82FtIVdixV246pYqUfKqCGAA
+images:
+  - https://lh3.googleusercontent.com/0zUyUt2XxpPiw7c4dBi193Q62ZOnvtNr6iTyIO8zR0UPpZQN_bOg62g24HSCIvRk_XMOVu8V-puu-vLgL2dyl09iQ1vTnHcZPsFCWc1BKfXmPug6tUNUJAXVtBN6-KesmnFS6C4eUg
+  - https://lh3.googleusercontent.com/vjm4SqtReCU6PL1BPBF9HXA9VJqQTMFt5dJf386kGLxVr-ofztXzVIEy42ELB-idtQg82fCrTRTgkx4EF_XXuPnNfwaxnctSGSCX80jE98t3vt0E7uT8Zp8IkYYwOGG-8jZ65_fhQQ
+  - https://lh3.googleusercontent.com/OezAOSTy2DmxC-jnQnwhw_pMSOpjY5hKXamMV0K9YQyEPR5NxycJALxIItLBlzoM3PYjW-b5NyCOBzXbl39amy3LCKQYmba_2uXUfoxPekHq3sqGNmG-sjEOum7kD80JlA-Q8dN3IQ
+  - https://lh3.googleusercontent.com/WZXpvB4bMssUJWgfjjLhmXgQSAFN5vvI9Bh9CSJhBfGuLocissMpt5GWiXD_rTkgVon9tzuTSXoDFvlI1FF4_yyDeQ0vwq4Ntsgv0pGsGfa2C-jSbI82FtIVdixV246pYqUfKqCGAA
+  - https://lh3.googleusercontent.com/7lEZN2CtqRVMyw1x-FxgTuZa2mIWUl5UO20co69B_033v31DU8rH5Cpib82k22mLikUufDr6hT260IQZtj6aBMGU3BphW3JBB59hxJ9za63KtfOKQZq2Co7BqzPqVpp1pQucWjrzcQ
 ---
-
-TODO

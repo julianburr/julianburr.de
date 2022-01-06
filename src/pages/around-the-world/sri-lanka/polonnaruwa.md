@@ -1,9 +1,21 @@
 ---
 country: Sri Lanka
+region: Polonnaruwa
 place: Polonnaruwa
 type: location
 date: 2013-10
-latlng: 7.9342774, 80.9429664
+latlng: 7.944118930782835, 81.0000612269339
+thumb: https://lh3.googleusercontent.com/oDD_0TpIixd0r-5-66Lp2vd1ef8P7OtQgQKxOsw_NX7Qrg5cBdP2cqVu_idOz6OcxZj2iVS4RdrGYBJeYZDGXoN0KHUgujkEOXs0vEAzWioyb3Gfukw-XM0IIm7Hg6T5d5mq0s02sA
+images:
+  - https://lh3.googleusercontent.com/fKS1ngdAgxDIPTjtX4ITAP0CPdNtN3okmj8UELqgzfqO9EiR_x-5s0rKAoE7O38qffmXuFJLwlJhEUUTEuOeA_X_uWCcxi41Ir8I2QOEpzTl8VObJNlZ-vVZeSVghbmiS1Nvt-13Tg
+  - https://lh3.googleusercontent.com/usNwzF7Ms6oUHiTuX3NXW-5Wyi-rHkxeOTRTtwQ6G5pMW8owe0VJgdQsq7nHu28AjelwpmvPYK_ANKMMAZzv8rhGLOq7PjUL_MdRykO6hQpX-wtXrKjvGzZgsex7Yn1EuGwnzuQXzA
+  - https://lh3.googleusercontent.com/CCPyvmTp4KYCOHnVullaJTqF2GiM629vQmbyrs_Ql5OJI4qrBgY4RagPVUTf_2ng2Uei5R-B_X4UIJVrJIidm77rAt-M51Z09GhifVeyBZUDrfxnYxdzODcmhxeWr7GF8txM0ZpDyA
+  - https://lh3.googleusercontent.com/9NXsQmFjLTtJ0lJ4D1ZJtYNWlp0fdDMky5UfqYCsUya7psrLef3bZzj1uBK4taD8cWKvyA7bn64Wt8Y0nxJMyiwc819AwMFL0hoyF4rClztCwXK5mEfJmofwiD3H6l3HX07aIK5NRg
+  - https://lh3.googleusercontent.com/JIwuc8zssYVQfuWK7sNiKCSAOYCjiH1lc_vx4jo_Mhy75S5KsIGMJBUL4yQJbN7Hb4laNpz9d10RD_xe3NdB7HQMfVSMSS0W5Ct6oEVKkYmfO1KY2iTvYg9wUBf_xFXAYdbynfQ9DQ
+  - https://lh3.googleusercontent.com/aHkfzw26RklREyu5i7aMn52sKw_jIXdVWw0kSvlOrNdgSp2SuN8yMpqwkMzXh9-S2QZ1ykjaso9WMl8HkSMnGisNTfaupgwPNHeON1ShuIv9n_-t3x3Oy6RsENGmwNVX03EscaWAFg
+  - https://lh3.googleusercontent.com/dLqfKU3z7ndA24oLXR5xg-nBOqQ-EtxdAHlyixg1UezFTMEK7r_WmMaQH8Rkj0_ilNUVhK5MoKEotS5ZKdUIduTSpXFofniI8EC5Nwj6iuL55xkIDW3Hym1KpuSL8mG479b2Em0M2w
+  - https://lh3.googleusercontent.com/5OcA9XQj3lujw-IT92c3tFr0uJApyYpph6qEzphCBK_E2sm9pKFVEmsplUTyuI31kTcdlwK5V26Tr3j-LQgGRszF-U1Aqs_Sa81ZSxpyjRwUUzbQ2LQS5WsQSDTUV5Hq27CNhjF-qg
+  - https://lh3.googleusercontent.com/oDD_0TpIixd0r-5-66Lp2vd1ef8P7OtQgQKxOsw_NX7Qrg5cBdP2cqVu_idOz6OcxZj2iVS4RdrGYBJeYZDGXoN0KHUgujkEOXs0vEAzWioyb3Gfukw-XM0IIm7Hg6T5d5mq0s02sA
+  - https://lh3.googleusercontent.com/llx4oFlknHPR5Ox1XvuArlmPH_nv1ne3tQyIjVVHusqhtP_NX0m2apdMjxrCr_Y7IjDBF6WN-mB-aBU3JkrxHVZohsEXNBaC-gGoDm3hA5ilgLLP_-O1lC2bGx9DQQvAGub30ORYJw
+  - https://lh3.googleusercontent.com/0mIAiopyX6Lg9AdtP7E4_Nw7b1_cBRwQkmLAwt0p3ubbVv3cch54-NgRyFkMPJ6nHpq_s9PW0mJrhnFgqcemZa-EvY8oMNo5dE91NwxPhODyG1S8XUIySRZ1uHt6CANbyfkd6h27nQ
 ---
-
-TODO

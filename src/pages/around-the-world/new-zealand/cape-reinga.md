@@ -1,9 +1,20 @@
 ---
 country: New Zealand
+region: Northland
 place: Cape Reinga
 type: location
 date: 2014-01
-latlng: -34.493489, 172.620384
+latlng: -34.750202, 173.059029
+thumb: https://lh3.googleusercontent.com/CTdbm6YsFLqr6G1CfwROyuAnsmSoa35zntsmdDe7s32uYjM6jJH1i57sESEP7B_UkNBZr1XvKsyrSWIffSfLzx7s3T9J9MKeAkwgal9-PJxF7ypFj7z7kVdn6KQxUOhzz0Dc6igRKw
+images:
+  - https://lh3.googleusercontent.com/m9JvzTIpAgYv1N9OUg1erOwtJND56jX4NCqzGiiHs-79xz3bY9l69XEx90JYNktFPUuvRJ11USt552CMIudY6bXRWlPk3RakHbxUWn36rLJPANcqTTXMkrRSJJMSoWNkQoq2N1Oa1Q
+  - https://lh3.googleusercontent.com/c7PI-XuCz05IvCBpvjTwspb5MJK6Sxobv-Qq1pCOAh5vP8TSsPaN_jiSK7wnKdtIaHFE4GuSnVQLq76JbEYg606VZ20QNcDqhpf9qife0aSGXvma5WhkCmzjNcbl8Ueu-70RHOGYAg
+  - https://lh3.googleusercontent.com/Vep-hus-2XL4JOJpeE96NGDMPscECKxJKvyrRPMJhbjsy_CdaGe2IOWk-K-_D7SMT3x94c_x4ROvTDmq1KymTmGfrNGnQil0JRCKsVPpLqcPgkKaTcRpAbBlw2rUhCThG4Y1wCZqAw
+  - https://lh3.googleusercontent.com/VPY_YoK3coG7adbugKsE9ASMW_nznBFVR2Ca79A_m-taxPA6HsM_fnLyFvNBmuMrq0QmYbpuMyHQ--NfXSgYaT5TcOIT75hxVFwWmgnnYjJA5JiwYgPgZQMiE6UD7CX4Vm6z-_iI4w
+  - https://lh3.googleusercontent.com/DkWCwNY2X-dHOxDY-xJm906I6O4XoU2H9mPk2sRurx0w6ZPrBeUrRfTxafxnvJrZPhGgd_8ZeLPp41tWl8Aw9q7EQayQx5laBzBNyQWfAAbBOfocGD1QVeaEuFmUErvGFQaWtQAtAA
+  - https://lh3.googleusercontent.com/CTdbm6YsFLqr6G1CfwROyuAnsmSoa35zntsmdDe7s32uYjM6jJH1i57sESEP7B_UkNBZr1XvKsyrSWIffSfLzx7s3T9J9MKeAkwgal9-PJxF7ypFj7z7kVdn6KQxUOhzz0Dc6igRKw
+  - https://lh3.googleusercontent.com/GvB1j0Xm8bPdWI8z5-wbQQYGZFX_96K1B72cObx4jXzuEHg5Ffexts_7aC9COE2HoC9ZBtSoLHKLdtxiRhtQeU8i1Fvs1TQ-NdsZ5T806gF7YLlqH5nA9zetMNXf-nZt4-dZ_VXCDQ
+  - https://lh3.googleusercontent.com/cDIfrAw5AcnyfLAig9ACeBtsROINkcn2wE3_4hg6Fyo2bGfZ4t15PZAVuTcXGW5tECQSv3qU8nCOyj1_vDaMBiz_f7DURQRL5vfmps216zMYyhIW3ujcd6v1r4VCb6mZHprXxfSc4g
+  - https://lh3.googleusercontent.com/IhLzoWhOuCPnb_nUqbPVxBs7Mslgx4OfyIvINr7hi0di4SZsIwyQWyStfzlR6OTGdIICNZrtWgQxZuKIIutSHqal_EgQqvkBW6uNtewd9e6gi6Bwm-1qQTfGLrSmtcpgoYadUAyu-g
+  - https://lh3.googleusercontent.com/Vj0-jwnYRawaQgP2zeo4VRkveP7EyTWA-EB2q9nlN8zR5VeOJWYcDLHDcK_zAXUq6dhtDtWzddb_VLNHjndkVxNWY_1SL4VXDuZCEBfxs1F9hmZrKqhPegjhP29XvGUCtKfmmzojCQ
 ---
-
-TODO

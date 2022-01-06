@@ -1,9 +1,17 @@
 ---
 country: India
+region: Maharashtra
 place: Mumbai
 type: location
 date: 2013-11
-latlng: 19.0825221, 72.7407566
+latlng: 18.96667, 72.83333
+thumb: https://lh3.googleusercontent.com/wRtIKsEmlUTotw9_cLQpVkQdQkz_SV2D0ngxYb9w8i60V-97z9ePWgr7RM5jLUyQKn0fK_ReTVitKEEDnOedd1pROIvXwUiO_VhDKQz4f_lfJucfgXjlunhm029UfgpSSdNL0xDL7w
+images:
+  - https://lh3.googleusercontent.com/WAg5Nev0bCd3gRCDPKH5PacoPMlSBAWiXiBX2zGA5eU55qIYTXqOJUzhXNWfgx30Fj1IBjGtZG-u9M2bqecKkYD90ll_UC477teTWA0tydZRCZ5wdpHGZM3tr8tQqHokmsWA2fFsQg
+  - https://lh3.googleusercontent.com/_DzzDn9bZAP2qQ3Z95eXvfQZROvky-uxGzLAjwyXucibWyWzPKq7eOaCysPZPVwAd_PPVDfLlOzD3aXHxmupuTK9r31NklOcGDaf6pNK0TnxNyaVOyZa1QF9AnIQUCa5cejlVk2MBg
+  - https://lh3.googleusercontent.com/6cZbONc7-Dz8z-XZjh2bq8VEkawYmPA8cjn_fsOAv574jqMW15Pdzq0_befsvj4fC2uaRad2URpkyUqSFXUOo4NQfv5deZU12fA4-6WOVCzI8afGCw2XU33vmc3Ti7V2jwFN0PpILA
+  - https://lh3.googleusercontent.com/vYqOP0n1t8e7p6FM8uuFpy5AjXZ4qD0Ho30X4FVq55A3Vzd7NOIYR34kP-q5DQ-wKw-x5Yd985IVus3D4bl_EUTdF-mZSUKgSJ7W3mK97TUZ9qZ9jrMvTM8khkozUSmSRbCKEWYZcQ
+  - https://lh3.googleusercontent.com/WxGRuMM-HTVX1-HdXSpzTJ33jnEpQQuUsZlqZcCLe1BWwcSh-FH_ZfIJCuwl5e9L1w4OPuvOuXDHqaRiM6sxv_UKikMmoWbYX6sF1axQcZ730aszG8KaPFzDHAwVWkREN9QUNaPSXw
+  - https://lh3.googleusercontent.com/wRtIKsEmlUTotw9_cLQpVkQdQkz_SV2D0ngxYb9w8i60V-97z9ePWgr7RM5jLUyQKn0fK_ReTVitKEEDnOedd1pROIvXwUiO_VhDKQz4f_lfJucfgXjlunhm029UfgpSSdNL0xDL7w
+  - https://lh3.googleusercontent.com/V3fwWCYBCWovgfkj1IUomTHqQVsty8_09_xhNhDFiw5nAMT3y-idhXBghpRmaFdgoGTXfblIzlObOVuSLpCDi-WYx3th8cVOvKREwk3YP3TA0IdN5AGPZJOpGwQHljSoXV02XEpRGg
 ---
-
-TODO

@@ -1,9 +1,8 @@
 ---
 country: Australia
+region: Queensland
 place: Cairns
 type: location
 date: 2014-01
-latlng: -16.8801501, 145.5765152
+latlng: -16.9205, 145.7719
 ---
-
-TODO

@@ -1,9 +1,19 @@
 ---
 country: Laos
+region: Vientiane
 place: Vientiane
 type: location
 date: 2014-01
-latlng: 17.9605903, 102.5355535
+latlng: 17.971071164070395, 102.62008692082918
+thumb: https://lh3.googleusercontent.com/Aol9lYwqd2mgNnHcBFylzVy1phdAiyR6KJbwP2E5cw_6T49m-j3KUFzKvV3eZoZ00T8dVLDQAlaDX-vDdqHRo9MozxDCJBKYK3xFy-nLFLd925wRDD-DaFR6tVBHd0bDG0GzAcUsVA
+images:
+  - https://lh3.googleusercontent.com/La7foZ2H0Cf1W0sxMsRPXC4qdUlzGOW6R4gY2wfG4KZPjEDmft5XOS0rW_k4PvLUKpeUDE4fS24v6tecUpo42tf8C31RNjjJdJRbysCiV1kL6HxKlRO4PTjrgdLV1P2oZUvBqmZYEw
+  - https://lh3.googleusercontent.com/21b3SqwNY-lQx6tJ5AJ5ivWrkBDDdQkAQ-X-vP1Dd8q4MjCXx7Mi96-8MYFoCwDi0gwobhIzU63jtyBwOky43TP1xLATBcNU8QW6MrKpqlRqax_Dna60gGSSOHFGkfOVRHl2Fn4usw
+  - https://lh3.googleusercontent.com/aumADcTz2hFUtt_XQVXECVJF9SmtcxTPyfn6BWzVWoUZBtHVTMqWnfm2GMl3PI3Du7fxFII6_IsA_wTbMPqWUIcV2fn9j9cFQ2C4ju2VbeWUM_6Uq0EHMACbg6z-fLzweR3KMQI5KQ
+  - https://lh3.googleusercontent.com/Apwbz9C5DCTkIt6KSjL7OwZ68FxY7E_od-kAqsH1A0R6jF1WBn2Q-Q-kp1Bfonvk7vd6m7bIwErRBYqelhFDcPuGxEKjqFrOT4HCzWI3CqV1E8GbeOY28lh9A6i-5yAY9sKg9q6o5Q
+  - https://lh3.googleusercontent.com/WOYzt9z6ZB6NFqymB3chxHJutSImFm3iTPKgyJxk4Z1vn9DOw3BayfkNCGaLT9zw4pHEgTQJXzLjmOpnEPKupLzQvedHJJ6hC02kaIt8q6o1VKHgVGrVdFDehCk8BslBIIb30BUkrw
+  - https://lh3.googleusercontent.com/9hJdApbF-fjnG7leDswiMNTKBPyKLMY3uAecAStUFvUYBbhcQS5DOXeKd5d7QPa3Fyl7AB68_8p0Llk0zUcJM4Rk5-8eUcYVgPHpw7CIsMYa-0LjNtif6n3OOSq3yEsu_VwNiRFGsw
+  - https://lh3.googleusercontent.com/b45qZ8X-qpdKELxJvJNf92jAvQeOWnFDFeQ9lKemhU-0-DHnggqLzui2uZ4JJpNhAZcT2_jQ5ZDH4YnPMd0EmGQ6Wj4rFVvhvrF1d6Vk2s2mn3qrxhT9ekpcXleuBjOU59GvNIMBlA
+  - https://lh3.googleusercontent.com/Aol9lYwqd2mgNnHcBFylzVy1phdAiyR6KJbwP2E5cw_6T49m-j3KUFzKvV3eZoZ00T8dVLDQAlaDX-vDdqHRo9MozxDCJBKYK3xFy-nLFLd925wRDD-DaFR6tVBHd0bDG0GzAcUsVA
+  - https://lh3.googleusercontent.com/s43c1CW-E1-AjocZ7I44Y60EdXgPysqvaYtc7tNZMf55VD53VWKkGUCc_raunqwtuumtgyIs-0pWUTFUgEjtU9Fe83Ir9m1qgBDT4pHA3dlrNaERqY5KGu3JSoa4ByCxKpJO6aSD9g
 ---
-
-TODO
