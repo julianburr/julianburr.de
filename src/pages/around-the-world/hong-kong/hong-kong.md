@@ -2,7 +2,7 @@
 country: Hong Kong
 place: Hong Kong
 type: location
-date: 2014-01
+date: 2014-04-30
 latlng: 22.27833, 114.15861
 thumb: https://lh3.googleusercontent.com/aTbLll88ucGjmOwIeIcfpL_CNnwLozpaUGNOy07mpMTUZuGtE6JTCuWnhxfj2mYcVQiyrCznT89XuKUrUdRaTSHLafeiuIRyV9YHhdHn68b9qQpegIOugCUMiKB6Y5dDuc7x1x4GMA
 images:

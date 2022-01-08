@@ -2,7 +2,7 @@
 country: Vietnam
 place: Hanoi
 type: location
-date: 2014-01
+date: 2014-03-06
 latlng: 21.061399092503265, 105.8497470004296
 thumb: https://lh3.googleusercontent.com/R1K8VSzZDyLv9xSMx5q3Xc6mmEglIbK4ziVMPFzFgCyvVKOW8xGzrdL6IfNsACQsPF81g_LpwAym7HC2pRELKYw5Ey4Z6ktBoXZJbgPoJwHYAN11Z7KNplTp_RH9YePe3r08b1c9Gw
 images:

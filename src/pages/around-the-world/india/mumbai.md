@@ -3,7 +3,7 @@ country: India
 region: Maharashtra
 place: Mumbai
 type: location
-date: 2013-11
+date: 2013-11-29
 latlng: 18.96667, 72.83333
 thumb: https://lh3.googleusercontent.com/wRtIKsEmlUTotw9_cLQpVkQdQkz_SV2D0ngxYb9w8i60V-97z9ePWgr7RM5jLUyQKn0fK_ReTVitKEEDnOedd1pROIvXwUiO_VhDKQz4f_lfJucfgXjlunhm029UfgpSSdNL0xDL7w
 images:

@@ -3,7 +3,7 @@ country: Sri Lanka
 region: Matara
 place: Matara
 type: location
-date: 2013-10
+date: 2013-10-29
 latlng: 5.9455659548373205, 80.54654347815148
 thumb: https://lh3.googleusercontent.com/SRBn5iZ7uaTe9IAoCMlhOhb4CrvzA-fHh6hnLckeqCDpofpERdlFZPuopyA1J5krqqy61ouitWBEhW-EHkxivb9rMr3_wQb3KO5FPonfHshr89oiH177wdB-EOKRv4BGhYwhXbjdaw
 images:

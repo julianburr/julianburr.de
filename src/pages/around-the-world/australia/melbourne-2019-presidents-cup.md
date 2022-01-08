@@ -3,7 +3,7 @@ country: Australia
 region: Victoria
 place: 2019 Presidents Cup
 type: event
-date: 2019-01
+date: 2019-12-14
 latlng: -37.9694605, 145.030834
 thumb: https://lh3.googleusercontent.com/6ftTIqOcggf1pOGfyiJLMVQbfaBHVhKLsNaXcHZp8mSYc3mwbzTdzhxcJjITYV_VWTsMw47bKGA5fCQxsjwiSDkdcBX0RZXFhBZuF3orHiPd3ZSpF3FvyOMCEhdZQZcz_EbfFgFMdg
 images:

@@ -3,7 +3,7 @@ country: Vietnam
 region: Binh Dinh
 place: Quy Nhon
 type: location
-date: 2014-01
+date: 2014-02-22
 latlng: 13.770532649575955, 109.23107671406785
 thumb: https://lh3.googleusercontent.com/F8rbJw5nvGdqgHKlkdA5T88ENJetc9kMkGq_wtTOSYZGuIlB0v_XE7zIWTME5ZNHTsFoA-bMsHru6HWc_kMSHYN7G1rtQGGOB91mUP0xDDS996HZPnw_AxY6jiVQZyLkeNNOOrmlSw
 images:

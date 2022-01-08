@@ -1,10 +1,25 @@
-import { graphql } from "gatsby";
+import { graphql, navigate } from "gatsby";
+import { parse } from "query-string";
 
 import { SEO } from "../components/seo";
 import { ImageGallery } from "../components/image-gallery";
+import { useCallback } from "react";
 
-export default function PageGalleryTemplate({ data }: { data: any }) {
+export default function PageGalleryTemplate({
+  data,
+  location,
+}: {
+  data: any;
+  location: any;
+}) {
   const post = data.markdownRemark;
+  const qs = parse(location.search);
+  console.log({ qs, location });
+
+  const currentIndex = qs.image ? parseInt(qs.image as string) : 0;
+  const setCurrentIndex = useCallback((index) => {
+    navigate(index ? `${location.pathname}?image=${index}` : location.pathname);
+  }, []);
 
   return (
     <>
@@ -22,6 +37,8 @@ export default function PageGalleryTemplate({ data }: { data: any }) {
         content={post.html}
         thumbSrc={post.frontmatter.thumb}
         images={post.frontmatter.images}
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
       />
     </>
   );

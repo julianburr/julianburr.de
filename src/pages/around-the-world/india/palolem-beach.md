@@ -3,7 +3,7 @@ country: India
 region: Goa
 place: Palolem Beach
 type: location
-date: 2013-11
+date: 2013-11-26
 latlng: 15.009323825460186, 74.02421855295731
 thumb: https://lh3.googleusercontent.com/A0SBuAl88VEwgj768XWLL6pOmZNKO2v4HK-z1FcZRJNON9qmQ8ux-xMQHosa_1KlRjOC7FliGojIbCukOKd6QjH0WVe0FPXH5FYDQCUNA_jIDvt3thwnGNpA2e1igL_7iNIGvAWVNQ
 images:

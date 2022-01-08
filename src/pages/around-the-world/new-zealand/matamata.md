@@ -3,7 +3,7 @@ country: New Zealand
 region: Waikato
 place: Matamata
 type: location
-date: 2014-01
+date: 2014-10-20
 latlng: -37.81, 175.77
 thumb: https://lh3.googleusercontent.com/VclH0vU3jnTUu5nyT1xgcsWPVfczJXVF21MSEiXfN4YUbkCqTNtJLD-16YxrijhODLETTJsCbckeopnEzsf5K7K05nIiKUEdZN1jDXygG4Wo76Zj90jw34jQxFSIHghQac9F5jOGGQ
 images:

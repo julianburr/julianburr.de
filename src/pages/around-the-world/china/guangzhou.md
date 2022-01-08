@@ -2,7 +2,7 @@
 country: China
 place: Guangzhou
 type: location
-date: 2014-01
+date: 2014-05-08
 latlng: 23.141922249098457, 113.25211632519517
 thumb: https://lh3.googleusercontent.com/y8w0trdwmDpr_pUsjC_MsZis9dT4E7mCnzbzA__P0Tj-0rQ-zr_I5jd_IZwAJ-UOklQ6LLN-SciQ6K_I0U-xxpXluhzxWdFY1B54Mo4lsqpD8sM-VDo4fA1kK6BtE7sDKnpu603hOA
 images:

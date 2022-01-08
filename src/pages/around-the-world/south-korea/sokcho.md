@@ -2,7 +2,7 @@
 country: South Korea
 place: Sokcho
 type: location
-date: 2014-01
+date: 2015-05-21
 latlng: 38.20833, 128.59111
 thumb: https://lh3.googleusercontent.com/ZKHxbxcAIahHPmVJbxmzi-Qul1T2rpyXD5WywO9RA4PMXysLBCCzeoD3sWEa2SnSiV2MnMLoy0PWBSkmuCGfj7peTxMg7j7ltmCp8LmyyY62ZAmhU_kruT2aPmzUTz-95xqwH8p3G6Q
 images:

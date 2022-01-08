@@ -3,7 +3,7 @@ country: India
 region: Uttar Pradesh
 place: Agra
 type: location
-date: 2013-11
+date: 2013-12-06
 latlng: 27.17405204873893, 78.04217334074906
 thumb: https://lh3.googleusercontent.com/yYHnMUbM81U1hNtWDjUvdvo-RSawZFkM8HDvSWR3kSnPJj4QoMROZgJRDMlXM1lP1RkaTpU1O6OhGnHFsIP6ksHE0o7T-qzq24HKZkl60ZqN-o-58Jvh4kzh3hHYl4ZSCRjwiZTxvg
 images:

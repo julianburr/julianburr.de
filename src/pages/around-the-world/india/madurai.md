@@ -3,7 +3,7 @@ country: India
 region: Tamil Nadu
 place: Madurai
 type: location
-date: 2013-11
+date: 2013-11-19
 latlng: 9.91966, 78.11939
 thumb: https://lh3.googleusercontent.com/ZbsWZ_kGgpkSxMCyHnvQnJsVwadMt4Gp0q7F18_aI2QoPVEhNEHvuP-qXwDaH0qCZw0xFRsJBv7yL-SdO9i8d3ZDZuOKBFNcX-n8gSpR2ZFxCGeZysWXOMrCjLCCTGjG1SwvnRggjQ
 images:

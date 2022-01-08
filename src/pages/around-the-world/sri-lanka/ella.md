@@ -3,7 +3,7 @@ country: Sri Lanka
 region: Badulla
 place: Ella
 type: location
-date: 2013-10
+date: 2013-11-01
 latlng: 6.9553304162178335, 81.03141837555569
 thumb: https://lh3.googleusercontent.com/ZX_4DKfP9vfq-E_nhXyshBqO8WG1-djvi3Al4c5wUdy4lebnUxJy6Axug_T-iv_1W-xhO1cYRbra_1MLR2-_OzRwG5MHRBFc0NjHVvqWr6e5z85hNoBVi7pLWIGYa_q4UuZ9dTP6XA
 images:

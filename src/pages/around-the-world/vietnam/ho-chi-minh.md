@@ -2,7 +2,7 @@
 country: Vietnam
 place: Ho Chi Minh
 type: location
-date: 2014-01
+date: 2014-02-12
 latlng: 10.80811354876272, 106.68903230407147
 thumb: https://lh3.googleusercontent.com/Qwco2ShVrIXpQYzRdPFlCHP8LcJc4-ssTsV_z7mHks-86zRPKY4EehIiae4CWgbxzDPDqcTwu__ZWHRLGvBrIM9HxJvWdmQ68oSuLGgVGDTiq3dMdnKd1I8UbG_VKTGuuifA8cwYfg
 images:
