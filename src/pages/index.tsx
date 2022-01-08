@@ -44,7 +44,7 @@ export default function IndexPage() {
           kittens.
         </p>
       </WrapContent>
-      <WrapGraphic>
+      <WrapGraphic aria-hidden="true">
         <Graphic />
       </WrapGraphic>
     </>

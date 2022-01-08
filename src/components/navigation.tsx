@@ -341,6 +341,7 @@ export function Navigation({ location }: NavigationProps) {
                 className={key === context.currentGrid ? "active" : undefined}
                 style={{ color: gridColors[key as keyof typeof gridColors] }}
                 to={context.routingGrids[key]}
+                aria-label={`Go to ${context.routingGrids[key]}`}
               />
             </li>
           ))}
