@@ -139,7 +139,7 @@ export function MovingIn(props: ComponentProps<typeof Container>) {
       <Lamp />
       <Box6 turned={turned} onClick={() => setTurned(!turned)}>
         <ArrowUp />
-        <Text>This side up</Text>
+        <Text aria-hidden="true">This side up</Text>
       </Box6>
 
       <Box7 />
