@@ -2,6 +2,6 @@
 country: Indonesia
 place: Bali
 type: location
-date: 2014-01
+date:
 latlng: -8.36917, 115.13833
 ---

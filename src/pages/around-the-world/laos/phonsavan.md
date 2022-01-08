@@ -3,7 +3,7 @@ country: Laos
 region: Xiangkhouang
 place: Phonsavan
 type: location
-date: 2014-01
+date: 2014-03-25
 latlng: 19.4517610169177, 103.20656315416295
 thumb: https://lh3.googleusercontent.com/dvqBFtVZ1Yi3Vj-KzlnRuNJ7A-PLEbcCi7DIfTFtyvaPGHliX0aZXUwuE3gGy2eJ2E8Mm6bZUoXaMBhJZOvQEK4lgDbL8ACfJEPgyOdwelmLfQ3dxOymiPfeZdwLY8TqtYsJ-Rt0Tw
 images:

@@ -3,7 +3,7 @@ country: Sri Lanka
 region: Galle
 place: Bentota
 type: location
-date: 2013-10
+date: 2013-10-23
 latlng: 6.421527648, 79.997854326
 thumb: https://lh3.googleusercontent.com/5v6Evpz82fkH-7w8aqjL2mQTnQdfl5HSh0E88sTdANVnxzfPx7ouj30_3Y5dtanbozzauL1Te70kbnimygS2zqyXv3issmmlDoWZENfGylULueRSStvh8tGBMEhDwlKRobNjbiJ0Mw
 images:

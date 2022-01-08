@@ -3,6 +3,6 @@ country: Indonesia
 region: Central Java
 place: Borobudur
 type: location
-date: 2014-01
+date:
 latlng: -7.60444, 110.2
 ---

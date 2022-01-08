@@ -3,7 +3,7 @@ country: Malaysia
 region: Penang
 place: Georgetown
 type: location
-date: 2014-01
+date: 2014-01-25
 latlng: 5.418864391962401, 100.32648206863229
 thumb: https://lh3.googleusercontent.com/TMixQOHRrQR355fboCEeXIRwR7hDHZ7HOTfW3Cp71uO8BHLdyTNnH1cSy-BuTrXbdi5MSD5yuzP6tyg3h5wqMO1yzvcscRjSrPtncHyFupN1GEWe-PklQSrIvUsH3rbnW-8ZFRDTMQ
 images:

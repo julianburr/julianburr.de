@@ -3,7 +3,7 @@ country: Sri Lanka
 region: Galle
 place: Kosgoda
 type: location
-date: 2013-10
+date: 2013-10-21
 latlng: 6.338587932, 80.028901985
 thumb: https://lh3.googleusercontent.com/mSDzNgJkXmci_dEPphjShKeM6yvt4S6-ei5RzN2_4_6s8EHw3SfhxU5Cp-tMVVZLHg7WMLo6p7PR1-y7L1IUYJh1XvFG2bEnPFV8d9DAeAkyBrV7NJ4j7R0n1QooW4jyDLUfy6u5WQ
 images:

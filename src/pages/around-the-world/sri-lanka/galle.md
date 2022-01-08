@@ -3,7 +3,7 @@ country: Sri Lanka
 region: Galle
 place: Galle
 type: location
-date: 2013-10
+date: 2013-10-25
 latlng: 6.02717486325089, 80.2170195523649
 thumb: https://lh3.googleusercontent.com/qLaNWRtFo6S7QDdraXCGeN6eKuYzee2eAej54spaWkcRKwI13jQfDSx6WXp0wVqD3PThFcFKgRvsI7eVG95OYqHIRqapz0fc4_GQHjf51HTu62itEdquW8DpyMN5RL5Nk33P2XUBmg
 images:

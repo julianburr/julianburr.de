@@ -3,7 +3,7 @@ country: Laos
 region: Champasak
 place: Don Khong
 type: location
-date: 2014-01
+date: 2014-04-05
 latlng: 14.118111, 105.855678
 thumb: https://lh3.googleusercontent.com/HzW1YO7uLoDrhgpJisYVATSBxY0bZ572guqfUw_htNiWqAANdthgniMJpUeQvChSMJN9ymencs9xpp-R_U5wbDqlL92Aru8eZcJZwiJ7OpRKwB_eh7o5j-ANJcEQN3_moE3W_gZ6DA
 images:

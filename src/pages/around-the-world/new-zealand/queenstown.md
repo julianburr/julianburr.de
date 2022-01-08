@@ -3,7 +3,7 @@ country: New Zealand
 region: Otago
 place: Queenstown
 type: location
-date: 2014-01
+date: 2014-11-02
 latlng: -45.021452499999995, 168.73932100000002
 thumb: https://lh3.googleusercontent.com/k4ZRcTlNy-ZGHCcfYy2O1f7zDleND23hMKGTc_6awxIp5xDi8hCQP6VSoGzJ2D5JbUopGnrq0Y4d0B5BxVpq8DSFer5hUk3Gk4yY89HhJzSGWvRgnugxlEbHvSfyiP4OKp6IhP35pUc
 images:

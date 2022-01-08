@@ -3,7 +3,7 @@ country: Laos
 region: Vientiane
 place: Vientiane
 type: location
-date: 2014-01
+date: 2014-03-12
 latlng: 17.971071164070395, 102.62008692082918
 thumb: https://lh3.googleusercontent.com/Aol9lYwqd2mgNnHcBFylzVy1phdAiyR6KJbwP2E5cw_6T49m-j3KUFzKvV3eZoZ00T8dVLDQAlaDX-vDdqHRo9MozxDCJBKYK3xFy-nLFLd925wRDD-DaFR6tVBHd0bDG0GzAcUsVA
 images:

@@ -3,7 +3,7 @@ country: New Zealand
 region: Northland
 place: Bay of Islands
 type: landscape
-date: 2014-01
+date: 2014-10-15
 latlng: -35.263148, 173.912508
 thumb: https://lh3.googleusercontent.com/OnFP5KiRpjwiuIz4iFlvGtoDQiaMp1H748ORF5V5XB-DkJV680khRbAJHRJlRA0ou76WygrQo8IOhcbbS7RuHSbUZgGWOkwlwqr3Dw75vCtO3spUtQfDK0WBwgF8v2BwBgMxrghYBw
 images:

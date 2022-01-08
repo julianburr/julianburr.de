@@ -3,7 +3,7 @@ country: Malaysia
 region: Kuala Lumpur
 place: Kuala Lumpur
 type: location
-date: 2014-01
+date: 2014-01-20
 latlng: 3.13564143753608, 101.66677131009726
 thumb: https://lh3.googleusercontent.com/b5_efwhrE0_1r1J3VtQYYEExso0lt-Hth_mvUn1DlA4p0ppAIBfkAjh88mhJwSwSEQPQ2ya0vPaBjTPmd0PekR8RS4lho3eFdXyPzovnBCJbSXrsPydi0hn2jpukMuUAmR3gvVn3bw
 images:

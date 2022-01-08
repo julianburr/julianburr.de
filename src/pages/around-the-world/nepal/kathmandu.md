@@ -3,7 +3,7 @@ country: Nepal
 region: Bagmati
 place: Kathmandu
 type: location
-date: 2013-12
+date: 2013-12-16
 latlng: 27.717231030454215, 85.31140627391403
 thumb: https://lh3.googleusercontent.com/VKgBfDzlMRHQCQAByK6PvtoH6lCfirVUKAZ0uej3Vceoc6Vy3n_iIhhf5-s-R_vlgaHpTa_gY_n_nodfHWoMnFKgiWzuee4Qrta8oIgdja2vxvX34Y6wLokQ67HUCPEArVhNpDHpOQ
 images:

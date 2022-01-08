@@ -3,7 +3,7 @@ country: Malaysia
 region: Pahang
 place: Cameron Highlands
 type: national park
-date: 2014-01
+date: 2014-01-22
 latlng: 4.491031, 101.386912
 thumb: https://lh3.googleusercontent.com/ti_KhW8VAhXAUXhZmdQlMwdrcHnvgkIe0sjeilfZVmOzSTo4ZXL-lduGsX2FEnnk-ty_Ibza26rmntbmWl0QA6NGcJuCy04ypeYsC7WKoVPjQq-wuzey6LQaDtODvvG8d97oSPzJ5w
 images:

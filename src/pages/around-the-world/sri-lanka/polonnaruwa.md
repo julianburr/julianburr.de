@@ -3,7 +3,7 @@ country: Sri Lanka
 region: Polonnaruwa
 place: Polonnaruwa
 type: location
-date: 2013-10
+date: 2013-11-07
 latlng: 7.944118930782835, 81.0000612269339
 thumb: https://lh3.googleusercontent.com/oDD_0TpIixd0r-5-66Lp2vd1ef8P7OtQgQKxOsw_NX7Qrg5cBdP2cqVu_idOz6OcxZj2iVS4RdrGYBJeYZDGXoN0KHUgujkEOXs0vEAzWioyb3Gfukw-XM0IIm7Hg6T5d5mq0s02sA
 images:

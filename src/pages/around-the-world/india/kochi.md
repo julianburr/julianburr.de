@@ -3,7 +3,7 @@ country: India
 region: Kerala
 place: Kochi
 type: location
-date: 2013-11
+date: 2013-11-21
 latlng: 9.986331, 76.236767
 thumb: https://lh3.googleusercontent.com/tazpljwqS9Ur-SKMKz-ljkkdLEF-ECLMo35_TC4L0LKovFAbrwhmTIz5C3SbZJISeAtlbxQ_0Ofi6BLJ56Tr5SYbmZvQxlWSJtHORD6uiWaNBubOYSEhtIALj19_Q75-OItLDxsCRA
 images:

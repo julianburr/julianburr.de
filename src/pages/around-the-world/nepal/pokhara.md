@@ -3,7 +3,7 @@ country: Nepal
 region: Gandaki
 place: Pokhara
 type: location
-date: 2013-12
+date: 2013-12-30
 latlng: 28.20972, 83.98528
 thumb: https://lh3.googleusercontent.com/z7DUSvvAGDQ4F3yE8e_pu5hoxwKwNU78XBSB9RaoC1bp1M_SsMRtvWFCJ53QvfTqMexDwQbtxh_OBofr-ZfRLK2oCopshTqMN5VrDXM4moIVMmDnhDz9WYTRzwxWoQxT4EdQz3AZWg
 images:
