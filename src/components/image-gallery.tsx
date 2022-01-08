@@ -149,7 +149,7 @@ type ImageGallery = {
   thumbSrc?: string;
   images: string[];
   currentIndex?: number;
-  setCurrentIndex: (number) => void;
+  setCurrentIndex: (index: number) => void;
 };
 
 export function ImageGallery({
