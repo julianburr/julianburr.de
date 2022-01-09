@@ -109,7 +109,7 @@ export function WorldMap({ destinations }: WorldMapProps) {
     import("mapbox-gl/dist/mapbox-gl.css")
       // eslint-disable-next-line
       // @ts-ignore
-      .then(() => import("mapbox-gl/dist/mapbox-gl.js"))
+      .then(() => import("!mapbox-gl/dist/mapbox-gl.js"))
       .then(({ default: mapboxgl }) => {
         popupRef.current = new mapboxgl.Popup({ offset: 10 });
 
