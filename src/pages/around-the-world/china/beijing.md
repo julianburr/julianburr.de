@@ -3,7 +3,7 @@ country: China
 place: Beijing
 type: location
 date: 2015-07-05
-latlng: 38.86, 117.44
+latlng: 39.905, 116.39139
 thumb: https://lh3.googleusercontent.com/2THj_9KSQTIy_snsbdrTqYjOeuRDdKL6Zr2sdYwuK2KRGQldbRfVwxxTdaAmNOoIXPIA24ogKP7Hm6lagGeo3CUV9zsxwhZG4Z8HUUZcownMOU6E7dcphMaiwTs6Tvmwpv1MzLFgWA
 images:
   - https://lh3.googleusercontent.com/AtEZXz9xxxtGUxspRK80OiEKPthOviyUTmmDkXZxbC6sXw0WPMwXU_ZuDSAKSVEj3mpOAOBAH_OMlIxe0VV_vOAMSnsgITYIgjWK6anEaz1PvKdSPkmSdd0lk1qd4uCdK8UxD8yk2w
