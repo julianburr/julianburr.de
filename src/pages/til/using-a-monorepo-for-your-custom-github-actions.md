@@ -19,7 +19,7 @@ On top of that, Github only looks for public repos to detect custom actions. Tha
 
 ## The "solution"
 
-You can get around both restrictions with a "simple" workaround. It takes advantage of the fact that you can reference custom actions by pointing to a locally checked out directory containing the `action.yml`. So, in order to point to a private custom action and/or to an action in a monorepo, all you need to do is check out that repo in your workflow and then pointing to the local folder with the action in question.
+You can get past both restrictions with a "simple" workaround. It takes advantage of the fact that you can reference custom actions by pointing to a locally checked out directory containing the `action.yml`. So, in order to point to a private custom action and/or to an action in a monorepo, all you need to do is check out that repo in your workflow and then pointing to the local folder with the action in question.
 
 ```bash
 # Example folder structure in your `github-actions-monorepo` repo
