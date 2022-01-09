@@ -2,12 +2,12 @@ import { Link, graphql } from "gatsby";
 import styled from "styled-components";
 
 import { SEO } from "../components/seo";
-import { Grid, Column } from "../components/grid";
 import { Card } from "../components/card";
 
 import { ReactComponent as MediumLogoSvg } from "../images/icons/medium.svg";
 import { ReactComponent as MeetupLogoSvg } from "../images/icons/meetup.svg";
 import { ReactComponent as DevToLogoSvg } from "../images/icons/devto.svg";
+import { BREAKPOINTS } from "../theme";
 
 const Icons = {
   Medium: MediumLogoSvg,
@@ -17,13 +17,25 @@ const Icons = {
 
 type Platform = keyof typeof Icons;
 
-const Group = styled(Grid)`
-  margin-top: 1.6rem;
-  margin-bottom: 2.4rem;
+const Group = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+
+  ${BREAKPOINTS.TABLET} {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  ${BREAKPOINTS.MOBILE} {
+    grid-template-columns: 1fr;
+  }
 `;
 
-const GroupItem = styled(Column)`
-  margin-bottom: 0.8rem;
+const GroupItem = styled.div`
+  & > * {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const WrapHeading = styled.div`
@@ -84,7 +96,8 @@ export default function MyWorkPage({ data }: { data: any }) {
 
       <h2>Talks</h2>
       <p>
-        Even though I don't like public speaking, I always try to share my
+        Even though I wouldn't consider public speaking one of my strongest
+        skills (yet), being out of my comfort zone, I always try to share my
         experience and the things I learn with others. The following are some of
         the talks I gave at local meetups.
       </p>
@@ -94,7 +107,6 @@ export default function MyWorkPage({ data }: { data: any }) {
           const Icon = Icons[platform];
           return (
             <GroupItem
-              width={4}
               key={talk.node.fields.slug || talk.node.frontmatter.externalUrl}
             >
               <Card
@@ -131,7 +143,6 @@ export default function MyWorkPage({ data }: { data: any }) {
           const Icon = Icons[platform];
           return (
             <GroupItem
-              width={4}
               key={post.node.fields.slug || post.node.frontmatter.externalUrl}
             >
               <Card
@@ -157,13 +168,19 @@ export default function MyWorkPage({ data }: { data: any }) {
 
       <h2>Open Source</h2>
       <p>
-        Besides contributions to open source libraries, I created a few of my
-        own.
+        Besides contributions to open source libraries, I created{" "}
+        <a
+          href="https://github.com/julianburr"
+          target="_blank"
+          rel="noreferrer"
+        >
+          a few of my own
+        </a>
+        .
       </p>
       <Group>
         {oss.map((project: any) => (
           <GroupItem
-            width={4}
             key={
               project.node.fields.slug || project.node.frontmatter.externalUrl
             }
@@ -190,7 +207,6 @@ export default function MyWorkPage({ data }: { data: any }) {
       <Group>
         {projects.map((project: any) => (
           <GroupItem
-            width={4}
             key={
               project.node.fields.slug || project.node.frontmatter.externalUrl
             }
