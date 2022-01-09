@@ -5,7 +5,7 @@ from: 2015-09-01
 to: 2016-03-01
 ---
 
-[Femaso](http://femaso.com/) is a small family business located in Cairns, Queensland. As part of my working holidays I got hired as a fulltime software engineer, working on both front- and backend. I was part of a 3 headed development team.
+[Femaso](http://femaso.com/) is a small family business located in Cairns, Queensland. As part of my working holidays I got hired as a full-time software engineer, working on both frontend and backend, as well as doing occational design and marketing work. I was one of three developers in the team.
 
 ## Responsibilities
 

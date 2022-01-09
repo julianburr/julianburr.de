@@ -44,7 +44,7 @@ export default function CurriculumVitaePage({ data }: { data: any }) {
         Below is a history of emplyers I worked for. Click through to see more
         details about what my roles were and what responsibilities were
         involved, as well as most importantly what I think I learned at each of
-        them. Every single role made me grow professionally and personally.
+        them.
       </p>
       <List mt="3rem">
         {roles.map((role: any) => {

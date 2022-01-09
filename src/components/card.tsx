@@ -7,7 +7,7 @@ const Container = styled((p) =>
   p.href ? <a target="_blank" {...p} /> : <Link {...p} />
 )`
   width: 100%;
-  padding: 2.5rem;
+  padding: 2.5rem 4.5rem 2.5rem 2.5rem;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;

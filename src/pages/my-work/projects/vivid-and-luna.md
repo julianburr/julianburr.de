@@ -1,8 +1,8 @@
 ---
-title: Vivid
+title: Vivid & Luna
 type: Project
 description: Building a Frontend React Component Library / Design System
-date: 2019-01-01
+date: 2020-01-01
 job: rexlabs
 ---
 
@@ -12,7 +12,7 @@ At [rexlabs](https://www.rexlabs.io), we transitioned from a one product company
 
 This created an interesting challenge for the frontend team. How can we avoid building the same things over an over again and utilise solutions we built for one product for all the others as well. Especially when it comes to styling of the app and the app's components.
 
-The solution: a centralised component and module library, that acts as the foundational design system all our brands inherit from.
+The solution: a centralised component and module library, that acts as the foundations of a design system all our brands inherit from.
 
 ## The Concept
 
@@ -26,10 +26,18 @@ The basis is a [monorepo](https://danluu.com/monorepo/), that contains all the p
 
 For the branding, Lochlan built an abstraction layer on top of [glamor](https://github.com/threepointone/glamor), a popular CSS-in-JS library, early on, that allowed us to override styles for our components via a simple provider. No need to wrap or even override the core components for no reason, kind of bringing the "C" back into CSS-in-JS.
 
+## Creating a design system
+
+From this basis, we eventually got buy in from the design team to take things to the next level. Together we created "Luna", a design system built for rexlabs that would cater all different products and brands.
+
+I am planning to write about our journey, the challenges that we ran into and how we solved most but not all of them in the near future.
+
+We were lucky that we had a new green field project we could apply the new design system to while we were still polishing it. Working on a real product rather than in theory is a lot more efficient. From there we started mapping out the adoption and rollout strategies with the other product teams.
+
 ## Where is it going?
 
 Another challenge that we're still solving: open sourcing all of this. Obviously we want to contribute back to the community, even if noone might actually be able to use what we built (it's of course pretty opinionated towards our products and business requirements), but at the very least allow others to see how we solved some of the common problems in the industry and build their solutions on top of that knowledge, basically exactly like we did.
 
-In general I think working on a project like this was massive for me. Besides the obvious technical skills I picked up the way, my thinking about developer experience, the collaboration between design and development teams as a combined product team, and the way we think about and deal with design systems, has evolved a lot.
+In general I think working on a project like this was a huge learning opportunity for me. Besides the obvious technical skills I picked up on the way, my thinking about developer experience, the collaboration between design and development teams as a combined product team, and the way we think about and deal with design systems has evolved a lot.
 
 😊
