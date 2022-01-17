@@ -79,15 +79,18 @@ const WrapIcon = styled.div`
 
 export default function MyWorkPage({ data }: { data: any }) {
   const work = data.allMarkdownRemark.edges;
+  console.log({ work });
 
   function createFilter(type: string) {
-    return (e: any) => e.node.frontmatter.type === type;
+    return (e: any) =>
+      e.node.fields.slug.split("/").filter(Boolean)?.[1] === type;
   }
 
-  const projects = work.filter(createFilter("Project"));
-  const talks = work.filter(createFilter("Talk"));
-  const blogs = work.filter(createFilter("Blog"));
-  const oss = work.filter(createFilter("Open Source"));
+  const projects = work.filter(createFilter("projects"));
+  const sideProjects = work.filter(createFilter("side-projects"));
+  const talks = work.filter(createFilter("talks"));
+  const blogs = work.filter(createFilter("blog"));
+  const oss = work.filter(createFilter("open-source"));
 
   return (
     <>
@@ -199,10 +202,37 @@ export default function MyWorkPage({ data }: { data: any }) {
         ))}
       </Group>
 
-      <h2>Intesting Projects</h2>
+      <h2>Interesting Side Projects</h2>
       <p>
-        A selection of interesting projects I worked on during my employments or
-        as private side projects.
+        I usually use side projects more with learning in mind than anything
+        else, but every now and then I actually do finish one 😅
+      </p>
+      <Group>
+        {sideProjects.map((project: any) => (
+          <GroupItem
+            key={
+              project.node.fields.slug || project.node.frontmatter.externalUrl
+            }
+          >
+            <Card
+              linkTo={project.node.fields.slug}
+              href={project.node.frontmatter.externalUrl}
+            >
+              <WrapHeading>
+                <WorkYear>{project.node.frontmatter.date} —</WorkYear>
+                <span role="heading" aria-level={3}>
+                  {project.node.frontmatter.title}
+                </span>
+              </WrapHeading>
+              <Desc>{project.node.frontmatter.description}</Desc>
+            </Card>
+          </GroupItem>
+        ))}
+      </Group>
+
+      <h2>Work Projects</h2>
+      <p>
+        A selection of interesting projects I worked on during my employments.
       </p>
       <Group>
         {projects.map((project: any) => (
