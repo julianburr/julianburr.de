@@ -1,9 +1,7 @@
 ---
 title: Vivid & Luna
-type: Project
 description: Building a Frontend React Component Library / Design System
 date: 2020-01-01
-job: rexlabs
 ---
 
 ## The Project
