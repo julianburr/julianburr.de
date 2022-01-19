@@ -13,6 +13,7 @@ const Container = styled.div<{ background: string }>`
   padding: 5rem;
   display: flex;
   transition: background 0.4s;
+  position: relative;
 
   ${BREAKPOINTS.MOBILE} {
     padding: 0.5rem;
@@ -58,9 +59,9 @@ function Inner({ children }: InnerProps) {
   const context = useContext(RoutingContext);
   return (
     <Container background={context.currentGridColor}>
-      <Stage id="stage" invert={context.currentGrid === "blm"}>
+      <Stage id="stage" invert={context.currentGrid === "blm"} tabIndex={0}>
         <Navigation />
-        <Content>{children}</Content>
+        <Content id="content">{children}</Content>
       </Stage>
     </Container>
   );
