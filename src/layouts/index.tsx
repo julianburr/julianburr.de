@@ -1,5 +1,6 @@
-import { PropsWithChildren, useContext } from "react";
+import { PropsWithChildren, useContext, useEffect } from "react";
 import styled from "styled-components";
+import twemoji from "twemoji";
 
 import { Navigation } from "../components/navigation";
 import { RoutingProvider, RoutingContext } from "../context/routing";
@@ -72,9 +73,17 @@ function InnerGallery({ children }: InnerProps) {
 type LayoutProps = PropsWithChildren<{ location: any }>;
 
 export default function Layout({ location, children }: LayoutProps) {
+  useEffect(() => {
+    twemoji.parse(window.document.body, {
+      ext: ".svg",
+      size: "svg",
+    });
+  }, [location.pathname]);
+
   const isGallery =
     location.pathname?.startsWith("/around-the-world/") &&
     location.pathname !== "/around-the-world/";
+
   return (
     <RoutingProvider location={location}>
       <GlobalStyles />

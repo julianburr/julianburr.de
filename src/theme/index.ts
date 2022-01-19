@@ -189,7 +189,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   img.emoji {
-    height: 1.8rem;
+    height: 1.2em;
+    margin: 0 .2rem;
     width: auto;
     display: inline;
     vertical-align: middle;

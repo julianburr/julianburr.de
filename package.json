@@ -38,6 +38,7 @@
     "@types/react-dom": "^17.0.11",
     "@types/react-helmet": "^6.1.5",
     "@types/styled-components": "^5.1.20",
+    "@types/twemoji": "^12.1.2",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
     "babel-eslint": "^10.1.0",
