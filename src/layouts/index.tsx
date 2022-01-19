@@ -40,6 +40,10 @@ const Stage = styled.div<{ invert: boolean }>`
   ${BREAKPOINTS.MOBILE} {
     padding: 2.5rem 2.5rem 2.5rem 7.5rem;
   }
+
+  &:focus {
+    outline: 0.3rem solid rgba(255, 255, 255, 0.3);
+  }
 `;
 
 const Content = styled.main`
@@ -50,7 +54,6 @@ const Content = styled.main`
 const GalleryContainer = styled.main`
   width: 100%;
   height: 100%;
-  background: yellow;
 `;
 
 type InnerProps = PropsWithChildren<Record<never, any>>;
@@ -74,6 +77,24 @@ function InnerGallery({ children }: InnerProps) {
 type LayoutProps = PropsWithChildren<{ location: any }>;
 
 export default function Layout({ location, children }: LayoutProps) {
+  // HACK: this is not ideal, but the closest I could get to allow users to navigate the page
+  // just via keyboard, when hitting the arrow or page keys and the current focus is on the
+  // body, I switch the focus to the actual content area
+  useEffect(() => {
+    function handleKeyDown(e: any) {
+      const stage = window.document.getElementById("stage");
+      if (stage && !stage?.contains?.(e.target)) {
+        if (["ArrowDown", "ArrowUp", "PageDown", "PageUp"].includes(e.key)) {
+          stage?.focus();
+        }
+      }
+    }
+
+    window.document.addEventListener("keydown", handleKeyDown);
+    return () => window.document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  // Parse page body with twemoji to get nicer looking flat emoji SVGs
   useEffect(() => {
     twemoji.parse(window.document.body, {
       ext: ".svg",
@@ -81,6 +102,8 @@ export default function Layout({ location, children }: LayoutProps) {
     });
   }, [location.pathname]);
 
+  // This is a temporary workaround to render a different layout for the galery routes
+  // in the `around the world` section of the website
   const isGallery =
     location.pathname?.startsWith("/around-the-world/") &&
     location.pathname !== "/around-the-world/";
