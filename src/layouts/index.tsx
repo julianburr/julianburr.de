@@ -40,6 +40,10 @@ const Stage = styled.div<{ invert: boolean }>`
   ${BREAKPOINTS.MOBILE} {
     padding: 2.5rem 2.5rem 2.5rem 7.5rem;
   }
+
+  &:focus {
+    outline: 0.3rem solid rgba(255, 255, 255, 0.3);
+  }
 `;
 
 const Content = styled.main`
@@ -50,7 +54,6 @@ const Content = styled.main`
 const GalleryContainer = styled.main`
   width: 100%;
   height: 100%;
-  background: yellow;
 `;
 
 type InnerProps = PropsWithChildren<Record<never, any>>;
@@ -79,12 +82,11 @@ export default function Layout({ location, children }: LayoutProps) {
   // body, I switch the focus to the actual content area
   useEffect(() => {
     function handleKeyDown(e: any) {
-      if (e.target !== window.document.body) {
-        return;
-      }
-
-      if (["ArrowDown", "ArrowUp", "PageDown", "PageUp"].includes(e.key)) {
-        window.document.getElementById("stage")?.focus();
+      const stage = window.document.getElementById("stage");
+      if (stage && !stage?.contains?.(e.target)) {
+        if (["ArrowDown", "ArrowUp", "PageDown", "PageUp"].includes(e.key)) {
+          stage?.focus();
+        }
       }
     }
 
