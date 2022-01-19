@@ -1,6 +1,5 @@
 const path = require("path");
 const fs = require("fs");
-const twemoji = require("twemoji");
 const { createFilePath } = require("gatsby-source-filesystem");
 
 function createPages({ actions, graphql }) {
@@ -79,12 +78,6 @@ function onCreateNode({ node, getNode, actions }) {
       node,
       name: `slug`,
       value: slug,
-    });
-
-    const content = node.internal.content;
-    node.internal.content = twemoji.parse(content, {
-      ext: ".svg",
-      size: "svg",
     });
   }
 }
