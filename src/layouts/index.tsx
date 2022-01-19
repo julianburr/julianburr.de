@@ -74,6 +74,25 @@ function InnerGallery({ children }: InnerProps) {
 type LayoutProps = PropsWithChildren<{ location: any }>;
 
 export default function Layout({ location, children }: LayoutProps) {
+  // HACK: this is not ideal, but the closest I could get to allow users to navigate the page
+  // just via keyboard, when hitting the arrow or page keys and the current focus is on the
+  // body, I switch the focus to the actual content area
+  useEffect(() => {
+    function handleKeyDown(e: any) {
+      if (e.target !== window.document.body) {
+        return;
+      }
+
+      if (["ArrowDown", "ArrowUp", "PageDown", "PageUp"].includes(e.key)) {
+        window.document.getElementById("stage")?.focus();
+      }
+    }
+
+    window.document.addEventListener("keydown", handleKeyDown);
+    return () => window.document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  // Parse page body with twemoji to get nicer looking flat emoji SVGs
   useEffect(() => {
     twemoji.parse(window.document.body, {
       ext: ".svg",
@@ -81,6 +100,8 @@ export default function Layout({ location, children }: LayoutProps) {
     });
   }, [location.pathname]);
 
+  // This is a temporary workaround to render a different layout for the galery routes
+  // in the `around the world` section of the website
   const isGallery =
     location.pathname?.startsWith("/around-the-world/") &&
     location.pathname !== "/around-the-world/";
