@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { SEO } from "../components/seo";
 import { Box } from "../components/box";
 import { BookPreview } from "../components/book-preview";
+import { MouseEvent } from "react";
 
 const BackLink = styled(Link)`
   color: var(--main-bg-color);
@@ -50,7 +51,7 @@ export default function PageBlogTemplate({
       <Box flexDirection="row" alignItems="center" mt="1rem">
         <BackLink
           to={isBook ? "/library" : "/til"}
-          onClick={(e) => {
+          onClick={(e: MouseEvent) => {
             if (location.state.fromList) {
               e.preventDefault();
               if (window.history) {

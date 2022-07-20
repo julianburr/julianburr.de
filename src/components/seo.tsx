@@ -18,7 +18,6 @@ export function SEO({
   keywords = [],
   title,
   image = "preview.png",
-  slug,
 }: SEOProps) {
   const { site } = useStaticQuery(
     graphql`
@@ -35,9 +34,10 @@ export function SEO({
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const HelmetHack: any = Helmet;
 
   return (
-    <Helmet
+    <HelmetHack
       htmlAttributes={{
         lang,
       }}

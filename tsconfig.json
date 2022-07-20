@@ -17,7 +17,7 @@
     "jsx": "react-jsx",
     "outDir": "dist"
   },
-  "include": ["src"],
+  "include": ["src", "src/index.d.ts"],
   "exclude": [
     "./gatsby-browser.js",
     "./gatsby-config.js",

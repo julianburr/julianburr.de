@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { render } from "react-dom";
 import styled, { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles: any = createGlobalStyle`
   .mapboxgl-popup {
     filter: drop-shadow(0 .4rem 1rem rgba(0,0,0,.5));
   }
