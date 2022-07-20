@@ -19,14 +19,14 @@ jobs:
 
       - name: Linting and typechecks
         run: |-
-          yarn lint
+          yarn lint --quiet
           yarn typecheck
 
       - name: Create github deployment
         id: deployment
         uses: actions/github-script@v5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_PAT }}
           script: |
             const deployment = await github.rest.repos.createDeployment({
               ...context.repo,

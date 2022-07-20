@@ -14,10 +14,9 @@ export default function PageGalleryTemplate({
 }) {
   const post = data.markdownRemark;
   const qs = parse(location.search);
-  console.log({ qs, location });
 
   const currentIndex = qs.image ? parseInt(qs.image as string) : 0;
-  const setCurrentIndex = useCallback((index) => {
+  const setCurrentIndex = useCallback((index: any) => {
     navigate(index ? `${location.pathname}?image=${index}` : location.pathname);
   }, []);
 
