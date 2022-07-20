@@ -79,7 +79,6 @@ const WrapIcon = styled.div`
 
 export default function MyWorkPage({ data }: { data: any }) {
   const work = data.allMarkdownRemark.edges;
-  console.log({ work });
 
   function createFilter(type: string) {
     return (e: any) =>
