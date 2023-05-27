@@ -11,7 +11,7 @@ https://www.dddbrisbane.com/ \
 https://twitter.com/DDDBrisbane
 
 Canva slides: \
-https://www.canva.com/design/DAFSd1PdVXY/Os_lY_CSKqnp2d0xMW4p3g/view?utm_content=DAFSd1PdVXY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+https://www.canva.com/design/DAFSd1PdVXY/Os_lY_CSKqnp2d0xMW4p3g/view
 
 Slides as PDF: \
 https://www.julianburr.de/ddd-brisbane-2022-slides.pdf
