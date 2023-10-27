@@ -1,7 +1,7 @@
 ---
 title: Quantum Bites - The Basics
 description: What's the difference between quantum and classical computing?
-date: 2023-03-01
+date:
 tags: quantum computing
 ---
 
