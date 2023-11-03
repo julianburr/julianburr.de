@@ -49,7 +49,8 @@ export default function CurriculumVitaePage({ data }: { data: any }) {
       <List mt="3rem">
         {roles.map((role: any) => {
           const { frontmatter } = role.node;
-          const current = dayjs(frontmatter.toFmt).isAfter(dayjs());
+          const current =
+            !frontmatter.toFmt || dayjs(frontmatter.toFmt).isAfter(dayjs());
           return (
             <Item key={role.node.fields.slug} pb=".8rem">
               <Card linkTo={role.node.fields.slug}>

@@ -103,7 +103,7 @@ export default function MyWorkPage({ data }: { data: any }) {
         Even though I wouldn't consider public speaking one of my strongest
         skills (yet), being out of my comfort zone, I always try to share my
         experience and the things I learn with others. The following are some of
-        the talks I gave at local meetups.
+        the talks I've given at meetups and conferences:
       </p>
       <Group>
         {talks.map((talk: any) => {

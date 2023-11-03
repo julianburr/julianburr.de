@@ -7,7 +7,11 @@ platform: Conference
 
 ## Links
 
-https://webdirections.org/summit
-
 Slides: \
 https://talk-server-components.vercel.app
+
+Conference website: \
+https://webdirections.org/summit
+
+Write up: \
+https://medium.com/@julianburr/deja-vu-how-server-components-are-changing-the-game-using-old-ideas-f4defc168147

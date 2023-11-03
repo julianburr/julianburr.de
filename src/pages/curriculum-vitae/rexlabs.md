@@ -21,7 +21,7 @@ To further improve these and my mentoring skills, I started to be more active in
 
 ## Technology
 
-- JS
+- JS & Typescript
 - React
 - Redux
 - React Native
