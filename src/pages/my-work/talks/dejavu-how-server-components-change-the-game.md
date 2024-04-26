@@ -1,8 +1,9 @@
 ---
-title: Dejavu — How Web Components Change The Game With Old Ideas @ Web Directions Summit 2023
+title: Dejavu — How Web Components Change The Game With Old Ideas
 type: Talk
 date: 2023-10-26
 platform: Conference
+event: Web Directions Summit
 ---
 
 ## Links

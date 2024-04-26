@@ -1,8 +1,9 @@
 ---
-title: Yes, Your Browser Can Do That (Probably) @ DDD Brisbane 2022
+title: Yes, Your Browser Can Do That (Probably)
 type: Talk
 date: 2022-12-03
 platform: Conference
+event: DDD Brisbane
 ---
 
 ## Links

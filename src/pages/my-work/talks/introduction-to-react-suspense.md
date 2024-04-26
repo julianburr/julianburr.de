@@ -3,6 +3,7 @@ title: Introduction to React Suspense
 type: Talk
 date: 2018-04-24
 platform: Meetup
+event: ReactBris
 ---
 
 ## The evolution of data fetching in React
@@ -18,14 +19,14 @@ import { api } from "./api";
 class Example extends PureComponent {
   state = {
     loading: true,
-    data: null
+    data: null,
   };
 
   componentDidMount() {
-    api.get("/example").then(data => {
+    api.get("/example").then((data) => {
       this.setState({
         data,
-        loading: false
+        loading: false,
       });
     });
 
@@ -43,7 +44,7 @@ class Example extends PureComponent {
           <p>Loading...</p>
         ) : (
           <ul>
-            {data.map(item => (
+            {data.map((item) => (
               <li>{item}</li>
             ))}
           </ul>
@@ -69,7 +70,7 @@ import { connect } from "react-redux";
 
 const initialState = {
   loading: false,
-  data: null
+  data: null,
 };
 
 const reducer = (state, action) => {
@@ -78,23 +79,23 @@ const reducer = (state, action) => {
       // We use set timeout here as a workaround, since by default
       // Redux does not let you trigger other actions within a reducer!
       setTimeout(() => {
-        api.get("/example").then(data => {
+        api.get("/example").then((data) => {
           // Dispatch the "loaded" action with the API data
           store.dispatch({
             type: "example/LOADED",
-            payload: data
+            payload: data,
           });
         });
       }, 0);
       return {
         loading: true,
-        data: null
+        data: null,
       };
 
     case "example/LOADED":
       return {
         loading: false,
-        data: action.payload
+        data: action.payload,
       };
 
     default:
@@ -116,7 +117,7 @@ class Example extends PureComponent {
     const { loading, data, dispatch } = this.props;
     if (!data && !loading) {
       dispatch({
-        type: "example/LOAD"
+        type: "example/LOAD",
       });
     }
   }
@@ -130,7 +131,7 @@ class Example extends PureComponent {
           <p>Loading...</p>
         ) : (
           <ul>
-            {data.map(item => (
+            {data.map((item) => (
               <li>{item}</li>
             ))}
           </ul>
@@ -140,7 +141,7 @@ class Example extends PureComponent {
   }
 }
 
-const EnhancedExample = connect(state => state.example)(Example);
+const EnhancedExample = connect((state) => state.example)(Example);
 ```
 
 This is great and all, but its immediately obvious that this solution brings A LOT of heavy boilerplate with in around data flows in your app. Remember, this is just the basic setup, this doesn't even touch normalisation, garbage collection, smart ways of dealing with item updates and lists containing these items, etc.
@@ -182,7 +183,7 @@ class List extends PureComponent {
     // ^ yes, we call `fetchExample` in render!! Forget what you learned and/or have been told over the last couple of years, this is ok 🙃😄
     return (
       <ul>
-        {data.map(item => (
+        {data.map((item) => (
           <li>{item}</li>
         ))}
       </ul>
@@ -200,11 +201,11 @@ The `Placeholder` is a simple component based on the new `React.Timeout` compone
 In this repo you can find a very basic and dumb implementation of a suspense cache provider.
 
 ```js
-export const createFetcher = (method, hash = i => i) => {
+export const createFetcher = (method, hash = (i) => i) => {
   let cache = {};
   return (...args) => {
     if (!cache[hash(...args)]) {
-      throw method(...args).then(response => {
+      throw method(...args).then((response) => {
         cache[hash(...args)] = response;
       });
     }

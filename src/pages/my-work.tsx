@@ -41,7 +41,9 @@ const GroupItem = styled.div`
 `;
 
 const WrapHeading = styled.div`
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
   word-wrap: break-word;
   padding: 0.4rem 0;
   font-size: 1.6rem;
@@ -123,7 +125,10 @@ export default function MyWorkPage({ data }: { data: any }) {
                   </WrapIcon>
                 )}
                 <WrapHeading>
-                  <WorkYear>{talk.node.frontmatter.date} —</WorkYear>
+                  <WorkYear>
+                    {talk.node.frontmatter.date} — @{" "}
+                    {talk.node.frontmatter.event}
+                  </WorkYear>
                   <span role="heading" aria-level={3}>
                     {talk.node.frontmatter.title}
                   </span>
@@ -279,6 +284,7 @@ export const pageQuery = graphql`
             date(formatString: "YYYY")
             type
             platform
+            event
             externalUrl
           }
         }

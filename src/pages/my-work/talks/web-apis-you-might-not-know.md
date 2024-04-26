@@ -1,8 +1,9 @@
 ---
-title: Web APIs You Might Not Know @ SydJS 2023
+title: Web APIs You Might Not Know
 type: Talk
 date: 2023-12-13
 platform: Meetup
+event: SydJS
 ---
 
 ## Links
