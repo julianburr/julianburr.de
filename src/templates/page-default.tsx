@@ -19,6 +19,13 @@ const ExternalLink = styled.a`
   margin: 2.4rem 0;
 `;
 
+const Content = styled.div`
+  iframe.youtube-embed {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+`;
+
 export default function PageDefaultTemplate({ data }: { data: any }) {
   const post = data.markdownRemark;
   return (
@@ -34,7 +41,7 @@ export default function PageDefaultTemplate({ data }: { data: any }) {
       )}
 
       <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Content dangerouslySetInnerHTML={{ __html: post.html }} />
     </>
   );
 }
