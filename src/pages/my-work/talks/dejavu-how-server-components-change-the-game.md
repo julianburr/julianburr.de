@@ -6,10 +6,15 @@ platform: Conference
 event: Web Directions Summit
 ---
 
+<a href="https://conffab.com/presentation/how-server-components-change-the-game-using-old-ideas/?gl=55m4IsQp7jsG" target="_blank"><img width="100%" src="https://conffab.com/wp-content/uploads/2024/05/julian-thumb.jpg" alt="Link to presentation recording" /></a>
+
 ## Links
 
 Slides: \
 https://talk-server-components.vercel.app
+
+Recording: \
+https://conffab.com/presentation/how-server-components-change-the-game-using-old-ideas/?gl=55m4IsQp7jsG
 
 Conference website: \
 https://webdirections.org/summit
