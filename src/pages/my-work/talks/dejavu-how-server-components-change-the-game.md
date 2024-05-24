@@ -1,12 +1,12 @@
 ---
-title: Dejavu — How Web Components Change The Game With Old Ideas
+title: Dejavu — How Server Components Change The Game With Old Ideas
 type: Talk
 date: 2023-10-26
 platform: Conference
 event: Web Directions Summit
 ---
 
-<a href="https://conffab.com/presentation/how-server-components-change-the-game-using-old-ideas/?gl=55m4IsQp7jsG" target="_blank"><img width="100%" src="https://conffab.com/wp-content/uploads/2024/05/julian-thumb.jpg" alt="Link to presentation recording" /></a>
+<a href="https://conffab.com/presentation/how-server-components-change-the-game-using-old-ideas/?gl=55m4IsQp7jsG" target="_blank"><img width="100%" src="/web-directions-summit-2023-cover.png" alt="Link to presentation recording" /></a>
 
 ## Links
 
