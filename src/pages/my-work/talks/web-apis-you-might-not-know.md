@@ -16,3 +16,6 @@ https://www.julianburr.de/web-apis-sydjs-2023-slides.pdf
 
 Meetup website: \
 https://sydjs.com
+
+Other conferences/meetups a variant of this talk was given: \
+[../NEW 2024](./yes-your-browser-can-do-that-probably--slashnew-2024), [SydJS 2023](./web-apis-you-might-not-know), [DDD Brisbane 2022](./yes-your-browser-can-do-that-probably)
