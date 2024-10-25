@@ -6,6 +6,8 @@ platform: Conference
 event: ../NEW
 ---
 
+<iframe class="youtube-embed" src="https://www.youtube.com/embed/8gvEy3KXYfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Links
 
 Canva slides: \
