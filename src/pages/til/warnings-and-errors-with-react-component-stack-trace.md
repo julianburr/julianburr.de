@@ -7,7 +7,7 @@ tags: js, react
 
 This is gonna be a quick one, I just learned about it and thought it was a shame I didn't know it existed before 😅
 
-https://twitter.com/brian_d_vaughn/status/1108788282966433792
+<!-- https://twitter.com/brian_d_vaughn/status/1108788282966433792 -->
 
 If you want to show error messages or warning with a React components stack trace, instead of the usual JS execution stack trace, simply use the provided methods from the react library.
 

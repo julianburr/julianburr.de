@@ -7,7 +7,7 @@ tags: css
 
 CSS specificity is not necessarily something I learned today, but this specific usage of it certainly is.
 
-https://twitter.com/JoshWComeau/status/1158429802526924801
+<!-- https://twitter.com/JoshWComeau/status/1158429802526924801 -->
 
 ## What is CSS specificity
 
